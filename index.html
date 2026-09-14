@@ -46,10 +46,10 @@ const clOn={};Object.keys(PAL).forEach(k=>clOn[k]=true);clOn.org=true;
 const gOn={money:true,position:true,other:true};
 const legend=d3.select('#legend');Object.keys(GZH).forEach(g=>{legend.append('span').style('background',GCOL[g]).text(GZH[g])});legend.append('span').style('background',ORG).text('机构');
 const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');let W,Hh,T=d3.zoomIdentity,sel=null,hover=null;
-function resize(){W=canvas.width=innerWidth*devicePixelRatio;Hh=canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';if(!(T.k>0))fit();draw()}
+function resize(){W=canvas.width=innerWidth*devicePixelRatio;Hh=canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';if(!(T.k>0)||!userZoomed)fit();draw()}
 const pct=(arr,p)=>{const a=arr.slice().sort((x,y)=>x-y);return a[Math.floor((a.length-1)*p)]};let xs=[pct(nodes.map(n=>n.x),0.02),pct(nodes.map(n=>n.x),0.98)],ys=[pct(nodes.map(n=>n.y),0.02),pct(nodes.map(n=>n.y),0.98)];
 function fit(){const s=Math.min(innerWidth/(xs[1]-xs[0]+200),innerHeight/(ys[1]-ys[0]+200))*0.92;if(!(s>0))return;T=d3.zoomIdentity.translate(innerWidth/2-s*(xs[0]+xs[1])/2+(innerWidth>900?140:0),innerHeight/2-s*(ys[0]+ys[1])/2).scale(s);d3.select(canvas).call(zoom.transform,T)}
-const zoom=d3.zoom().scaleExtent([0.1,8]).on('zoom',ev=>{T=ev.transform;draw()});d3.select(canvas).call(zoom);
+let userZoomed=false;const zoom=d3.zoom().scaleExtent([0.1,8]).on('zoom',ev=>{T=ev.transform;if(ev.sourceEvent)userZoomed=true;draw()});d3.select(canvas).call(zoom);
 const lod=()=>nodes.length>400?(T.k<0.9?4:(T.k<1.6?3:(T.k<2.6?2:1))):1;
 const vis=n=>{const f=sel||hover;if(f&&(f.id===n.id||(adj[f.id]||[]).some(e=>e.s===n.id||e.t===n.id)))return true;return (n.deg||0)>=lod()+(isStub(n)?1:0)};
 function draw(){ctx.save();ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);ctx.translate(T.x,T.y);ctx.scale(T.k,T.k);
