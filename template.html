@@ -24,7 +24,7 @@ canvas{display:block}#tip{position:absolute;z-index:6;pointer-events:none;backgr
 const DATA = /*DATA*/;
 const GROUP={'academic-theory':'research','arxiv-safety':'research','principled-agents-researcher':'research','ea-org-leader':'safety-org','corrigibility-grantee':'safety-org','ea-funder':'funder','vc-strategic':'funder','anthropic-investor':'funder','crypto':'funder','state-funder':'funder','frontier-lab-exec':'lab','openai-founding':'lab','anthropic-board-ltbt':'lab','policy-gov':'policy','thiel-political':'policy','media-writer':'media'};
 const GCOL={'research':'#3b82f6','safety-org':'#10b981','funder':'#f59e0b','lab':'#ef4444','policy':'#a78bfa','media':'#ec4899','other':'#94a3b8'};
-const GZH={'research':'研究者 / 学术','safety-org':'安全机构 / EA 组织','funder':'资方 / 投资人','lab':'实验室 / 公司高管','policy':'政策 / 政治','media':'媒体 / 写作者'};
+const GZH={'research':'研究者','safety-org':'安全机构从业者','funder':'资方 / 投资人','lab':'实验室高管','policy':'政策人士','media':'媒体 / 写作者'};
 const PAL=new Proxy({},{get:(_,k)=>GCOL[GROUP[k]||'other']});
 const ZH={'academic-theory':'学术理论圈','ea-org-leader':'EA / 安全机构负责人','policy-gov':'政策与政府','vc-strategic':'风投','arxiv-safety':'安全研究者','frontier-lab-exec':'实验室高管','media-writer':'媒体写作者','ea-funder':'EA 资方','crypto':'加密 / d/acc','anthropic-investor':'Anthropic 投资人','thiel-political':'Thiel 政治圈','anthropic-board-ltbt':'Anthropic 董事会','openai-founding':'OpenAI 创始圈','corrigibility-grantee':'Corrigibility 受资人'};
 const ORG='#cbd5e1';
