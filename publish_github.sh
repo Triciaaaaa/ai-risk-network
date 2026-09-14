@@ -8,7 +8,11 @@ REPO=ai-risk-network
 SRC=~/research/xrisk-atlas
 mkdir -p data
 cp "$SRC/site/template.html" template.html
-cp "$SRC/data/network/nodes.json" "$SRC/data/network/edges.json" data/
+git pull -q --ff-only origin main 2>/dev/null || true
+mkdir -p build/export && cp "$SRC/data/network/nodes.json" "$SRC/data/network/edges.json" build/export/
+python3 "$SRC/scripts/merge_public.py" build/export data
+NETWORK_OUT=build/export python3 "$SRC/scripts/dedup_network.py" >/dev/null
+cp build/export/nodes.json build/export/edges.json data/
 python3 "$SRC/scripts/scan_sensitive_site.py" >/dev/null || { echo "sensitivity scan failed on site_dist; fix before publishing"; exit 1; }
 python3 validate.py
 python3 build.py
