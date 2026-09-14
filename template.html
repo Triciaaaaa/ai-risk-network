@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI risk fund &amp; member network</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+html,body{margin:0;height:100%;font:13px/1.45 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Segoe UI",Helvetica,Arial,sans-serif;background:#0f1117;color:#e5e7eb;overflow:hidden}
+#left{position:absolute;z-index:5;top:12px;left:12px;width:250px;max-height:calc(100% - 24px);overflow:auto;background:#161a23;border:1px solid #2a3040;border-radius:10px;padding:12px 14px}
+#right{position:absolute;z-index:5;top:12px;right:12px;width:340px;max-height:calc(100% - 24px);overflow:auto;background:#161a23;border:1px solid #2a3040;border-radius:10px;padding:12px 14px;display:none}
+h1{font-size:15px;margin:0 0 4px}h2{font-size:14px;margin:0 0 6px}.muted{color:#9aa3b5;font-size:11.5px}
+input{width:100%;box-sizing:border-box;padding:6px 8px;border-radius:6px;border:1px solid #39415a;background:#0e1018;color:#e5e7eb;margin-top:8px}
+#hits div{padding:3px 6px;cursor:pointer;border-radius:4px}#hits div:hover{background:#2b3245}
+.leg{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}.leg span{font-size:10.5px;padding:1px 7px;border-radius:9px;color:#0f1117;font-weight:600}
+.tog{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}.tog button{font-size:11px;padding:3px 8px;border-radius:6px;border:1px solid #39415a;background:#0e1018;color:#e5e7eb;cursor:pointer}.tog button.off{opacity:.35}
+a{color:#7fb2ff;text-decoration:none}a:hover{text-decoration:underline}
+#edges div{padding:5px 0;border-top:1px solid #232838}#edges .lab{color:#c7cddb}
+canvas{display:block}#tip{position:absolute;z-index:6;pointer-events:none;background:#1b1f2a;border:1px solid #39415a;border-radius:6px;padding:4px 8px;font-size:12px;display:none}
+.close{float:right;cursor:pointer;color:#9aa3b5}
+</style></head><body>
+<div id="left"><h1>AI risk fund &amp; member network</h1><div class="muted" id="meta"></div>
+<input id="q" placeholder="搜索人名 / 机构…" autocomplete="off"><div id="hits"></div>
+<div class="leg" id="legend"></div><div class="muted" style="margin-top:8px">线：<span style="color:#f59e0b">橙 = 钱</span> · <span style="color:#94a3b8">灰 = 职位</span> · <span style="color:#818cf8">蓝 = 合著 / 结盟</span><br>点节点看关系与来源 · 滚轮缩放</div></div>
+<div id="right"><span class="close" onclick="closePanel()">✕</span><h2 id="pname"></h2><div class="muted" id="pmeta"></div><div id="edges"></div></div>
+<div id="tip"></div><canvas id="c"></canvas>
+<script>
+const DATA = /*DATA*/;
+const GROUP={'academic-theory':'research','arxiv-safety':'research','principled-agents-researcher':'research','ea-org-leader':'safety-org','corrigibility-grantee':'safety-org','ea-funder':'funder','vc-strategic':'funder','anthropic-investor':'funder','crypto':'funder','state-funder':'funder','frontier-lab-exec':'lab','openai-founding':'lab','anthropic-board-ltbt':'lab','policy-gov':'policy','thiel-political':'policy','media-writer':'media'};
+const GCOL={'research':'#3b82f6','safety-org':'#10b981','funder':'#f59e0b','lab':'#ef4444','policy':'#a78bfa','media':'#ec4899','other':'#94a3b8'};
+const GZH={'research':'研究者 / 学术','safety-org':'安全机构 / EA 组织','funder':'资方 / 投资人','lab':'实验室 / 公司高管','policy':'政策 / 政治','media':'媒体 / 写作者'};
+const PAL=new Proxy({},{get:(_,k)=>GCOL[GROUP[k]||'other']});
+const ZH={'academic-theory':'学术理论圈','ea-org-leader':'EA / 安全机构负责人','policy-gov':'政策与政府','vc-strategic':'风投','arxiv-safety':'安全研究者','frontier-lab-exec':'实验室高管','media-writer':'媒体写作者','ea-funder':'EA 资方','crypto':'加密 / d/acc','anthropic-investor':'Anthropic 投资人','thiel-political':'Thiel 政治圈','anthropic-board-ltbt':'Anthropic 董事会','openai-founding':'OpenAI 创始圈','corrigibility-grantee':'Corrigibility 受资人'};
+const ORG='#cbd5e1';
+const nodes=DATA.nodes, edges=DATA.edges, byId=Object.fromEntries(nodes.map(n=>[n.id,n]));
+const egroup=e=>/fund|grant|donat|invest|led round|\$/i.test(e.label)?'money':(/employ|board|found|officer|runs|member|advis|mentor|director|ceo|chair/i.test(e.label)?'position':'other');
+edges.forEach(e=>{e.g=egroup(e);e.a=byId[e.s];e.b=byId[e.t]});
+const adj={};edges.forEach(e=>{(adj[e.s]=adj[e.s]||[]).push(e);(adj[e.t]=adj[e.t]||[]).push(e)});
+const isStub=n=>n.type!=='person'&&!n.url&&!(n.affil||n.focus);
+const r=n=>(isStub(n)?1.6:(n.type==='person'?2.4:2.2))+Math.min(12,Math.sqrt(n.deg||1)*(isStub(n)?1.0:1.6));
+const hubCut=(()=>{const d=nodes.map(n=>n.deg||0).sort((a,b)=>b-a);return d[Math.min(11,d.length-1)]||1})();
+(function layout(){const big=nodes.length>400;nodes.forEach(n=>{n.x=(n.x||0)*(big?1.2:1);n.y=(n.y||0)*(big?1.2:1)});
+ const links=edges.map(e=>({source:e.s,target:e.t}));
+ const sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(d=>d.id).distance(l=>(big?26:40)+(big?1.6:0)*(Math.sqrt(l.source.deg||1)+Math.sqrt(l.target.deg||1))).strength(big?0.25:0.5))
+  .force('charge',d3.forceManyBody().strength(d=>-(big?34:40)-(big?13:6)*Math.sqrt(d.deg||1)).theta(0.9).distanceMax(big?700:900))
+  .force('collide',d3.forceCollide(d=>r(d)+(big?(d.deg>=hubCut?9:2.5):3)).iterations(2)).force('x',d3.forceX(0).strength(big?0.018:0.03)).force('y',d3.forceY(0).strength(big?0.018:0.03)).stop();
+ const n=big?380:300;for(let i=0;i<n;i++)sim.tick();})();
+document.getElementById('meta').textContent=`${nodes.filter(n=>n.type==='person').length} people · ${nodes.filter(n=>n.type!=='person').length} orgs · ${edges.length} sourced links`;
+const clOn={};Object.keys(PAL).forEach(k=>clOn[k]=true);clOn.org=true;
+const gOn={money:true,position:true,other:true};
+const legend=d3.select('#legend');Object.keys(GZH).forEach(g=>{legend.append('span').style('background',GCOL[g]).text(GZH[g])});legend.append('span').style('background',ORG).text('机构');
+const canvas=document.getElementById('c'),ctx=canvas.getContext('2d');let W,Hh,T=d3.zoomIdentity,sel=null,hover=null;
+function resize(){W=canvas.width=innerWidth*devicePixelRatio;Hh=canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';if(!(T.k>0))fit();draw()}
+const pct=(arr,p)=>{const a=arr.slice().sort((x,y)=>x-y);return a[Math.floor((a.length-1)*p)]};let xs=[pct(nodes.map(n=>n.x),0.02),pct(nodes.map(n=>n.x),0.98)],ys=[pct(nodes.map(n=>n.y),0.02),pct(nodes.map(n=>n.y),0.98)];
+function fit(){const s=Math.min(innerWidth/(xs[1]-xs[0]+200),innerHeight/(ys[1]-ys[0]+200))*0.92;if(!(s>0))return;T=d3.zoomIdentity.translate(innerWidth/2-s*(xs[0]+xs[1])/2+(innerWidth>900?140:0),innerHeight/2-s*(ys[0]+ys[1])/2).scale(s);d3.select(canvas).call(zoom.transform,T)}
+const zoom=d3.zoom().scaleExtent([0.1,8]).on('zoom',ev=>{T=ev.transform;draw()});d3.select(canvas).call(zoom);
+const lod=()=>nodes.length>400?(T.k<0.9?4:(T.k<1.6?3:(T.k<2.6?2:1))):1;
+const vis=n=>{const f=sel||hover;if(f&&(f.id===n.id||(adj[f.id]||[]).some(e=>e.s===n.id||e.t===n.id)))return true;return (n.deg||0)>=lod()+(isStub(n)?1:0)};
+function draw(){ctx.save();ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);ctx.translate(T.x,T.y);ctx.scale(T.k,T.k);
+ const focus=sel||hover;const nb=focus?new Set((adj[focus.id]||[]).flatMap(e=>[e.s,e.t])):null;
+ const big=nodes.length>400;edges.forEach(e=>{if(!gOn[e.g]||!vis(e.a)||!vis(e.b))return;const hot=focus&&(e.s===focus.id||e.t===focus.id);const dimE=focus&&!hot;const base=big?0.10:0.22;ctx.strokeStyle=e.g==='money'?'rgba(245,158,11,'+(hot?0.95:(dimE?0.04:base+0.06))+')':(e.g==='position'?'rgba(148,163,184,'+(hot?0.95:(dimE?0.03:base))+')':'rgba(99,102,241,'+(hot?0.95:(dimE?0.03:base))+')');ctx.lineWidth=(hot?2.2:0.7+(e.scale||1)*0.25)/T.k;if(e.dash)ctx.setLineDash([4/T.k,3/T.k]);else ctx.setLineDash([]);ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);ctx.stroke()});
+ ctx.setLineDash([]);
+ nodes.forEach(n=>{if(!vis(n))return;const dim=focus&&!(nb.has(n.id)||n.id===focus.id);ctx.globalAlpha=dim?0.15:(isStub(n)?0.45:1);ctx.fillStyle=n.type==='person'?(PAL[n.cluster]||'#94a3b8'):(isStub(n)?'#6b7280':ORG);const rr=r(n);if(n.type==='person'){ctx.beginPath();ctx.arc(n.x,n.y,rr,0,7);ctx.fill()}else{ctx.fillRect(n.x-rr,n.y-rr,2*rr,2*rr)}
+  const big2=nodes.length>400;const hub=(n.deg||0)>=(big2?(T.k<0.9?hubCut:(T.k<1.8?16:8)):8);if(!dim&&((hub&&(T.k>0.35||(n.deg||0)>=hubCut))||T.k*rr>7||(focus&&(nb.has(n.id)||n.id===focus.id)))){ctx.font=(hub?'600 ':'')+(Math.max(9.5,11.5/T.k))+'px sans-serif';ctx.textAlign='center';const fs=Math.max(9.5,11.5/T.k);const tw=ctx.measureText(n.name).width;ctx.fillStyle='rgba(15,17,23,0.72)';ctx.fillRect(n.x-tw/2-2/T.k,n.y-rr-2/T.k-fs,tw+4/T.k,fs+2/T.k);ctx.fillStyle=hub?'#ffffff':'#d1d5db';ctx.fillText(n.name,n.x,n.y-rr-2/T.k)}ctx.globalAlpha=1});ctx.restore()}
+function pick(mx,my){const p=T.invert([mx,my]);let best=null,bd=1e9;nodes.forEach(n=>{if(!vis(n))return;const d=Math.hypot(n.x-p[0],n.y-p[1]);if(d<bd&&d<r(n)+6/T.k){bd=d;best=n}});return best}
+const tip=document.getElementById('tip');
+canvas.addEventListener('mousemove',ev=>{const n=pick(ev.clientX,ev.clientY);hover=n;canvas.style.cursor=n?'pointer':'grab';if(n){tip.style.display='block';tip.style.left=(ev.clientX+12)+'px';tip.style.top=(ev.clientY+12)+'px';tip.textContent=n.name+(n.type==='person'?' · '+(ZH[n.cluster]||n.cluster):' · 机构')+' · '+n.deg+' 条关系'}else tip.style.display='none';draw()});
+canvas.addEventListener('click',ev=>{const n=pick(ev.clientX,ev.clientY);if(n)open(n);else{sel=null;closePanel()}});
+function open(n){sel=n;const R=document.getElementById('right');R.style.display='block';document.getElementById('pname').innerHTML=n.url?`<a href="${n.url}" target="_blank" rel="noopener">${n.name} ↗</a>`:n.name;document.getElementById('pmeta').innerHTML=((n.type==='person'?(ZH[n.cluster]||n.cluster):'机构')+' · '+(adj[n.id]||[]).length+' 条关系')+(n.affil?'<div style="margin-top:4px">'+n.affil+'</div>':'')+(n.focus?'<div style="margin-top:4px">'+n.focus+'</div>':'');
+ const es=(adj[n.id]||[]).slice().sort((a,b)=>(b.scale||1)-(a.scale||1));document.getElementById('edges').innerHTML=es.map(e=>{const o=e.s===n.id?e.b:e.a;const dir=e.arrow==='1->2'?(e.s===n.id?'→':'←'):'—';return `<div><b style="cursor:pointer" onclick="openId('${o.id}')">${dir} ${o.name}</b><br><span class="lab">${e.label||''}</span>${e.u?` · <a href="${e.u}" target="_blank" rel="noopener">来源</a>`:''}</div>`}).join('');draw()}
+window.openId=id=>{const n=byId[id];if(n){open(n);T=d3.zoomIdentity.translate(innerWidth/2-n.x*2+140,innerHeight/2-n.y*2).scale(2);d3.select(canvas).call(zoom.transform,T)}};
+window.closePanel=()=>{document.getElementById('right').style.display='none';sel=null;draw()};
+const q=document.getElementById('q'),hits=document.getElementById('hits');q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();hits.innerHTML='';if(!v)return;nodes.filter(n=>n.name.toLowerCase().includes(v)||n.id.includes(v)).slice(0,12).forEach(n=>{const d=document.createElement('div');d.textContent=n.name+(n.type==='person'?'':' (机构)');d.onclick=()=>{openId(n.id);hits.innerHTML='';q.value=n.name};hits.appendChild(d)})});
+addEventListener('resize',resize);resize();fit();
+</script></body></html>
