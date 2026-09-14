@@ -68,6 +68,12 @@ function open(n){sel=n;const R=document.getElementById('right');R.style.display=
  document.getElementById('edges').innerHTML=groups.map(g=>`<div><b style="cursor:pointer" onclick="openId('${g.o.id}')">${g.o.name}</b>`+g.items.map(e=>{const dir=e.arrow==='1->2'?(e.s===n.id?'→':'←'):'—';return `<br><span class="lab">${dir} ${e.label||''}</span>${e.u?` · <a href="${e.u}" target="_blank" rel="noopener">来源</a>`:''}`}).join('')+`</div>`).join('');draw()}
 window.openId=id=>{const n=byId[id];if(n){open(n);T=d3.zoomIdentity.translate(innerWidth/2-n.x*2+140,innerHeight/2-n.y*2).scale(2);d3.select(canvas).call(zoom.transform,T)}};
 window.closePanel=()=>{document.getElementById('right').style.display='none';sel=null;draw()};
-const q=document.getElementById('q'),hits=document.getElementById('hits');q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();hits.innerHTML='';if(!v)return;nodes.filter(n=>n.name.toLowerCase().includes(v)||n.id.includes(v)).slice(0,12).forEach(n=>{const d=document.createElement('div');d.textContent=n.name+(n.type==='person'?'':' (机构)');d.onclick=()=>{openId(n.id);hits.innerHTML='';q.value=n.name};hits.appendChild(d)})});
+const REPO='https://github.com/Triciaaaaa/ai-risk-network';const MISS_ENDPOINT='';/* optional: a form endpoint that silently records zero-result searches */
+const q=document.getElementById('q'),hits=document.getElementById('hits');let missTimer=null;const missSent=new Set();
+function issueUrl(v){const t=encodeURIComponent('添加请求：'+v);const b=encodeURIComponent('想加的条目：'+v+'\n\n它是谁 / 什么机构：\n公开来源链接：\n与图里哪些节点有什么关系（钱 / 职位 / 合著）：\n');return `${REPO}/issues/new?labels=add-request&title=${t}&body=${b}`}
+function logMiss(v){if(!MISS_ENDPOINT||missSent.has(v))return;missSent.add(v);try{const fd=new FormData();fd.append('query',v);fd.append('page',location.href);fetch(MISS_ENDPOINT,{method:'POST',mode:'no-cors',body:fd})}catch(e){}}
+q.addEventListener('input',()=>{const raw=q.value.trim(),v=raw.toLowerCase();hits.innerHTML='';clearTimeout(missTimer);if(!v)return;const found=nodes.filter(n=>n.name.toLowerCase().includes(v)||n.id.includes(v)).slice(0,12);
+ if(found.length){found.forEach(n=>{const d=document.createElement('div');d.textContent=n.name+(n.type==='person'?'':' (机构)');d.onclick=()=>{openId(n.id);hits.innerHTML='';q.value=n.name};hits.appendChild(d)});return}
+ if(raw.length>=2){const d=document.createElement('div');d.className='muted';d.style.cursor='default';d.innerHTML=`没找到「${raw.replace(/</g,'&lt;')}」 · <a href="${issueUrl(raw)}" target="_blank" rel="noopener">提交添加请求 ↗</a>`;hits.appendChild(d);missTimer=setTimeout(()=>logMiss(raw),1500)}});
 addEventListener('resize',resize);resize();fit();
 </script></body></html>
