@@ -13,6 +13,12 @@ An interactive map of who funds, runs, advises and co-authors with whom in the A
 
 Only public facts: public roles and affiliations, public grants and investments, public co-authorship, and public statements of alliance or opposition, each with the page it came from. No contact details, no private assessments, no family relations. If you are listed and want something corrected or removed, open an issue or a PR; removal requests are honoured without discussion.
 
+## Asking the map
+
+- **Ask in the search box.** Type a question and press Enter, in English or Chinese: `who funds METR`, `Anthropic 董事会`, `谁在资助 interpretability`, `Paul Christiano 和 OpenAI`. The page picks out the people and organisations you name, the kind of relation you ask about (funding, investment, board, founded, advises, candidate…) and any topic words, then lists the matching relations with their sources and highlights them on the map. Click a name to open it; the panel links back to your question.
+- **我该关注谁？ (Who should I follow?)** Describe your work or interests in a few sentences and pick a role (research, looking for funding, policy, investing, writing). The page ranks the people, organisations and relations on the map by how closely they match what you wrote: for funding it lists who has funded that area, for research the organisations its people work at. It ranks by relevance only and does not work out introduction paths between people.
+- Both run entirely in your browser from the published data. What you type is not sent anywhere and not stored.
+
 ## Forum activity (LessWrong / Alignment Forum)
 
 Read from the forums' own public API (the data their profile and post pages show). Three things come from it:
