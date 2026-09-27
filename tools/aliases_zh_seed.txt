@@ -1,0 +1,107 @@
+# 英文名（与 data/nodes.json 的 name 精确或去括号后匹配）<TAB>中文名（多个用 | 分隔）。匹配不到 id 的行直接丢弃，不许猜。
+Google DeepMind	谷歌DeepMind|谷歌 DeepMind
+DeepMind	DeepMind|深度思维
+Machine Intelligence Research Institute	机器智能研究所
+Future of Humanity Institute	人类未来研究所
+Future of Life Institute	未来生命研究所
+Center for AI Safety	AI安全中心|人工智能安全中心
+Center for Human-Compatible AI	人类兼容人工智能中心
+Coefficient Giving	开放慈善|Open Philanthropy
+Survival and Flourishing Fund	生存与繁荣基金
+Long-Term Future Fund	长期未来基金
+80,000 Hours	八万小时
+UK AI Security Institute	英国人工智能安全研究所|英国AI安全研究所
+European AI Office	欧盟人工智能办公室
+Concordia AI	安远AI
+Beijing Academy of Artificial Intelligence	北京智源人工智能研究院|智源研究院|智源
+Shanghai AI Lab	上海人工智能实验室
+Shanghai Artificial Intelligence Laboratory	上海人工智能实验室
+Tsinghua University	清华大学|清华
+Peking University	北京大学|北大
+China Academy of Information and Communications Technology	中国信息通信研究院|中国信通院|信通院
+DeepSeek	深度求索
+Alibaba Group	阿里巴巴
+Baidu	百度
+Tencent	腾讯
+Zhipu AI	智谱
+Moonshot AI	月之暗面
+Huawei	华为
+Microsoft	微软
+Google	谷歌
+Nvidia	英伟达
+NVIDIA	英伟达
+Amazon	亚马逊
+SoftBank	软银
+Sequoia Capital	红杉资本
+Stanford University	斯坦福大学|斯坦福
+UC Berkeley	加州大学伯克利分校|伯克利
+MIT	麻省理工学院|麻省理工
+Harvard University	哈佛大学
+University of Oxford	牛津大学
+Carnegie Mellon University	卡内基梅隆大学
+RAND	兰德公司
+RAND Corporation	兰德公司
+Brookings Institution	布鲁金斯学会
+Carnegie Endowment for International Peace	卡内基国际和平基金会
+Frontier Model Forum	前沿模型论坛
+Partnership on AI	人工智能合作伙伴关系
+International Dialogues on AI Safety	国际AI安全对话
+United Nations	联合国
+OECD	经合组织
+LessWrong	LessWrong|少错
+Alignment Forum	对齐论坛
+Geoffrey Hinton	杰弗里·辛顿|辛顿
+Yoshua Bengio	约书亚·本吉奥|本吉奥
+Stuart Russell	斯图尔特·罗素
+Andrew Yao	姚期智
+Ya-Qin Zhang	张亚勤
+Xue Lan	薛澜
+Yi Zeng	曾毅
+Brian Tse	谢旻希
+Yaodong Yang	杨耀东
+Bowen Zhou	周伯文
+Hongjiang Zhang	张宏江
+Liang Wenfeng	梁文锋
+Sam Altman	萨姆·奥尔特曼|奥尔特曼|奥特曼
+Dario Amodei	达里奥·阿莫迪
+Daniela Amodei	丹妮拉·阿莫迪
+Demis Hassabis	戴密斯·哈萨比斯|哈萨比斯
+Ilya Sutskever	伊尔亚·苏茨克维
+Elon Musk	埃隆·马斯克|马斯克
+Mark Zuckerberg	马克·扎克伯格|扎克伯格
+Eliezer Yudkowsky	埃利泽·尤德科夫斯基
+Nick Bostrom	尼克·博斯特罗姆
+Max Tegmark	迈克斯·泰格马克|泰格马克
+Jaan Tallinn	扬·塔林
+Dustin Moskovitz	达斯汀·莫斯科维茨
+Vitalik Buterin	维塔利克·布特林|V神
+Peter Thiel	彼得·蒂尔
+Marc Andreessen	马克·安德森
+Reid Hoffman	里德·霍夫曼
+Eric Schmidt	埃里克·施密特
+Jensen Huang	黄仁勋
+Satya Nadella	萨提亚·纳德拉
+Sundar Pichai	桑达尔·皮查伊
+Paul Christiano	保罗·克里斯蒂亚诺
+Jan Leike	扬·莱克
+Chris Olah	克里斯·奥拉
+Yann LeCun	杨立昆
+Fei-Fei Li	李飞飞
+Andrew Ng	吴恩达
+Kai-Fu Lee	李开复
+Toby Ord	托比·奥德
+William MacAskill	威尔·麦卡斯基尔
+Holden Karnofsky	霍尔顿·卡诺夫斯基
+Gary Marcus	加里·马库斯
+Timnit Gebru	蒂姆尼特·格布鲁
+David Sacks	大卫·萨克斯
+Helen Toner	海伦·托纳
+Greg Brockman	格雷格·布罗克曼
+Mira Murati	米拉·穆拉蒂
+Mustafa Suleyman	穆斯塔法·苏莱曼
+Shane Legg	谢恩·莱格
+Jack Clark	杰克·克拉克
+Dan Hendrycks	丹·亨德里克斯
+Daniel Kokotajlo	丹尼尔·科科塔伊洛
+Scott Wiener	斯科特·维纳
+Gavin Newsom	加文·纽森|纽森
