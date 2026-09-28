@@ -82,6 +82,38 @@ if aliases_path.exists():
             if not isinstance(values, list) or not all(isinstance(value, str) and value.strip() for value in values):
                 errs.append(f"aliases_zh.json aliases must be non-empty strings: {node_id}")
 
+faq_path = DATA_DIR / "faq.json"
+if faq_path.exists():
+    faq = load(faq_path)
+    if not isinstance(faq, list):
+        errs.append("faq.json must be an array")
+    else:
+        faq_ids = set()
+        valid_roles = {"research", "funding", "policy", "invest", "media", "curious"}
+        for item in faq:
+            if not isinstance(item, dict):
+                errs.append("faq.json entries must be objects")
+                continue
+            faq_id = item.get("id")
+            if not faq_id or faq_id in faq_ids:
+                errs.append(f"faq.json has missing or duplicate id: {faq_id}")
+            faq_ids.add(faq_id)
+            if item.get("role") not in valid_roles:
+                errs.append(f"faq.json has unknown role: {faq_id} -> {item.get('role')}")
+            top10, why = item.get("top10"), item.get("why")
+            if not isinstance(top10, list) or not isinstance(why, list):
+                errs.append(f"faq.json top10 and why must be arrays: {faq_id}")
+                continue
+            if len(top10) != 10:
+                errs.append(f"faq.json top10 must contain 10 node ids: {faq_id} ({len(top10)})")
+            if len(top10) != len(why):
+                errs.append(f"faq.json top10 and why length mismatch: {faq_id} ({len(top10)} != {len(why)})")
+            if not all(isinstance(reason, str) and reason.strip() for reason in why):
+                errs.append(f"faq.json why must contain non-empty strings: {faq_id}")
+            for node_id in top10:
+                if node_id not in ids:
+                    errs.append(f"faq.json has unknown node id: {faq_id} -> {node_id}")
+
 for error in errs[:50]:
     print("ERROR", error)
 print(f"{len(nodes)} nodes, {len(edges)} edges, {len(errs)} errors")

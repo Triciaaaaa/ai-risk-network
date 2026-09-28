@@ -267,7 +267,7 @@ def main():
     if bad:
         raise SystemExit(f"{len(bad)} edges reference unknown node ids, e.g. {bad[0]}")
 
-    for key, filename in (("topics", "topics.json"), ("history", "history.json"), ("aliases", "aliases_zh.json")):
+    for key, filename in (("topics", "topics.json"), ("history", "history.json"), ("aliases", "aliases_zh.json"), ("faq", "faq.json")):
         path = DATA_DIR / filename
         if path.exists():
             data[key] = load_json(path)

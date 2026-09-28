@@ -1,0 +1,2848 @@
+[
+  {
+    "id": "f01",
+    "role": "research",
+    "question": "我想做机械可解释性，应该先关注哪些团队和研究者？",
+    "keywords": {
+      "zh": [
+        "机械可解释性",
+        "可解释性",
+        "神经网络内部",
+        "特征",
+        "回路",
+        "稀疏自编码器",
+        "模型解释"
+      ],
+      "en": [
+        "mechanistic interpretability",
+        "interpretability",
+        "circuits",
+        "features",
+        "sparse autoencoder",
+        "model internals",
+        "representation"
+      ]
+    },
+    "top10": [
+      "chris-olah",
+      "neel-nanda",
+      "jack-lindsey",
+      "zhonghao-he",
+      "encode",
+      "goodfire",
+      "transformer-lens",
+      "rohin-shah",
+      "lawrence-chan",
+      "thinking-machines-lab"
+    ],
+    "why": [
+      "Chris Olah 的节点简介涉及“Mechanistic interpretability; the persona-selection account of what an AI assistant is”，是了解机械可解释性的高相关人物入口。",
+      "Neel Nanda 的节点简介涉及“Applying interpretability to real-world safety problems - deception detection, model biology…”，是了解机械可解释性的高相关人物入口。",
+      "Jack Lindsey 的节点简介涉及“Model psychology and persona; introspection; circuits”，是了解机械可解释性的高相关人物入口。",
+      "Zhonghao He (何中豪) 的节点简介涉及“Mechanistic interpretability, neuroscience, ethics and human-machine interaction. 2026 status…”，是了解机械可解释性的高相关人物入口。",
+      "Encode 的节点简介涉及“Youth-led advocacy for AI laws and public safeguards, including nuclear command controls, mod…”，是了解机械可解释性的高相关机构入口。",
+      "Goodfire 的节点简介涉及“Builds interpretability agents and infrastructure to understand, monitor, and align advanced…”，是了解机械可解释性的高相关机构入口。",
+      "TransformerLens 的节点简介涉及“Provides tools for loading generative language models and inspecting or modifying their inter…”，是了解机械可解释性的高相关机构入口。",
+      "Rohin Shah 的节点简介涉及“Technical AGI safety: misalignment and misuse threat models, amplified oversight, interpretab…”，是了解机械可解释性的高相关人物入口。",
+      "Lawrence Chan 的节点简介涉及“Evaluation and interpretability methodology; FAR.AI governance”，是了解机械可解释性的高相关人物入口。",
+      "Thinking Machines Lab 的节点简介涉及“Multimodal AI, RL, infrastructure; publicly stated emphasis on human oversight and on interpr…”，是了解机械可解释性的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f02",
+    "role": "research",
+    "question": "有哪些人在做危险能力评测和安全基准？",
+    "keywords": {
+      "zh": [
+        "危险能力评测",
+        "模型评测",
+        "安全基准",
+        "红队",
+        "能力测试",
+        "审计",
+        "基准测试"
+      ],
+      "en": [
+        "dangerous capability evals",
+        "model evaluations",
+        "safety benchmarks",
+        "red teaming",
+        "capability testing",
+        "auditing",
+        "benchmark"
+      ]
+    },
+    "top10": [
+      "deedy-das",
+      "steinhardt",
+      "ai-safety-fund",
+      "transluce",
+      "natasha-crampton",
+      "anka-reuel",
+      "zico-kolter",
+      "irene-solaiman",
+      "ariel-procaccia",
+      "hoda-heidari"
+    ],
+    "why": [
+      "Deedy Das (Debarghya Das) 的节点简介涉及“Early-stage AI/ML, next-gen infrastructure and enterprise software; heavy public commentary o…”，是了解危险能力评测的高相关人物入口。",
+      "Jacob Steinhardt 的节点简介涉及“Open-source model auditing and behaviour elicitation at Transluce; forecasting rare and emerg…”，是了解危险能力评测的高相关人物入口。",
+      "AI Safety Fund (AISF) 的节点简介涉及“Funds independent research on frontier-model risks, including standardized third-party evalua…”，是了解危险能力评测的高相关机构入口。",
+      "Transluce 的节点简介涉及“Open model auditing and behaviour elicitation; surfacing rare and unexpected model behaviours…”，是了解危险能力评测的高相关机构入口。",
+      "Natasha Crampton 的节点简介涉及“Agentic AI governance; adaptive responsible-AI standards; evaluation tooling; partnerships wi…”，是了解危险能力评测的高相关人物入口。",
+      "Anka Reuel 的节点简介涉及“Whether AI evaluations reliably measure what they claim: validity-centred evaluation framewor…”，是了解危险能力评测的高相关人物入口。",
+      "Zico Kolter 的节点简介涉及“Adversarial robustness and safety evaluation of LLMs and agents: sample-efficient reliability…”，是了解危险能力评测的高相关人物入口。",
+      "Irene Solaiman 的节点简介涉及“Benchmark saturation and the durability of evaluations; a community schema and repository for…”，是了解危险能力评测的高相关人物入口。",
+      "Ariel Procaccia 的节点简介涉及“Social choice as the formal backbone of AI evaluation and alignment: robust AI evaluation thr…”，是了解危险能力评测的高相关人物入口。",
+      "Hoda Heidari 的节点简介涉及“Stated current focus is the Evaluation of Risks and Benefits of General-purpose AI: third-par…”，是了解危险能力评测的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f03",
+    "role": "research",
+    "question": "AI control 到底有哪些值得跟进的研究路线？",
+    "keywords": {
+      "zh": [
+        "AI控制",
+        "控制评估",
+        "不可信模型",
+        "监控",
+        "沙箱",
+        "遏制",
+        "破坏行为"
+      ],
+      "en": [
+        "AI control",
+        "control evaluations",
+        "untrusted models",
+        "monitoring",
+        "sandboxing",
+        "containment",
+        "sabotage"
+      ]
+    },
+    "top10": [
+      "julian-stastny",
+      "buck-shlegeris",
+      "david-lindner",
+      "fabien-roger",
+      "joe-benton",
+      "he-he-nyu",
+      "gdm-mats-stream",
+      "neel-nanda",
+      "uk-aisi",
+      "ryan-greenblatt"
+    ],
+    "why": [
+      "Julian Stastny 的节点简介涉及“AI control protocols, untrusted-monitoring, control evaluations”，是了解AI 控制的高相关人物入口。",
+      "Buck Shlegeris 的节点简介涉及“AI control; untrusted-model protocols; control evaluations; consulting relationships with fro…”，是了解AI 控制的高相关人物入口。",
+      "David Lindner 的节点简介涉及“Misalignment science; AI control and monitoring; capability and propensity evaluations”，是了解AI 控制的高相关人物入口。",
+      "Fabien Roger 的节点简介涉及“AI control; lie detection; sabotage risk”，是了解AI 控制的高相关人物入口。",
+      "Joe Benton 的节点简介涉及“AI control; sabotage evaluations; conceptual reasoning benchmarks; supervising external colla…”，是了解AI 控制的高相关人物入口。",
+      "He He (何贺) 的节点简介涉及“How large language models work and the potential risks of the technology; control and monitor…”，是了解AI 控制的高相关人物入口。",
+      "Google DeepMind MATS stream (Autumn 2026) 的节点简介涉及“Scheming-propensity evaluation and AI control research training”，是了解AI 控制的高相关机构入口。",
+      "Neel Nanda 的节点简介涉及“Applying interpretability to real-world safety problems - deception detection, model biology…”，是了解AI 控制的高相关人物入口。",
+      "UK AI Security Institute (AISI) 的节点简介涉及“Evaluations, cyber-misuse, safeguards & alignment research, AI control and autonomy, human in…”，是了解AI 控制的高相关机构入口。",
+      "Ryan Greenblatt 的节点简介涉及“AI control protocols; scheming and alignment faking; takeover threat models”，是了解AI 控制的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f04",
+    "role": "research",
+    "question": "做 scalable oversight 和对齐研究，我该从谁的工作读起？",
+    "keywords": {
+      "zh": [
+        "可扩展监督",
+        "对齐",
+        "弱监督强模型",
+        "辩论",
+        "递归监督",
+        "奖励模型",
+        "人类反馈"
+      ],
+      "en": [
+        "scalable oversight",
+        "alignment",
+        "weak-to-strong",
+        "debate",
+        "recursive supervision",
+        "reward models",
+        "human feedback"
+      ]
+    },
+    "top10": [
+      "jan-leike",
+      "jiaxin-wen",
+      "yanchen-liu",
+      "dylan-hadfield-menell",
+      "geoffrey-irving",
+      "evan-hubinger",
+      "rohin-shah",
+      "samuel-marks",
+      "acs-research",
+      "casper"
+    ],
+    "why": [
+      "Jan Leike 的节点简介涉及“Scalable oversight; automated alignment research; agentic misalignment mitigation; the Fellow…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Jiaxin Wen (温嘉欣) 的节点简介涉及“Alignment failures in language models, weak-to-strong generalisation, elicitation; predicting…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Yanchen Liu 的节点简介涉及“Listed on the Algorithmic Alignment Group team page as working on scalable supervision and ov…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Dylan Hadfield-Menell 的节点简介涉及“Group research spans three areas: interpreting AI system internals, robust learning from huma…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Geoffrey Irving 的节点简介涉及“Chief Scientist at Resolution as of the Curve 2026 speaker listing - a move out of UK AISI. D…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Evan Hubinger 的节点简介涉及“Deceptive alignment, sleeper agents, model organisms of misalignment; regranting to independe…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Rohin Shah 的节点简介涉及“Technical AGI safety: misalignment and misuse threat models, amplified oversight, interpretab…”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Samuel Marks 的节点简介涉及“Alignment auditing; hidden objectives; model-spec training generalisation”，是了解可扩展监督与对齐的高相关人物入口。",
+      "Alignment of Complex Systems (ACS) 的节点简介涉及“Multi-agent systems of humans and AIs; mathematical theories of cooperation across scales; an…”，是了解可扩展监督与对齐的高相关机构入口。",
+      "Stephen Casper (Cas) 的节点简介涉及“Listed by the Algorithmic Alignment Group as an alumnus now at Harvard Kennedy School; coauth…”，是了解可扩展监督与对齐的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f05",
+    "role": "research",
+    "question": "Who is working on formal verification and provably safe AI?",
+    "keywords": {
+      "zh": [
+        "形式化验证",
+        "可证明安全",
+        "验证式AI",
+        "定理证明",
+        "安全保证",
+        "形式化方法"
+      ],
+      "en": [
+        "formal verification",
+        "provably safe AI",
+        "verified AI",
+        "theorem proving",
+        "safety guarantees",
+        "formal methods"
+      ]
+    },
+    "top10": [
+      "david-dalrymple",
+      "richardson",
+      "steve-omohundro",
+      "cameron-winklevoss",
+      "remmelt-ellen",
+      "tom-everitt",
+      "michael-k-cohen",
+      "alessandro-abate",
+      "safe-trusted-ai-cdt",
+      "yonadav-shavit"
+    ],
+    "why": [
+      "David 'davidad' Dalrymple 的节点简介涉及“Guaranteed-safe AI; formal verification of cyber and cyber-physical systems by fleets of AI a…”，是了解形式化验证的高相关人物入口。",
+      "Oliver Richardson (Oli) 的节点简介涉及“LawZero / Montreal; probabilistic dependency graphs and formal methods for non-agentic 'Scien…”，是了解形式化验证的高相关人物入口。",
+      "Steve Omohundro 的节点简介涉及“Operationalising AGI through Cattell-Horn-Carroll theory and human psychometric batteries; 'S…”，是了解形式化验证的高相关人物入口。",
+      "Cameron Winklevoss 的节点简介涉及“Bitcoin maximalism and Republican political alignment; no verified AI activity”，是了解形式化验证的高相关人物入口。",
+      "Remmelt Ellen 的节点简介涉及“AI Safety Camp editions including the virtual Research Incubator (15-30 Aug 2026); formal rea…”，是了解形式化验证的高相关人物入口。",
+      "Tom Everitt 的节点简介涉及“Causal foundations for safe AGI; formal incentive analysis of agents; reward tampering; decep…”，是了解形式化验证的高相关人物入口。",
+      "Michael K. Cohen 的节点简介涉及“Designing agents that provably behave safely; Bayesian pessimism / risk-averse reward-range m…”，是了解形式化验证的高相关人物入口。",
+      "Alessandro Abate 的节点简介涉及“Formal/categorical foundations for verifiable AI under ARIA Safeguarded AI”，是了解形式化验证的高相关人物入口。",
+      "UKRI CDT in Safe and Trusted AI (KCL + Imperial) 的节点简介涉及“Symbolic AI for safety and trustworthiness - explicit representation, verification, explanati…”，是了解形式化验证的高相关机构入口。",
+      "Yonadav Shavit 的节点简介涉及“AI policy and verification at OpenAI; advising Schmidt's safety-science grantmaking”，是了解形式化验证的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f06",
+    "role": "research",
+    "question": "我想研究欺骗、权谋和潜在目标，图里该看谁？",
+    "keywords": {
+      "zh": [
+        "模型欺骗",
+        "权谋",
+        "潜在目标",
+        "欺骗性对齐",
+        "隐藏行为",
+        "情境意识",
+        "目标错位"
+      ],
+      "en": [
+        "deception",
+        "scheming",
+        "latent goals",
+        "deceptive alignment",
+        "hidden behavior",
+        "situational awareness",
+        "misaligned goals"
+      ]
+    },
+    "top10": [
+      "krakovna",
+      "apollo-research",
+      "charlotte-stix",
+      "alexander-meinke",
+      "matteo-pistillo",
+      "alejandro-ortega",
+      "chris-akin",
+      "abhay-sheshadri",
+      "ryan-greenblatt",
+      "evan-hubinger"
+    ],
+    "why": [
+      "Victoria Krakovna 的节点简介涉及“Deceptive alignment and AI control; scheming-propensity evaluations; capability and propensit…”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Apollo Research 的节点简介涉及“Scheming and deception evaluations, model organisms, governance of evaluations”，是了解欺骗与权谋行为的高相关机构入口。",
+      "Charlotte Stix 的节点简介涉及“Governance of evaluations and deception research; policy interface for Apollo's scheming/eval…”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Alexander Meinke 的节点简介涉及“Scheming and deception evaluations for frontier models; evaluation methodology”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Matteo Pistillo 的节点简介涉及“Evaluations of deceptive and scheming behaviour; evaluation governance”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Alejandro Ortega 的节点简介涉及“Evaluations of deceptive and scheming behaviour; evaluation governance”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Chris Akin 的节点简介涉及“Evaluations of deceptive and scheming behaviour; evaluation governance”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Abhay Sheshadri 的节点简介涉及“Alignment auditing benchmarks; models with hidden behaviours”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Ryan Greenblatt 的节点简介涉及“AI control protocols; scheming and alignment faking; takeover threat models”，是了解欺骗与权谋行为的高相关人物入口。",
+      "Evan Hubinger 的节点简介涉及“Deceptive alignment, sleeper agents, model organisms of misalignment; regranting to independe…”，是了解欺骗与权谋行为的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f07",
+    "role": "research",
+    "question": "哪些研究者在做模型福利、数字心智或机器意识？",
+    "keywords": {
+      "zh": [
+        "模型福利",
+        "数字心智",
+        "机器意识",
+        "人工意识",
+        "感知能力",
+        "道德地位",
+        "AI福祉"
+      ],
+      "en": [
+        "model welfare",
+        "digital minds",
+        "machine consciousness",
+        "artificial consciousness",
+        "sentience",
+        "moral status",
+        "AI welfare"
+      ]
+    },
+    "top10": [
+      "jeff-sebo",
+      "geoff-keeling",
+      "nyu-center-mind-ethics-policy",
+      "lucius-caviola",
+      "macroscopic-ventures",
+      "kyle-fish",
+      "forethought",
+      "lowe-lundin",
+      "yi-zeng-casia",
+      "zach-freitas-groff"
+    ],
+    "why": [
+      "Jeff Sebo 的节点简介涉及“The moral status and welfare of nonhuman minds including AI systems; AI welfare policy; emoti…”，是了解模型福利与数字心智的高相关人物入口。",
+      "Geoff Keeling 的节点简介涉及“Manipulation and trust in human-AI interaction; machine consciousness and AI welfare (CUP boo…”，是了解模型福利与数字心智的高相关人物入口。",
+      "NYU Center for Mind, Ethics, and Policy 的节点简介涉及“AI moral status and welfare; consciousness indicators; emotional-alignment design policy.”，是了解模型福利与数字心智的高相关机构入口。",
+      "Lucius Caviola 的节点简介涉及“Societal impact of AI and the psychology of moral judgement; digital minds, expert forecastin…”，是了解模型福利与数字心智的高相关人物入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解模型福利与数字心智的高相关机构入口。",
+      "Kyle Fish 的节点简介涉及“Model welfare evaluations and mitigations; Claude's nature section of the constitution”，是了解模型福利与数字心智的高相关人物入口。",
+      "Forethought 的节点简介涉及“Navigating the transition to superintelligence; AI-enabled coups; digital minds; improving co…”，是了解模型福利与数字心智的高相关机构入口。",
+      "Lowe Lundin 的节点简介涉及“Standing up a new AI-focused fund: technical AI safety, AI governance incl. post-AGI governan…”，是了解模型福利与数字心智的高相关人物入口。",
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解模型福利与数字心智的高相关人物入口。",
+      "Zach Freitas-Groff 的节点简介涉及“Digital minds research and field-building; 'Field-building.”，是了解模型福利与数字心智的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f08",
+    "role": "research",
+    "question": "Where should I look for technical work on AI-enabled biosecurity risks?",
+    "keywords": {
+      "zh": [
+        "生物安全",
+        "生物风险",
+        "AI生物设计",
+        "病原体",
+        "双重用途",
+        "大流行",
+        "实验室安全"
+      ],
+      "en": [
+        "biosecurity",
+        "biorisk",
+        "AI-enabled biology",
+        "pathogens",
+        "dual use",
+        "pandemic",
+        "lab safety"
+      ]
+    },
+    "top10": [
+      "future-of-humanity-institute",
+      "david-manheim",
+      "association-for-long-term-existence-and-resilience",
+      "carnegie-endowment-for-international-peace",
+      "center-for-global-development",
+      "charity-entrepreneurship",
+      "effisciences",
+      "idais",
+      "vitalik-buterin",
+      "cltr"
+    ],
+    "why": [
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解AI 与生物安全的高相关机构入口。",
+      "David Manheim 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; multi_agent; other”，是了解AI 与生物安全的高相关人物入口。",
+      "Association for Long Term Existence and Resilience 的节点简介涉及“AI safety|Biosecurity and pandemic preparedness; Organization in public AI Watch position dat…”，是了解AI 与生物安全的高相关机构入口。",
+      "Carnegie Endowment for International Peace 的节点简介涉及“AI safety/governance; Biosecurity and pandemic preparedness; FIXME; International relations…”，是了解AI 与生物安全的高相关机构入口。",
+      "Center for Global Development 的节点简介涉及“Biosecurity and pandemic preparedness; Biosecurity and pandemic preparedness/COVID-19; FIXME…”，是了解AI 与生物安全的高相关机构入口。",
+      "Charity Entrepreneurship 的节点简介涉及“Animal welfare/movement growth/new organizations; Biosecurity and pandemic preparedness; Orga…”，是了解AI 与生物安全的高相关机构入口。",
+      "EffiSciences 的节点简介涉及“Effective altruism|AI safety|Biosecurity and pandemic preparedness|Climate change; Organizati…”，是了解AI 与生物安全的高相关机构入口。",
+      "International Dialogues on AI Safety (IDAIS) 的节点简介涉及“The IDAIS-London statement (Apr 2026) focuses on AI-enabled cyberattacks and biological misus…”，是了解AI 与生物安全的高相关机构入口。",
+      "Vitalik Buterin 的节点简介涉及“d/acc; open-source defensive tech; AI-agent settlement layers on Ethereum; Deep Funding as di…”，是了解AI 与生物安全的高相关人物入口。",
+      "Centre for Long-Term Resilience (CLTR) 的节点简介涉及“UK government risk management, AI policy, biosecurity”，是了解AI 与生物安全的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f09",
+    "role": "research",
+    "question": "想做 AI 预测、时间线和能力趋势研究，有哪些关键节点？",
+    "keywords": {
+      "zh": [
+        "AI预测",
+        "时间线",
+        "能力趋势",
+        "技术预测",
+        "算力趋势",
+        "预见",
+        "概率预测"
+      ],
+      "en": [
+        "AI forecasting",
+        "timelines",
+        "capability trends",
+        "technology forecasting",
+        "compute trends",
+        "foresight",
+        "probabilistic forecasting"
+      ]
+    },
+    "top10": [
+      "deger-turan",
+      "anthony-aguirre",
+      "nate-silver",
+      "beth-barnes",
+      "dean",
+      "katja-grace",
+      "steve-newman",
+      "taren-stinebrickner-kauffman",
+      "steinhardt",
+      "metaculus"
+    ],
+    "why": [
+      "Deger Turan 的节点简介涉及“Forecasting infrastructure and AI-vs-human forecaster benchmarking; he estimated AI would mat…”，是了解AI 预测与时间线的高相关人物入口。",
+      "Anthony Aguirre 的节点简介涉及“Running FLI's grantmaking, policy and communications; forecasting infrastructure”，是了解AI 预测与时间线的高相关人物入口。",
+      "Nate Silver 的节点简介涉及“Forecasting, prediction markets, 'River vs Village' analysis of risk-taking elites.”，是了解AI 预测与时间线的高相关人物入口。",
+      "Beth Barnes 的节点简介涉及“Scientific methods for assessing catastrophic risks from AI autonomy; task-length capability…”，是了解AI 预测与时间线的高相关人物入口。",
+      "Romeo Dean 的节点简介涉及“AI Futures Project; compute and hardware forecasting inside the scenario work.”，是了解AI 预测与时间线的高相关人物入口。",
+      "Katja Grace 的节点简介涉及“Surveying expert opinion on AI timelines and risk; conceptual work on argument quality in AI…”，是了解AI 预测与时间线的高相关人物入口。",
+      "Steve Newman 的节点简介涉及“Writing and convening on AI timelines, capabilities and economic impact.”，是了解AI 预测与时间线的高相关人物入口。",
+      "Taren Stinebrickner-Kauffman 的节点简介涉及“Golden Gate Institute's four stated areas: AI timelines and capabilities, economic impacts, d…”，是了解AI 预测与时间线的高相关人物入口。",
+      "Jacob Steinhardt 的节点简介涉及“Open-source model auditing and behaviour elicitation at Transluce; forecasting rare and emerg…”，是了解AI 预测与时间线的高相关人物入口。",
+      "Metaculus 的节点简介涉及“Metaculus”，是了解AI 预测与时间线的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f10",
+    "role": "research",
+    "question": "Who studies multi-agent safety, cooperation, and bargaining between AIs?",
+    "keywords": {
+      "zh": [
+        "多智能体安全",
+        "合作式AI",
+        "博弈",
+        "谈判",
+        "机制设计",
+        "多代理系统"
+      ],
+      "en": [
+        "multi-agent safety",
+        "cooperative AI",
+        "game theory",
+        "bargaining",
+        "mechanism design",
+        "multi-agent systems"
+      ]
+    },
+    "top10": [
+      "kate-larson",
+      "yali-du",
+      "trout",
+      "mark-braverman",
+      "alessandro-veneri",
+      "lewis-hammond",
+      "allan-dafoe",
+      "gdm-multi-agent-safety-call",
+      "pku-institute-for-ai",
+      "yang-yaodong"
+    ],
+    "why": [
+      "Kate Larson 的节点简介涉及“Mechanism design, computational social choice, cooperative multi-agent systems”，是了解多智能体安全与合作的高相关人物入口。",
+      "Yali Du 的节点简介涉及“Multi-agent cooperation, human-AI coordination, scalable alignment and value learning; recrui…”，是了解多智能体安全与合作的高相关人物入口。",
+      "Cristian Trout 的节点简介涉及“Designing a US federal insurance backstop for catastrophic AI risk, explicitly using mechanis…”，是了解多智能体安全与合作的高相关人物入口。",
+      "Mark Braverman 的节点简介涉及“Information complexity, mechanism design and algorithmic game theory (no AI-agents-specific 2…”，是了解多智能体安全与合作的高相关人物入口。",
+      "Alessandro Veneri 的节点简介涉及“Mechanism design and cooperative AI as a PIBBSS fellow”，是了解多智能体安全与合作的高相关人物入口。",
+      "Lewis Hammond 的节点简介涉及“Runs CAIF: PhD Fellowship (2026 cohort: 14 fellows), Cooperative AI Summer School, and co-iss…”，是了解多智能体安全与合作的高相关人物入口。",
+      "Allan Dafoe 的节点简介涉及“Leads frontier safety and governance strategy at Google DeepMind; co-issued the $10M Multi-Ag…”，是了解多智能体安全与合作的高相关人物入口。",
+      "Scaling AI Safety for a Multi-Agent World 的节点简介涉及“Four priority areas: (1) sandboxes and testbeds - 'realistic, reproducible environments to ev…”，是了解多智能体安全与合作的高相关机构入口。",
+      "Peking University Institute for AI / PKU-Alignment group 的节点简介涉及“Safe RLHF, multi-agent RL and game theory, open-source alignment datasets and benchmarks”，是了解多智能体安全与合作的高相关机构入口。",
+      "Yang Yaodong (杨耀东) 的节点简介涉及“AI alignment (RLHF, safe RLHF), multi-agent reinforcement learning and game theory; open-sour…”，是了解多智能体安全与合作的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f11",
+    "role": "funding",
+    "question": "我是个人研究者，哪里能申请 AI 安全小额资助或奖学金？",
+    "keywords": {
+      "zh": [
+        "个人资助",
+        "小额资助",
+        "奖学金",
+        "研究经费",
+        "开放申请",
+        "独立研究者",
+        "研究基金"
+      ],
+      "en": [
+        "individual grants",
+        "small grants",
+        "fellowships",
+        "research funding",
+        "open applications",
+        "independent researcher",
+        "research fund"
+      ]
+    },
+    "top10": [
+      "jaime-raldua-veuthey",
+      "asterisk-magazine",
+      "cosmos-institute",
+      "evan-hubinger",
+      "transformative-ai-fund",
+      "vitalik-buterin",
+      "tarbell-center",
+      "gavin-leech",
+      "effective-altruism-funds-effective-altruism-infrastructure-fund",
+      "blake-borgeson-2"
+    ],
+    "why": [
+      "Jaime Raldúa Veuthey 的节点简介涉及“Apart's sprint-to-fellowship pipeline (next sprint: AI Incident Response, 11-13 Sep 2026); or…”，是了解个人研究资助的高相关人物入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解个人研究资助的高相关机构入口。",
+      "Cosmos Institute 的节点简介涉及“Cosmos Grants ($1k-$10k, 90-day prototypes, $1M pool with Prime Intellect compute credits; la…”，是了解个人研究资助的高相关机构入口。",
+      "Evan Hubinger 的节点简介涉及“Deceptive alignment, sleeper agents, model organisms of misalignment; regranting to independe…”，是了解个人研究资助的高相关人物入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解个人研究资助的高相关机构入口。",
+      "Vitalik Buterin 的节点简介涉及“d/acc; open-source defensive tech; AI-agent settlement layers on Ethereum; Deep Funding as di…”，是了解个人研究资助的高相关人物入口。",
+      "Tarbell Center for AI Journalism 的节点简介涉及“Fellowship, residencies, grants and Transformer; funded by SFF ($520k 2024, $783k 2025) and b…”，是了解个人研究资助的高相关机构入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解个人研究资助的高相关人物入口。",
+      "Effective Altruism Funds: Effective Altruism Infrastructure Fund 的节点简介涉及“Effective altruism; Public grant recipient; Public philanthropic funding records”，是了解个人研究资助的高相关机构入口。",
+      "Blake Borgeson 的节点简介涉及“Public grantmaking records; Public philanthropic funding records”，是了解个人研究资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f12",
+    "role": "funding",
+    "question": "哪些基金会长期资助 AI 安全和长期主义项目？",
+    "keywords": {
+      "zh": [
+        "基金会",
+        "慈善资助",
+        "AI安全资助",
+        "长期主义",
+        "捐赠方",
+        "公益基金",
+        "项目资助"
+      ],
+      "en": [
+        "foundations",
+        "philanthropic funding",
+        "AI safety funding",
+        "longtermism",
+        "donors",
+        "charitable foundation",
+        "grants"
+      ]
+    },
+    "top10": [
+      "james-mcclave",
+      "vitalik-buterin",
+      "dustin-moskovitz",
+      "zach-stein-perlman",
+      "anthony-aguirre",
+      "luke-muehlhauser",
+      "aidan-ogara",
+      "gentzel",
+      "palladium-magazine",
+      "bill-gates"
+    ],
+    "why": [
+      "James (Jim) McClave 的节点简介涉及“Unknown. Deal databases record 1-2 investments total (Anthropic A and B) and list him only as…”，是了解AI 安全基金会的高相关人物入口。",
+      "Vitalik Buterin 的节点简介涉及“d/acc; open-source defensive tech; AI-agent settlement layers on Ethereum; Deep Funding as di…”，是了解AI 安全基金会的高相关人物入口。",
+      "Dustin Moskovitz 的节点简介涉及“With Cari Tuna moved their Anthropic stake (reported ~$500M mid-Nov) into a nonprofit vehicle…”，是了解AI 安全基金会的高相关人物入口。",
+      "Zach Stein-Perlman 的节点简介涉及“AI Lab Watch scorecards on frontier-lab safety commitments; grantmaking-process criticism; ad…”，是了解AI 安全基金会的高相关人物入口。",
+      "Anthony Aguirre 的节点简介涉及“Running FLI's grantmaking, policy and communications; forecasting infrastructure”，是了解AI 安全基金会的高相关人物入口。",
+      "Luke Muehlhauser 的节点简介涉及“Runs Coefficient's AI governance and international policy grantmaking; team includes Alex Law…”，是了解AI 安全基金会的高相关人物入口。",
+      "Aidan O'Gara 的节点简介涉及“Frontier AI Fund grantmaking; Longview's Extreme Power Concentration RFP (closed 2026-07-02)…”，是了解AI 安全基金会的高相关人物入口。",
+      "Matthew Gentzel 的节点简介涉及“Longview Philanthropy; nuclear weapons policy and AI-nuclear structural risk, plus grantmaking.”，是了解AI 安全基金会的高相关人物入口。",
+      "Palladium Magazine 的节点简介涉及“Weekly long-form free plus a quarterly print edition for members; institutional decay, state…”，是了解AI 安全基金会的高相关机构入口。",
+      "Bill Gates 的节点简介涉及“Global health philanthropy plus personal AI investments; publicly optimistic about AI in heal…”，是了解AI 安全基金会的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f13",
+    "role": "funding",
+    "question": "I run a small nonprofit—who funds AI governance organizations?",
+    "keywords": {
+      "zh": [
+        "非营利机构",
+        "治理资助",
+        "机构经费",
+        "核心支持",
+        "项目拨款",
+        "政策研究资助"
+      ],
+      "en": [
+        "nonprofit",
+        "governance funding",
+        "organizational funding",
+        "core support",
+        "project grants",
+        "policy research funding"
+      ]
+    },
+    "top10": [
+      "luke-muehlhauser",
+      "macroscopic-ventures",
+      "transformative-ai-fund",
+      "center-for-ai-policy",
+      "marius-hobbhahn",
+      "good-food-institute",
+      "americans-for-responsible-innovation",
+      "oscar-delaney",
+      "gavin-leech",
+      "blake-borgeson-2"
+    ],
+    "why": [
+      "Luke Muehlhauser 的节点简介涉及“Runs Coefficient's AI governance and international policy grantmaking; team includes Alex Law…”，是了解治理机构资助的高相关人物入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解治理机构资助的高相关机构入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解治理机构资助的高相关机构入口。",
+      "Center for AI Policy (CAIP) 的节点简介涉及“Policy research and advocacy aimed at reducing catastrophic risks from advanced AI, including…”，是了解治理机构资助的高相关机构入口。",
+      "Marius Hobbhahn 的节点简介涉及“Science of scheming; the Watcher production monitoring tool for coding agents; technical AI g…”，是了解治理机构资助的高相关人物入口。",
+      "The Good Food Institute 的节点简介涉及“Advances plant-based, cultivated, and fermentation-derived proteins through scientific resear…”，是了解治理机构资助的高相关机构入口。",
+      "Americans for Responsible Innovation (ARI) 的节点简介涉及“Bipartisan advocacy for AI governance addressing current harms, national security, and emergi…”，是了解治理机构资助的高相关机构入口。",
+      "Oscar Delaney 的节点简介涉及“AI policy and governance grantmaking at Macroscopic”，是了解治理机构资助的高相关人物入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解治理机构资助的高相关人物入口。",
+      "Blake Borgeson 的节点简介涉及“Public grantmaking records; Public philanthropic funding records”，是了解治理机构资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f14",
+    "role": "funding",
+    "question": "想办 AI 安全暑研、训练营或学者项目，可以找谁资助？",
+    "keywords": {
+      "zh": [
+        "暑研资助",
+        "训练营",
+        "学者项目",
+        "人才培养",
+        "课程资助",
+        "研究项目",
+        "能力建设"
+      ],
+      "en": [
+        "summer research funding",
+        "bootcamp",
+        "fellowship program",
+        "talent development",
+        "course funding",
+        "research program",
+        "capacity building"
+      ]
+    },
+    "top10": [
+      "ben-esche",
+      "jaime-raldua-veuthey",
+      "cosmos-institute",
+      "tarbell-center",
+      "asterisk-magazine",
+      "emergent-ventures",
+      "natalie-cargill",
+      "openai-foundation",
+      "thiel-fellowship",
+      "cecilia-elena-tilli"
+    ],
+    "why": [
+      "Ben Esche 的节点简介涉及“Funding training programs, events, groups, and media that build the AI-safety field”，是了解培训与学者项目资助的高相关人物入口。",
+      "Jaime Raldúa Veuthey 的节点简介涉及“Apart's sprint-to-fellowship pipeline (next sprint: AI Incident Response, 11-13 Sep 2026); or…”，是了解培训与学者项目资助的高相关人物入口。",
+      "Cosmos Institute 的节点简介涉及“Cosmos Grants ($1k-$10k, 90-day prototypes, $1M pool with Prime Intellect compute credits; la…”，是了解培训与学者项目资助的高相关机构入口。",
+      "Tarbell Center for AI Journalism 的节点简介涉及“Fellowship, residencies, grants and Transformer; funded by SFF ($520k 2024, $783k 2025) and b…”，是了解培训与学者项目资助的高相关机构入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解培训与学者项目资助的高相关机构入口。",
+      "Emergent Ventures 的节点简介涉及“Low-overhead fellowships and grants for 'zero to one' ideas; regional tracks for India, Afric…”，是了解培训与学者项目资助的高相关机构入口。",
+      "Natalie Cargill 的节点简介涉及“Donor education and grant recommendations for donors giving >$1M/yr”，是了解培训与学者项目资助的高相关人物入口。",
+      "OpenAI Foundation 的节点简介涉及“US community nonprofits using AI in education, economic opportunity, health and community res…”，是了解培训与学者项目资助的高相关机构入口。",
+      "Thiel Fellowship 的节点简介涉及“$250,000 grant over two years plus network access, mentorship and workshops”，是了解培训与学者项目资助的高相关机构入口。",
+      "Cecilia Elena Tilli 的节点简介涉及“Redesigning CAIF's grant programme to two rounds per year; running the PhD Fellowship (2026 c…”，是了解培训与学者项目资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f15",
+    "role": "funding",
+    "question": "Are there funders specifically interested in compute governance or hardware policy?",
+    "keywords": {
+      "zh": [
+        "算力治理资助",
+        "硬件政策",
+        "芯片政策",
+        "半导体",
+        "数据中心",
+        "研究基金"
+      ],
+      "en": [
+        "compute governance funding",
+        "hardware policy",
+        "chip policy",
+        "semiconductors",
+        "data centers",
+        "research grants"
+      ]
+    },
+    "top10": [
+      "lennart-heim",
+      "macroscopic-ventures",
+      "lisa-thiergart",
+      "transformative-ai-fund",
+      "ronn",
+      "gavin-leech",
+      "asterisk-magazine",
+      "effective-altruism-funds-effective-altruism-infrastructure-fund",
+      "blake-borgeson-2",
+      "ea-giving-group"
+    ],
+    "why": [
+      "Lennart Heim 的节点简介涉及“AI compute governance, semiconductor policy, technical verification, and empirical trends in…”，是了解算力治理资助的高相关人物入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解算力治理资助的高相关机构入口。",
+      "Lisa Thiergart 的节点简介涉及“AI security at SL5, hardware security, verification, technical governance”，是了解算力治理资助的高相关人物入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解算力治理资助的高相关机构入口。",
+      "Kristian Rönn 的节点简介涉及“Lucid Computing; hardware-enforced compute governance ('flexible hardware-enabled guarantees').”，是了解算力治理资助的高相关人物入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解算力治理资助的高相关人物入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解算力治理资助的高相关机构入口。",
+      "Effective Altruism Funds: Effective Altruism Infrastructure Fund 的节点简介涉及“Effective altruism; Public grant recipient; Public philanthropic funding records”，是了解算力治理资助的高相关机构入口。",
+      "Blake Borgeson 的节点简介涉及“Public grantmaking records; Public philanthropic funding records”，是了解算力治理资助的高相关人物入口。",
+      "EA Giving Group 的节点简介涉及“Public grant recipient; Public philanthropic funding records”，是了解算力治理资助的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f16",
+    "role": "funding",
+    "question": "在中国或面向中文社群做 AI 安全项目，可能找哪些支持方？",
+    "keywords": {
+      "zh": [
+        "中国AI安全",
+        "中文社群",
+        "中国资助",
+        "亚洲项目",
+        "本土研究",
+        "能力建设"
+      ],
+      "en": [
+        "China AI safety",
+        "Chinese community",
+        "China funding",
+        "Asia programs",
+        "local research",
+        "capacity building"
+      ]
+    },
+    "top10": [
+      "liang-fang",
+      "cnaisda",
+      "transformative-ai-fund",
+      "yi-zeng-casia",
+      "gavin-leech",
+      "asterisk-magazine",
+      "effective-altruism-funds-effective-altruism-infrastructure-fund",
+      "blake-borgeson-2",
+      "ea-giving-group",
+      "irene-zhang-chinatalk"
+    ],
+    "why": [
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解中国相关项目资助的高相关人物入口。",
+      "China AI Safety and Development Association (CnAISDA, 中国人工智能发展与安全研究网络) 的节点简介涉及“Representing China in the international AI-safety-institute network; the interface used at Pa…”，是了解中国相关项目资助的高相关机构入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解中国相关项目资助的高相关机构入口。",
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解中国相关项目资助的高相关人物入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解中国相关项目资助的高相关人物入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解中国相关项目资助的高相关机构入口。",
+      "Effective Altruism Funds: Effective Altruism Infrastructure Fund 的节点简介涉及“Effective altruism; Public grant recipient; Public philanthropic funding records”，是了解中国相关项目资助的高相关机构入口。",
+      "Blake Borgeson 的节点简介涉及“Public grantmaking records; Public philanthropic funding records”，是了解中国相关项目资助的高相关人物入口。",
+      "EA Giving Group 的节点简介涉及“Public grant recipient; Public philanthropic funding records”，是了解中国相关项目资助的高相关机构入口。",
+      "Irene Zhang 的节点简介涉及“Chinese AI labs, data labelling, synthetic data, evaluation scepticism”，是了解中国相关项目资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f17",
+    "role": "funding",
+    "question": "I want funding for empirical alignment experiments, not just policy work. Who fits?",
+    "keywords": {
+      "zh": [
+        "实证对齐",
+        "实验资助",
+        "技术安全",
+        "机器学习实验",
+        "研究经费",
+        "对齐项目"
+      ],
+      "en": [
+        "empirical alignment",
+        "experiment funding",
+        "technical safety",
+        "ML experiments",
+        "research grants",
+        "alignment project"
+      ]
+    },
+    "top10": [
+      "matt-macdermott",
+      "transformative-ai-fund",
+      "uk-aisi",
+      "gavin-leech",
+      "joel-becker",
+      "jake-mendel",
+      "asya-bergal",
+      "peter-favaloro",
+      "fund-for-alignment-research",
+      "blake-borgeson-2"
+    ],
+    "why": [
+      "Matt MacDermott 的节点简介涉及“Evaluates technical AI safety grants; background in mathematical/agent-foundations-style alig…”，是了解实证对齐实验资助的高相关人物入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解实证对齐实验资助的高相关机构入口。",
+      "UK AI Security Institute (AISI) 的节点简介涉及“Evaluations, cyber-misuse, safeguards & alignment research, AI control and autonomy, human in…”，是了解实证对齐实验资助的高相关机构入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解实证对齐实验资助的高相关人物入口。",
+      "Joel Becker 的节点简介涉及“Funding evals and individual career transitions; Lyptus Research bridge funding $150K; AI Dig…”，是了解实证对齐实验资助的高相关人物入口。",
+      "Jake Mendel 的节点简介涉及“Eliciting and steering technical AI safety proposals. Team scale: $40M of grants in 2025, 'ov…”，是了解实证对齐实验资助的高相关人物入口。",
+      "Asya Bergal 的节点简介涉及“Grantmaking for technical AI safety and field-building; Astra mentorship”，是了解实证对齐实验资助的高相关人物入口。",
+      "Peter Favaloro 的节点简介涉及“Co-leads technical AI safety grantmaking with Rossa O'Keeffe-O'Donovan; team includes Max Nad…”，是了解实证对齐实验资助的高相关人物入口。",
+      "Fund for Alignment Research 的节点简介涉及“Organization in public AI Watch position data; other”，是了解实证对齐实验资助的高相关机构入口。",
+      "Blake Borgeson 的节点简介涉及“Public grantmaking records; Public philanthropic funding records”，是了解实证对齐实验资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f18",
+    "role": "funding",
+    "question": "调查 AI 公司或做深度报道，有哪些媒体资助和 fellowship？",
+    "keywords": {
+      "zh": [
+        "调查报道资助",
+        "AI新闻",
+        "媒体项目",
+        "记者奖学金",
+        "新闻基金",
+        "深度报道"
+      ],
+      "en": [
+        "investigative reporting grants",
+        "AI journalism",
+        "media projects",
+        "journalism fellowship",
+        "news fund",
+        "deep reporting"
+      ]
+    },
+    "top10": [
+      "tarbell-center",
+      "median-group",
+      "cillian-crosson",
+      "cosmos-institute",
+      "asterisk-magazine",
+      "emergent-ventures",
+      "jacob-haimes",
+      "transformer-news",
+      "thiel-fellowship",
+      "cecilia-elena-tilli"
+    ],
+    "why": [
+      "Tarbell Center for AI Journalism 的节点简介涉及“Fellowship, residencies, grants and Transformer; funded by SFF ($520k 2024, $783k 2025) and b…”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Median Group 的节点简介涉及“Global catastrophic risks; Organization in public AI Watch position data; journalism_media”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Cillian Crosson 的节点简介涉及“Fellowship, residencies ($80k plus stipend), grants and Transformer; fundraising from SFF/Tal…”，是了解AI 新闻与调查报道资助的高相关人物入口。",
+      "Cosmos Institute 的节点简介涉及“Cosmos Grants ($1k-$10k, 90-day prototypes, $1M pool with Prime Intellect compute credits; la…”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Emergent Ventures 的节点简介涉及“Low-overhead fellowships and grants for 'zero to one' ideas; regional tracks for India, Afric…”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Jacob Haimes 的节点简介涉及“Advising Apart Lab fellows; AI safety media”，是了解AI 新闻与调查报道资助的高相关人物入口。",
+      "Transformer 的节点简介涉及“Daily/weekly reporting on the power and politics of transformative AI; op-ed section open to…”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Thiel Fellowship 的节点简介涉及“$250,000 grant over two years plus network access, mentorship and workshops”，是了解AI 新闻与调查报道资助的高相关机构入口。",
+      "Cecilia Elena Tilli 的节点简介涉及“Redesigning CAIF's grant programme to two rounds per year; running the PhD Fellowship (2026 c…”，是了解AI 新闻与调查报道资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f19",
+    "role": "funding",
+    "question": "哪些捐赠者或机构愿意支持生物安全与 AI 交叉项目？",
+    "keywords": {
+      "zh": [
+        "生物安全资助",
+        "AI生物风险",
+        "大流行防范",
+        "双重用途",
+        "科研资助",
+        "全球健康"
+      ],
+      "en": [
+        "biosecurity funding",
+        "AI biorisk",
+        "pandemic preparedness",
+        "dual use",
+        "research funding",
+        "global health"
+      ]
+    },
+    "top10": [
+      "center-for-global-development",
+      "future-of-humanity-institute",
+      "david-manheim",
+      "association-for-long-term-existence-and-resilience",
+      "effisciences",
+      "joan-gass",
+      "bill-gates",
+      "vitalik-buterin",
+      "gavin-leech",
+      "asterisk-magazine"
+    ],
+    "why": [
+      "Center for Global Development 的节点简介涉及“Biosecurity and pandemic preparedness; Biosecurity and pandemic preparedness/COVID-19; FIXME…”，是了解生物安全交叉资助的高相关机构入口。",
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解生物安全交叉资助的高相关机构入口。",
+      "David Manheim 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; multi_agent; other”，是了解生物安全交叉资助的高相关人物入口。",
+      "Association for Long Term Existence and Resilience 的节点简介涉及“AI safety|Biosecurity and pandemic preparedness; Organization in public AI Watch position dat…”，是了解生物安全交叉资助的高相关机构入口。",
+      "EffiSciences 的节点简介涉及“Effective altruism|AI safety|Biosecurity and pandemic preparedness|Climate change; Organizati…”，是了解生物安全交叉资助的高相关机构入口。",
+      "Joan Gass 的节点简介涉及“Builds and scales public-interest organizations and pathways for emerging-technology experts…”，是了解生物安全交叉资助的高相关人物入口。",
+      "Bill Gates 的节点简介涉及“Global health philanthropy plus personal AI investments; publicly optimistic about AI in heal…”，是了解生物安全交叉资助的高相关人物入口。",
+      "Vitalik Buterin 的节点简介涉及“d/acc; open-source defensive tech; AI-agent settlement layers on Ethereum; Deep Funding as di…”，是了解生物安全交叉资助的高相关人物入口。",
+      "Gavin Leech 的节点简介涉及“Funding evals science, alignment philosophy and macrostrategy; writing public grant rationale…”，是了解生物安全交叉资助的高相关人物入口。",
+      "Asterisk Magazine 的节点简介涉及“Commissioning the Fall 2026 issue 'Flourishing'; Issue 15 was 'Work'; the Dagger blog carries…”，是了解生物安全交叉资助的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f20",
+    "role": "funding",
+    "question": "Where can a very early-stage AI safety idea get seed funding?",
+    "keywords": {
+      "zh": [
+        "种子资助",
+        "早期项目",
+        "概念验证",
+        "启动资金",
+        "孵化器",
+        "创业资助"
+      ],
+      "en": [
+        "seed funding",
+        "early-stage project",
+        "proof of concept",
+        "startup funding",
+        "incubator",
+        "venture grant"
+      ]
+    },
+    "top10": [
+      "transformative-ai-fund",
+      "1517-fund",
+      "macroscopic-ventures",
+      "austin-chen",
+      "ruairi-donnelly",
+      "emergent-ventures",
+      "oscar-delaney",
+      "danielle-strachman",
+      "keith-rabois",
+      "deedy-das"
+    ],
+    "why": [
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解早期项目种子资助的高相关机构入口。",
+      "1517 Fund 的节点简介涉及“Backs dropouts, uncredentialed founders and deep-tech scientists; initial cheques $50k (idea/…”，是了解早期项目种子资助的高相关机构入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解早期项目种子资助的高相关机构入口。",
+      "Austin Chen 的节点简介涉及“Running Manifund's regranting and fiscal-sponsorship programmes; the Surplus incubator ('AI f…”，是了解早期项目种子资助的高相关人物入口。",
+      "Ruairí Donnelly 的节点简介涉及“Runs Macroscopic Ventures' ~$30M/yr (targeting up to $100M/yr) grant and investment program”，是了解早期项目种子资助的高相关人物入口。",
+      "Emergent Ventures 的节点简介涉及“Low-overhead fellowships and grants for 'zero to one' ideas; regional tracks for India, Afric…”，是了解早期项目种子资助的高相关机构入口。",
+      "Oscar Delaney 的节点简介涉及“AI policy and governance grantmaking at Macroscopic”，是了解早期项目种子资助的高相关人物入口。",
+      "Danielle Strachman 的节点简介涉及“Pre-seed and idea-stage funding for young and uncredentialed builders; the Medici grant program”，是了解早期项目种子资助的高相关人物入口。",
+      "Keith Rabois 的节点简介涉及“Early-stage investing; Miami/Austin tech politics; culture-war commentary”，是了解早期项目种子资助的高相关人物入口。",
+      "Deedy Das (Debarghya Das) 的节点简介涉及“Early-stage AI/ML, next-gen infrastructure and enterprise software; heavy public commentary o…”，是了解早期项目种子资助的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f21",
+    "role": "policy",
+    "question": "如果我在政府做 AI 政策，最值得关注哪些治理机构？",
+    "keywords": {
+      "zh": [
+        "政府AI政策",
+        "治理机构",
+        "政策智库",
+        "监管",
+        "公共部门",
+        "AI治理"
+      ],
+      "en": [
+        "government AI policy",
+        "governance organizations",
+        "policy think tank",
+        "regulation",
+        "public sector",
+        "AI governance"
+      ]
+    },
+    "top10": [
+      "owen-larter",
+      "michelle-nie",
+      "foundation-for-american-innovation",
+      "center-for-new-american-security",
+      "baobao-zhang",
+      "markus-anderljung",
+      "daniel-e-ho",
+      "americans-for-responsible-innovation",
+      "luke-muehlhauser",
+      "robert-trager"
+    ],
+    "why": [
+      "Owen Larter 的节点简介涉及“AI standards; regulation and governance frameworks in the US, UK, EU and globally; government…”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Michelle Nie 的节点简介涉及“AI and competition policy, public-sector AI capacity building, AI and the rule of law, and AI…”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Foundation for American Innovation (FAI) 的节点简介涉及“AI policy, state capacity, emerging technology governance from a heterodox-right position”，是了解政府 AI 治理机构的高相关机构入口。",
+      "Center for a New American Security (CNAS) 的节点简介涉及“National-security and defense policy; its Technology and National Security program studies AI…”，是了解政府 AI 治理机构的高相关机构入口。",
+      "Baobao Zhang (张宝宝) 的节点简介涉及“Public opinion on AI, AI governance, social policy”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Markus Anderljung 的节点简介涉及“Frontier AI regulation, compute governance, and structured access to models”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Daniel E. Ho 的节点简介涉及“Applying frontier AI to the public sector via RegLab partnerships with IRS, EPA, Department o…”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Americans for Responsible Innovation (ARI) 的节点简介涉及“Bipartisan advocacy for AI governance addressing current harms, national security, and emergi…”，是了解政府 AI 治理机构的高相关机构入口。",
+      "Luke Muehlhauser 的节点简介涉及“Runs Coefficient's AI governance and international policy grantmaking; team includes Alex Law…”，是了解政府 AI 治理机构的高相关人物入口。",
+      "Robert Trager 的节点简介涉及“International governance of emerging technologies, diplomatic practice, institutional design…”，是了解政府 AI 治理机构的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f22",
+    "role": "policy",
+    "question": "算力治理有哪些真正可执行的政策工具？",
+    "keywords": {
+      "zh": [
+        "算力治理",
+        "芯片管制",
+        "云计算",
+        "数据中心",
+        "算力监测",
+        "出口管制",
+        "许可证"
+      ],
+      "en": [
+        "compute governance",
+        "chip controls",
+        "cloud computing",
+        "data centers",
+        "compute monitoring",
+        "export controls",
+        "licensing"
+      ]
+    },
+    "top10": [
+      "lennart-heim",
+      "dario-amodei",
+      "public-first-action",
+      "jensen-huang",
+      "david-krueger",
+      "govai",
+      "macroscopic-ventures",
+      "oxford-martin-aigi",
+      "oracle",
+      "felipe-calero-forero"
+    ],
+    "why": [
+      "Lennart Heim 的节点简介涉及“AI compute governance, semiconductor policy, technical verification, and empirical trends in…”，是了解算力治理政策工具的高相关人物入口。",
+      "Dario Amodei 的节点简介涉及“Scaling Claude; IPO preparation; public advocacy for AI transparency regulation and chip expo…”，是了解算力治理政策工具的高相关人物入口。",
+      "Public First Action 的节点简介涉及“Backing candidates across the spectrum who support AI safeguards; priorities include export c…”，是了解算力治理政策工具的高相关机构入口。",
+      "Jensen Huang 的节点简介涉及“Selling compute to every frontier lab simultaneously (Anthropic, OpenAI, xAI, SSI, Thinking M…”，是了解算力治理政策工具的高相关人物入口。",
+      "David Krueger 的节点简介涉及“Advocacy to stop the race to superintelligence ('The simplest, most robust way would be to ce…”，是了解算力治理政策工具的高相关人物入口。",
+      "Centre for the Governance of AI (GovAI) 的节点简介涉及“Frontier AI regulation, compute governance, international governance, agent infrastructure, s…”，是了解算力治理政策工具的高相关机构入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解算力治理政策工具的高相关机构入口。",
+      "Oxford Martin AI Governance Initiative (AIGI) 的节点简介涉及“Technical AI Governance Programme; international AI regimes; verification and compute governance”，是了解算力治理政策工具的高相关机构入口。",
+      "Oracle 的节点简介涉及“Compute-for-equity and cloud commitments across the frontier”，是了解算力治理政策工具的高相关机构入口。",
+      "Felipe Calero Forero 的节点简介涉及“AI governance and the history of semiconductor-industry cooperation; previously researched at…”，是了解算力治理政策工具的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f23",
+    "role": "policy",
+    "question": "Who should policymakers follow on international AI coordination and diplomacy?",
+    "keywords": {
+      "zh": [
+        "国际协调",
+        "AI外交",
+        "多边治理",
+        "国际合作",
+        "条约",
+        "峰会",
+        "标准"
+      ],
+      "en": [
+        "international coordination",
+        "AI diplomacy",
+        "multilateral governance",
+        "international cooperation",
+        "treaty",
+        "summit",
+        "standards"
+      ]
+    },
+    "top10": [
+      "united-nations-ai-governance",
+      "robert-trager",
+      "lewis-ho",
+      "fu-ying",
+      "kenya-ai-safety-network-office",
+      "inbal-talgam-cohen",
+      "yali-du",
+      "jan-kulveit",
+      "acs-research",
+      "richard-ngo"
+    ],
+    "why": [
+      "United Nations AI Governance 的节点简介涉及“Umbrella for UN multilateral cooperation on artificial intelligence governance, including sci…”，是了解国际 AI 协调的高相关机构入口。",
+      "Robert Trager 的节点简介涉及“International governance of emerging technologies, diplomatic practice, institutional design…”，是了解国际 AI 协调的高相关人物入口。",
+      "Lewis Ho 的节点简介涉及“Institutional approaches to frontier AI governance; frontier safety framework design; interna…”，是了解国际 AI 协调的高相关人物入口。",
+      "Fu Ying (傅莹) 的节点简介涉及“China's international AI governance diplomacy”，是了解国际 AI 协调的高相关人物入口。",
+      "Kenya AI Safety Network Office 的节点简介涉及“Represents Kenya in international technical cooperation on AI safety, including foundation-mo…”，是了解国际 AI 协调的高相关机构入口。",
+      "Inbal Talgam-Cohen 的节点简介涉及“Algorithmic contract theory; human-AI teaming as a coordination/cooperation problem; LLM orch…”，是了解国际 AI 协调的高相关人物入口。",
+      "Yali Du 的节点简介涉及“Multi-agent cooperation, human-AI coordination, scalable alignment and value learning; recrui…”，是了解国际 AI 协调的高相关人物入口。",
+      "Jan Kulveit 的节点简介涉及“Complex systems composed of humans and AIs; mathematical theories of cooperation and kindness…”，是了解国际 AI 协调的高相关人物入口。",
+      "Alignment of Complex Systems (ACS) 的节点简介涉及“Multi-agent systems of humans and AIs; mathematical theories of cooperation across scales; an…”，是了解国际 AI 协调的高相关机构入口。",
+      "Richard Ngo 的节点简介涉及“Coalitions, virtue ethics, and the foundations of cooperation; the 2025 political-philosophy…”，是了解国际 AI 协调的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f24",
+    "role": "policy",
+    "question": "欧盟 AI Act、责任和前沿模型法律问题该看谁？",
+    "keywords": {
+      "zh": [
+        "欧盟AI法案",
+        "法律责任",
+        "前沿模型",
+        "合规",
+        "产品责任",
+        "监管法"
+      ],
+      "en": [
+        "EU AI Act",
+        "legal liability",
+        "frontier models",
+        "compliance",
+        "product liability",
+        "regulatory law"
+      ]
+    },
+    "top10": [
+      "ketan-ramakrishnan",
+      "gabriel-weil",
+      "jonathan-zittrain",
+      "christoph-winter",
+      "noam-kolt",
+      "sayash-kapoor",
+      "cullen-okeefe",
+      "john-morley",
+      "lydia-liu",
+      "john-tasioulas"
+    ],
+    "why": [
+      "Ketan Ramakrishnan 的节点简介涉及“Research spans torts, AI regulation, constitutional law and legal philosophy; serves as assoc…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Gabriel Weil 的节点简介涉及“Liability rules and tort law for catastrophic AI risk; legal-institutional design for AI”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Jonathan Zittrain 的节点简介涉及“Ethics and governance of AI; agents and intermediary liability; the 'useful and unobtrusive'…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Christoph Winter 的节点简介涉及“Law and governance of advanced AI, combining law, philosophy and psychology; compute threshol…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Noam Kolt 的节点简介涉及“Principal-agent economics and common-law agency doctrine applied to AI agents; legal alignmen…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Sayash Kapoor 的节点简介涉及“A science of AI agent reliability (ICML 2026); large-scale agent evaluation infrastructure (H…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Cullen O'Keefe 的节点简介涉及“Law-following AI; legal constraints on AI agents”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "John D. Morley 的节点简介涉及“His Yale profile states he was the primary drafter of the Anthropic Long-Term Benefit Trust a…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "Lydia T. Liu 的节点简介涉及“Evaluation of AI models under data-access constraints and legal-compliance regimes; algorithm…”，是了解欧盟与前沿模型法律的高相关人物入口。",
+      "John Tasioulas 的节点简介涉及“Human rights, the philosophy of law, and humanistic critiques of technocratic AI ethics; 2026…”，是了解欧盟与前沿模型法律的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f25",
+    "role": "policy",
+    "question": "美国国会和联邦政府里，谁在推动 AI 安全立法？",
+    "keywords": {
+      "zh": [
+        "美国国会",
+        "联邦政府",
+        "AI立法",
+        "参议院",
+        "行政命令",
+        "监管机构"
+      ],
+      "en": [
+        "US Congress",
+        "federal government",
+        "AI legislation",
+        "Senate",
+        "executive order",
+        "regulators"
+      ]
+    },
+    "top10": [
+      "ted-cruz",
+      "josh-hawley",
+      "helen-toner",
+      "center-for-ai-policy",
+      "jd-vance",
+      "openai-strategic-futures",
+      "nate-soares",
+      "alex-bores",
+      "jacob-helberg",
+      "seth-lazar"
+    ],
+    "why": [
+      "Ted Cruz 的节点简介涉及“Federal preemption of state AI law; light-touch federal AI framework”，是了解美国 AI 立法的高相关人物入口。",
+      "Josh Hawley 的节点简介涉及“Anti-Big-Tech populism; AI labour displacement; restricting AI in consequential decision-making”，是了解美国 AI 立法的高相关人物入口。",
+      "Helen Toner 的节点简介涉及“Running CSET and building a frontier-AI team there; testified to Senate Judiciary 22 Apr 2026…”，是了解美国 AI 立法的高相关人物入口。",
+      "Center for AI Policy (CAIP) 的节点简介涉及“Policy research and advocacy aimed at reducing catastrophic risks from advanced AI, including…”，是了解美国 AI 立法的高相关机构入口。",
+      "JD Vance 的节点简介涉及“AI as national-competitive opportunity, anti-EU regulation, anti-'ideological bias' in models…”，是了解美国 AI 立法的高相关人物入口。",
+      "OpenAI Strategic Futures team 的节点简介涉及“Catastrophic risk; recursive self-improvement; labour-market impact; the relationship between…”，是了解美国 AI 立法的高相关机构入口。",
+      "Nate Soares 的节点简介涉及“Co-author with Yudkowsky of 'If Anyone Builds It, Everyone Dies' (Little Brown, 16 Sept 2025)…”，是了解美国 AI 立法的高相关人物入口。",
+      "Alex Bores 的节点简介涉及“AI safety legislation; the aftermath of the most expensive AI-policy primary yet (>$40M outsi…”，是了解美国 AI 立法的高相关人物入口。",
+      "Jacob Helberg 的节点简介涉及“US-China technology competition; export controls; AI diplomacy; convening Silicon Valley and…”，是了解美国 AI 立法的高相关人物入口。",
+      "Seth Lazar 的节点简介涉及“Three named programmes: Normative Competence ('technical AI evaluations informed by and infor…”，是了解美国 AI 立法的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f26",
+    "role": "policy",
+    "question": "中国的 AI 安全治理网络和政策讨论有哪些关键参与者？",
+    "keywords": {
+      "zh": [
+        "中国AI治理",
+        "中国AI安全",
+        "政策网络",
+        "北京",
+        "监管",
+        "中美AI"
+      ],
+      "en": [
+        "China AI governance",
+        "China AI safety",
+        "policy network",
+        "Beijing",
+        "regulation",
+        "US-China AI"
+      ]
+    },
+    "top10": [
+      "yi-zeng-casia",
+      "liang-fang",
+      "concordia-ai",
+      "matt-sheehan",
+      "markus-anderljung",
+      "owen-larter",
+      "americans-for-responsible-innovation",
+      "luke-muehlhauser",
+      "robert-trager",
+      "yawen-duan"
+    ],
+    "why": [
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解中国 AI 治理的高相关人物入口。",
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解中国 AI 治理的高相关人物入口。",
+      "Concordia AI 安远AI 的节点简介涉及“Research, convenings, consulting for AI companies and policymakers, national/global standards…”，是了解中国 AI 治理的高相关机构入口。",
+      "Matt Sheehan 的节点简介涉及“Chinese AI regulation and standards; 2026 output includes 'China Is Worried About AI Companio…”，是了解中国 AI 治理的高相关人物入口。",
+      "Markus Anderljung 的节点简介涉及“Frontier AI regulation, compute governance, and structured access to models”，是了解中国 AI 治理的高相关人物入口。",
+      "Owen Larter 的节点简介涉及“AI standards; regulation and governance frameworks in the US, UK, EU and globally; government…”，是了解中国 AI 治理的高相关人物入口。",
+      "Americans for Responsible Innovation (ARI) 的节点简介涉及“Bipartisan advocacy for AI governance addressing current harms, national security, and emergi…”，是了解中国 AI 治理的高相关机构入口。",
+      "Luke Muehlhauser 的节点简介涉及“Runs Coefficient's AI governance and international policy grantmaking; team includes Alex Law…”，是了解中国 AI 治理的高相关人物入口。",
+      "Robert Trager 的节点简介涉及“International governance of emerging technologies, diplomatic practice, institutional design…”，是了解中国 AI 治理的高相关人物入口。",
+      "Yawen Duan (段亚文) 的节点简介涉及“Concordia AI; frontier safety evaluations and China-facing AI governance within the Safe AI F…”，是了解中国 AI 治理的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f27",
+    "role": "policy",
+    "question": "How can governments regulate AI labs without freezing useful innovation?",
+    "keywords": {
+      "zh": [
+        "监管AI实验室",
+        "创新政策",
+        "风险分级",
+        "许可制度",
+        "前沿模型监管",
+        "监管沙盒"
+      ],
+      "en": [
+        "regulating AI labs",
+        "innovation policy",
+        "risk tiers",
+        "licensing",
+        "frontier model regulation",
+        "regulatory sandbox"
+      ]
+    },
+    "top10": [
+      "dean-ball",
+      "adam-thierer",
+      "owen-larter",
+      "chris-meserole",
+      "openai",
+      "deepmind",
+      "steinhardt",
+      "josh-jacobson",
+      "ai-safety-fund",
+      "frontier-model-forum"
+    ],
+    "why": [
+      "Dean W. Ball 的节点简介涉及“Frontier AI policy inside a lab: catastrophic risk, recursive self-improvement, labour-market…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "Adam Thierer 的节点简介涉及“The most prolific permissionless-innovation writer in US tech policy; consistent opponent of…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "Owen Larter 的节点简介涉及“AI standards; regulation and governance frameworks in the US, UK, EU and globally; government…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "Chris Meserole 的节点简介涉及“Cross-lab safety and security standards; capability thresholds and evaluation timing; interna…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "OpenAI 的节点简介涉及“Astra/GPT-5 line frontier models; IPO preparation; Model Spec as public behaviour constitutio…”，是了解实验室监管与创新平衡的高相关机构入口。",
+      "Google DeepMind 的节点简介涉及“Gemini frontier models; Frontier Safety Framework; AGI Safety & Alignment org; Frontier Strat…”，是了解实验室监管与创新平衡的高相关机构入口。",
+      "Jacob Steinhardt 的节点简介涉及“Open-source model auditing and behaviour elicitation at Transluce; forecasting rare and emerg…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "Josh Jacobson 的节点简介涉及“Alignment Research Center; Berkeley Existential Risk Initiative; Centre for Effective Altruis…”，是了解实验室监管与创新平衡的高相关人物入口。",
+      "AI Safety Fund (AISF) 的节点简介涉及“Funds independent research on frontier-model risks, including standardized third-party evalua…”，是了解实验室监管与创新平衡的高相关机构入口。",
+      "Frontier Model Forum (FMF) 的节点简介涉及“Shared technical understandings across labs: threat models, safety evaluations, mitigations…”，是了解实验室监管与创新平衡的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f28",
+    "role": "policy",
+    "question": "AI 事故报告、吹哨人保护和透明度制度该怎么设计？",
+    "keywords": {
+      "zh": [
+        "事故报告",
+        "吹哨人保护",
+        "透明度",
+        "内部举报",
+        "安全事件",
+        "问责"
+      ],
+      "en": [
+        "incident reporting",
+        "whistleblower protection",
+        "transparency",
+        "internal reporting",
+        "safety incidents",
+        "accountability"
+      ]
+    },
+    "top10": [
+      "alan-chan",
+      "midas-project",
+      "tyler-johnston",
+      "nick-beckstead",
+      "frontier-ai-safety-commitments",
+      "apollo-research",
+      "percy-liang",
+      "dario-amodei",
+      "daniel-e-ho",
+      "joseph-bloom"
+    ],
+    "why": [
+      "Alan Chan 的节点简介涉及“Agent infrastructure (IDs, protocols, certification, rollback); incident analysis for AI agen…”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "The Midas Project 的节点简介涉及“AI corporate accountability, restructuring transparency, super-PAC investigations”，是了解事故报告与吹哨人保护的高相关机构入口。",
+      "Tyler Johnston 的节点简介涉及“AI corporate accountability; OpenAI restructuring transparency; super-PAC investigations”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "Nick Beckstead 的节点简介涉及“Runs Secure AI Project, developing and advocating policies to reduce risk of severe harm from…”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "Frontier AI Safety Commitments (AI Seoul Summit 2024) 的节点简介涉及“Developer safety frameworks for severe frontier-model risks, including capability thresholds…”，是了解事故报告与吹哨人保护的高相关机构入口。",
+      "Apollo Research 的节点简介涉及“Scheming and deception evaluations, model organisms, governance of evaluations”，是了解事故报告与吹哨人保护的高相关机构入口。",
+      "Percy Liang 的节点简介涉及“Agent evaluation infrastructure (Holistic Agent Leaderboard); transparency indices as a gover…”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "Dario Amodei 的节点简介涉及“Scaling Claude; IPO preparation; public advocacy for AI transparency regulation and chip expo…”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "Daniel E. Ho 的节点简介涉及“Applying frontier AI to the public sector via RegLab partnerships with IRS, EPA, Department o…”，是了解事故报告与吹哨人保护的高相关人物入口。",
+      "Joseph Bloom 的节点简介涉及“8 posts on LessWrong, 15 of them on the Alignment Forum; 5 with 100+ karma. Forum karma 2,078…”，是了解事故报告与吹哨人保护的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f29",
+    "role": "policy",
+    "question": "国家安全部门应该如何看待 AI 与生物风险？",
+    "keywords": {
+      "zh": [
+        "国家安全",
+        "AI生物风险",
+        "生物安全",
+        "双重用途",
+        "威胁评估",
+        "大流行防范"
+      ],
+      "en": [
+        "national security",
+        "AI biorisk",
+        "biosecurity",
+        "dual use",
+        "threat assessment",
+        "pandemic preparedness"
+      ]
+    },
+    "top10": [
+      "future-of-humanity-institute",
+      "david-manheim",
+      "association-for-long-term-existence-and-resilience",
+      "carnegie-endowment-for-international-peace",
+      "center-for-global-development",
+      "charity-entrepreneurship",
+      "effisciences",
+      "era-cambridge",
+      "americans-for-responsible-innovation",
+      "center-for-new-american-security"
+    ],
+    "why": [
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解国家安全与生物风险的高相关机构入口。",
+      "David Manheim 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; multi_agent; other”，是了解国家安全与生物风险的高相关人物入口。",
+      "Association for Long Term Existence and Resilience 的节点简介涉及“AI safety|Biosecurity and pandemic preparedness; Organization in public AI Watch position dat…”，是了解国家安全与生物风险的高相关机构入口。",
+      "Carnegie Endowment for International Peace 的节点简介涉及“AI safety/governance; Biosecurity and pandemic preparedness; FIXME; International relations…”，是了解国家安全与生物风险的高相关机构入口。",
+      "Center for Global Development 的节点简介涉及“Biosecurity and pandemic preparedness; Biosecurity and pandemic preparedness/COVID-19; FIXME…”，是了解国家安全与生物风险的高相关机构入口。",
+      "Charity Entrepreneurship 的节点简介涉及“Animal welfare/movement growth/new organizations; Biosecurity and pandemic preparedness; Orga…”，是了解国家安全与生物风险的高相关机构入口。",
+      "EffiSciences 的节点简介涉及“Effective altruism|AI safety|Biosecurity and pandemic preparedness|Climate change; Organizati…”，是了解国家安全与生物风险的高相关机构入口。",
+      "ERA (Existential Risk Alliance) Cambridge 的节点简介涉及“Frontier AI safety, AI governance, AI security and biosecurity fellowships; mentors drawn fro…”，是了解国家安全与生物风险的高相关机构入口。",
+      "Americans for Responsible Innovation (ARI) 的节点简介涉及“Bipartisan advocacy for AI governance addressing current harms, national security, and emergi…”，是了解国家安全与生物风险的高相关机构入口。",
+      "Center for a New American Security (CNAS) 的节点简介涉及“National-security and defense policy; its Technology and National Security program studies AI…”，是了解国家安全与生物风险的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f30",
+    "role": "policy",
+    "question": "What institutions could govern advanced AI across borders?",
+    "keywords": {
+      "zh": [
+        "跨境治理",
+        "国际机构",
+        "全球AI治理",
+        "条约机构",
+        "核查机制",
+        "多边组织"
+      ],
+      "en": [
+        "cross-border governance",
+        "international institution",
+        "global AI governance",
+        "treaty body",
+        "verification regime",
+        "multilateral organization"
+      ]
+    },
+    "top10": [
+      "oxford-martin-aigi",
+      "seb-krier",
+      "lennart-heim",
+      "lisa-thiergart",
+      "mauricio-baker",
+      "united-nations-ai-governance",
+      "global-challenges-foundation",
+      "david-dalrymple",
+      "marina-favaro",
+      "alessandro-abate"
+    ],
+    "why": [
+      "Oxford Martin AI Governance Initiative (AIGI) 的节点简介涉及“Technical AI Governance Programme; international AI regimes; verification and compute governance”，是了解高级 AI 的跨境制度的高相关机构入口。",
+      "Seb Krier 的节点简介涉及“Governance of frontier AI; international institutions for advanced AI; a personal speculative…”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "Lennart Heim 的节点简介涉及“AI compute governance, semiconductor policy, technical verification, and empirical trends in…”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "Lisa Thiergart 的节点简介涉及“AI security at SL5, hardware security, verification, technical governance”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "Mauricio Baker 的节点简介涉及“Technical verification mechanisms for international AI agreements, including US-China arms-co…”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "United Nations AI Governance 的节点简介涉及“Umbrella for UN multilateral cooperation on artificial intelligence governance, including sci…”，是了解高级 AI 的跨境制度的高相关机构入口。",
+      "Global Challenges Foundation 的节点简介涉及“Raises awareness of global catastrophic risks and works to strengthen global governance; its…”，是了解高级 AI 的跨境制度的高相关机构入口。",
+      "David 'davidad' Dalrymple 的节点简介涉及“Guaranteed-safe AI; formal verification of cyber and cyber-physical systems by fleets of AI a…”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "Marina Favaro 的节点简介涉及“Recursive self-improvement telemetry and early-warning metrics; verification mechanisms for a…”，是了解高级 AI 的跨境制度的高相关人物入口。",
+      "Alessandro Abate 的节点简介涉及“Formal/categorical foundations for verifiable AI under ARIA Safeguarded AI”，是了解高级 AI 的跨境制度的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f31",
+    "role": "invest",
+    "question": "投资 AI 公司时，怎么判断它的安全治理是不是认真的？",
+    "keywords": {
+      "zh": [
+        "AI投资",
+        "安全治理",
+        "尽职调查",
+        "风险管理",
+        "公司治理",
+        "安全承诺"
+      ],
+      "en": [
+        "AI investing",
+        "safety governance",
+        "due diligence",
+        "risk management",
+        "corporate governance",
+        "safety commitments"
+      ]
+    },
+    "top10": [
+      "zico-kolter",
+      "openai-safety-and-security-committee",
+      "paul-nakasone",
+      "lawrence-chan",
+      "toby-ord",
+      "jueyan-zhang",
+      "brian-tse",
+      "chris-liddell",
+      "halcyon-futures",
+      "center-for-new-american-security"
+    ],
+    "why": [
+      "Zico Kolter 的节点简介涉及“Adversarial robustness and safety evaluation of LLMs and agents: sample-efficient reliability…”，是了解AI 公司安全尽调的高相关人物入口。",
+      "OpenAI Safety and Security Committee 的节点简介涉及“Oversees critical safety and security decisions across OpenAI projects and operations; receiv…”，是了解AI 公司安全尽调的高相关机构入口。",
+      "Paul M. Nakasone 的节点简介涉及“Cybersecurity and national-security oversight of OpenAI”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Lawrence Chan 的节点简介涉及“Evaluation and interpretability methodology; FAR.AI governance”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Toby Ord 的节点简介涉及“Existential risk and the long-term trajectory of humanity, with current focus on AI; based in…”，是了解AI 公司安全尽调的高相关人物入口。",
+      "JueYan Zhang 的节点简介涉及“Fast, opportunistic grants across governance, technical alignment and evaluations/audit. 2026…”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Brian Tse (谢旻希) 的节点简介涉及“State of AI Safety in China (2026); State of AI Safety in Singapore (2026); Frontier AI Risk…”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Chris Liddell 的节点简介涉及“Governance of transformative technology; corporate and public-sector board work”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Halcyon Futures 的节点简介涉及“AI safety and alignment, biosecurity, cybersecurity, governance and policy; founder support…”，是了解AI 公司安全尽调的高相关人物入口。",
+      "Center for a New American Security (CNAS) 的节点简介涉及“National-security and defense policy; its Technology and National Security program studies AI…”，是了解AI 公司安全尽调的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f32",
+    "role": "invest",
+    "question": "哪些投资机构明确把 AI 安全或负责任 AI 当成主题？",
+    "keywords": {
+      "zh": [
+        "AI安全投资",
+        "负责任AI",
+        "主题基金",
+        "风险投资",
+        "影响力投资",
+        "投资机构"
+      ],
+      "en": [
+        "AI safety investing",
+        "responsible AI",
+        "thematic fund",
+        "venture capital",
+        "impact investing",
+        "investment firms"
+      ]
+    },
+    "top10": [
+      "coefficient-giving",
+      "dustin-moskovitz",
+      "transformative-ai-fund",
+      "solina-chau",
+      "natasha-crampton",
+      "cais",
+      "principles-of-intelligence",
+      "dan-hendrycks",
+      "alignment-project-fund",
+      "adria-garriga-alonso"
+    ],
+    "why": [
+      "Coefficient Giving 的节点简介涉及“Largest AI-safety funder globally: ~$336M (12% of $4B+ total) to AI safety since 2014. Pivoti…”，是了解AI 安全主题投资者的高相关机构入口。",
+      "Dustin Moskovitz 的节点简介涉及“With Cari Tuna moved their Anthropic stake (reported ~$500M mid-Nov) into a nonprofit vehicle…”，是了解AI 安全主题投资者的高相关人物入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解AI 安全主题投资者的高相关机构入口。",
+      "Solina Chau 的节点简介涉及“Horizons raised USD 350M in new capital Jan 2026 and is investing across deep tech, AI, bio…”，是了解AI 安全主题投资者的高相关人物入口。",
+      "Natasha Crampton 的节点简介涉及“Agentic AI governance; adaptive responsible-AI standards; evaluation tooling; partnerships wi…”，是了解AI 安全主题投资者的高相关人物入口。",
+      "Center for AI Safety 的节点简介涉及“Research, the Action Fund's policy work, and AI Frontiers as its publication”，是了解AI 安全主题投资者的高相关机构入口。",
+      "Principles of Intelligence 的节点简介涉及“Bringing complex-systems and other non-ML disciplines into AI safety; affiliates include Ilia…”，是了解AI 安全主题投资者的高相关机构入口。",
+      "Dan Hendrycks 的节点简介涉及“Eigenism - identity as a graded distributed pattern, and 'identity engineering' as an alterna…”，是了解AI 安全主题投资者的高相关人物入口。",
+      "The Alignment Project 的节点简介涉及“£27M+ global fund for AI alignment research. Backers: UK AISI, CAISI, CIFAR, Australian DISR…”，是了解AI 安全主题投资者的高相关机构入口。",
+      "Adrià Garriga-Alonso 的节点简介涉及“AI Safety Camp; Center on Long-Term Risk; FAR.AI; Fund for Alignment Research”，是了解AI 安全主题投资者的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f33",
+    "role": "invest",
+    "question": "Where is the market opportunity in AI evaluation and auditing?",
+    "keywords": {
+      "zh": [
+        "AI评测市场",
+        "模型审计",
+        "安全测试",
+        "第三方评估",
+        "合规科技",
+        "红队服务"
+      ],
+      "en": [
+        "AI evaluation market",
+        "model auditing",
+        "safety testing",
+        "third-party assessment",
+        "regtech",
+        "red-team services"
+      ]
+    },
+    "top10": [
+      "international-network-advanced-ai-measurement-evaluation-science",
+      "natasha-crampton",
+      "ai-safety-fund",
+      "logan-graham",
+      "xai",
+      "steinhardt",
+      "dawn-song",
+      "sam-bowman",
+      "seth-lazar",
+      "rishi-bommasani"
+    ],
+    "why": [
+      "International Network for Advanced AI Measurement, Evaluation, and Science 的节点简介涉及“Coordinates technical work on advanced-AI measurement, evaluation, safety research, testing…”，是了解AI 评测与审计市场的高相关机构入口。",
+      "Natasha Crampton 的节点简介涉及“Agentic AI governance; adaptive responsible-AI standards; evaluation tooling; partnerships wi…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "AI Safety Fund (AISF) 的节点简介涉及“Funds independent research on frontier-model risks, including standardized third-party evalua…”，是了解AI 评测与审计市场的高相关机构入口。",
+      "Logan Graham 的节点简介涉及“Frontier capability stress-testing: cyber, bio, autonomy, robotics; multiagent systems; strat…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "xAI 的节点简介涉及“Grok model line; framework compliance timed to California's TFAIA (in force 1 Jan 2026); mini…”，是了解AI 评测与审计市场的高相关机构入口。",
+      "Jacob Steinhardt 的节点简介涉及“Open-source model auditing and behaviour elicitation at Transluce; forecasting rare and emerg…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "Dawn Song (宋晓东) 的节点简介涉及“Agentic AI safety and security; agent security frameworks and intent-to-execution integrity…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "Sam Bowman 的节点简介涉及“Alignment safety cases; agentic misalignment case studies; alignment auditing benchmarks; men…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "Seth Lazar 的节点简介涉及“Three named programmes: Normative Competence ('technical AI evaluations informed by and infor…”，是了解AI 评测与审计市场的高相关人物入口。",
+      "Rishi Bommasani 的节点简介涉及“Economic and societal impacts of frontier AI; third-party evaluation and flaw disclosure; ope…”，是了解AI 评测与审计市场的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f34",
+    "role": "invest",
+    "question": "算力、芯片和数据中心的 AI 风险格局该看哪些节点？",
+    "keywords": {
+      "zh": [
+        "算力投资",
+        "AI芯片",
+        "数据中心",
+        "半导体",
+        "云计算",
+        "供应链风险"
+      ],
+      "en": [
+        "compute investment",
+        "AI chips",
+        "data centers",
+        "semiconductors",
+        "cloud computing",
+        "supply-chain risk"
+      ]
+    },
+    "top10": [
+      "lennart-heim",
+      "ren-zhengfei",
+      "oracle",
+      "wu-yongming",
+      "ariel-procaccia",
+      "lydia-liu",
+      "percy-liang",
+      "helen-toner",
+      "daniel-e-ho",
+      "center-for-new-american-security"
+    ],
+    "why": [
+      "Lennart Heim 的节点简介涉及“AI compute governance, semiconductor policy, technical verification, and empirical trends in…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Ren Zhengfei (任正非) 的节点简介涉及“Publicly downplays chip bottlenecks and pushes clustering/stacking as the answer; near-total…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Oracle 的节点简介涉及“Compute-for-equity and cloud commitments across the frontier”，是了解算力与芯片风险格局的高相关机构入口。",
+      "Wu Yongming (吴泳铭) 的节点简介涉及“Says Alibaba's full-stack AI has crossed from investment into commercial return; quarterly ca…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Ariel Procaccia 的节点简介涉及“Social choice as the formal backbone of AI evaluation and alignment: robust AI evaluation thr…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Lydia T. Liu 的节点简介涉及“Evaluation of AI models under data-access constraints and legal-compliance regimes; algorithm…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Percy Liang 的节点简介涉及“Agent evaluation infrastructure (Holistic Agent Leaderboard); transparency indices as a gover…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Helen Toner 的节点简介涉及“Running CSET and building a frontier-AI team there; testified to Senate Judiciary 22 Apr 2026…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Daniel E. Ho 的节点简介涉及“Applying frontier AI to the public sector via RegLab partnerships with IRS, EPA, Department o…”，是了解算力与芯片风险格局的高相关人物入口。",
+      "Center for a New American Security (CNAS) 的节点简介涉及“National-security and defense policy; its Technology and National Security program studies AI…”，是了解算力与芯片风险格局的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f35",
+    "role": "invest",
+    "question": "实验室董事会在重大安全决策中到底起什么作用？",
+    "keywords": {
+      "zh": [
+        "实验室董事会",
+        "公司治理",
+        "安全委员会",
+        "董事责任",
+        "监督",
+        "高管问责"
+      ],
+      "en": [
+        "AI lab boards",
+        "corporate governance",
+        "safety committee",
+        "director duties",
+        "oversight",
+        "executive accountability"
+      ]
+    },
+    "top10": [
+      "zico-kolter",
+      "openai-safety-and-security-committee",
+      "chris-liddell",
+      "fynn-heide",
+      "lightcone-foundation",
+      "toby-ord",
+      "yuval-noah-harari",
+      "john-rose",
+      "maria-eitel",
+      "valerie-pisano"
+    ],
+    "why": [
+      "Zico Kolter 的节点简介涉及“Adversarial robustness and safety evaluation of LLMs and agents: sample-efficient reliability…”，是了解实验室董事会治理的高相关人物入口。",
+      "OpenAI Safety and Security Committee 的节点简介涉及“Oversees critical safety and security decisions across OpenAI projects and operations; receiv…”，是了解实验室董事会治理的高相关机构入口。",
+      "Chris Liddell 的节点简介涉及“Governance of transformative technology; corporate and public-sector board work”，是了解实验室董事会治理的高相关人物入口。",
+      "Fynn Heide 的节点简介涉及“Running IDAIS: Oxford (Oct 2023), Beijing (Mar 2024), Venice (Sep 2024), Shanghai (Jul 2025)…”，是了解实验室董事会治理的高相关人物入口。",
+      "Lightcone Foundation 的节点简介涉及“Holding and deploying the largest single crypto-derived AI-safety endowment”，是了解实验室董事会治理的高相关机构入口。",
+      "Toby Ord 的节点简介涉及“Existential risk and the long-term trajectory of humanity, with current focus on AI; based in…”，是了解实验室董事会治理的高相关人物入口。",
+      "Yuval Noah Harari 的节点简介涉及“Governance of LawZero”，是了解实验室董事会治理的高相关人物入口。",
+      "Sir John Rose 的节点简介涉及“Governance of LawZero”，是了解实验室董事会治理的高相关人物入口。",
+      "Maria Eitel 的节点简介涉及“Governance of LawZero”，是了解实验室董事会治理的高相关人物入口。",
+      "Valerie Pisano 的节点简介涉及“Governance of LawZero”，是了解实验室董事会治理的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f36",
+    "role": "invest",
+    "question": "Who tracks frontier model economics, scaling laws, and investment requirements?",
+    "keywords": {
+      "zh": [
+        "前沿模型经济学",
+        "扩展定律",
+        "资本开支",
+        "训练成本",
+        "AI经济",
+        "投资需求"
+      ],
+      "en": [
+        "frontier model economics",
+        "scaling laws",
+        "capital expenditure",
+        "training costs",
+        "AI economics",
+        "investment requirements"
+      ]
+    },
+    "top10": [
+      "tamay-besiroglu",
+      "eli-dourado",
+      "ruth-porat",
+      "solina-chau",
+      "wu-yongming",
+      "kai-fu-lee",
+      "nick-bostrom",
+      "astera-institute",
+      "ruairi-donnelly",
+      "hillhouse"
+    ],
+    "why": [
+      "Tamay Besiroglu 的节点简介涉及“Mechanize (automating work); AI economics and forecasting lineage from Epoch”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Eli Dourado 的节点简介涉及“Deploying capital into regulated capital-intensive industries; US productivity-growth stagnat…”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Ruth Porat 的节点简介涉及“Alphabet capital allocation; AI capex”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Solina Chau 的节点简介涉及“Horizons raised USD 350M in new capital Jan 2026 and is investing across deep tech, AI, bio…”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Wu Yongming (吴泳铭) 的节点简介涉及“Says Alibaba's full-stack AI has crossed from investment into commercial return; quarterly ca…”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Kai-Fu Lee (李开复) 的节点简介涉及“Enterprise agents and commercialisation; explicitly no longer talking about AGI or scaling laws.”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Nick Bostrom 的节点简介涉及“Working papers: 'Optimal Timing for Superintelligence' (arguing delay costs are underrated)…”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Astera Institute 的节点简介涉及“Neuro & AGI (McCaleb, Dileep George, Doris Tsao), Radial life sciences (Becky Pferdehirt), Fo…”，是了解前沿模型经济与投入的高相关机构入口。",
+      "Ruairí Donnelly 的节点简介涉及“Runs Macroscopic Ventures' ~$30M/yr (targeting up to $100M/yr) grant and investment program”，是了解前沿模型经济与投入的高相关人物入口。",
+      "Hillhouse Investment (高瓴) 的节点简介涉及“Post-IPO AI positions; global tech allocation.”，是了解前沿模型经济与投入的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f37",
+    "role": "invest",
+    "question": "做 AI 生物技术投资，哪些安全风险最值得尽调？",
+    "keywords": {
+      "zh": [
+        "AI生物技术",
+        "生物安全尽调",
+        "双重用途",
+        "病原体风险",
+        "实验室安全",
+        "生命科学投资"
+      ],
+      "en": [
+        "AI biotech",
+        "biosecurity diligence",
+        "dual use",
+        "pathogen risk",
+        "lab safety",
+        "life-science investing"
+      ]
+    },
+    "top10": [
+      "idais",
+      "future-of-humanity-institute",
+      "ai-safety-fund",
+      "brian-tse",
+      "david-manheim",
+      "miles-brundage",
+      "association-for-long-term-existence-and-resilience",
+      "carnegie-endowment-for-international-peace",
+      "effisciences",
+      "emily-oehlsen"
+    ],
+    "why": [
+      "International Dialogues on AI Safety (IDAIS) 的节点简介涉及“The IDAIS-London statement (Apr 2026) focuses on AI-enabled cyberattacks and biological misus…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "AI Safety Fund (AISF) 的节点简介涉及“Funds independent research on frontier-model risks, including standardized third-party evalua…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "Brian Tse (谢旻希) 的节点简介涉及“State of AI Safety in China (2026); State of AI Safety in Singapore (2026); Frontier AI Risk…”，是了解AI 生物技术安全尽调的高相关人物入口。",
+      "David Manheim 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; multi_agent; other”，是了解AI 生物技术安全尽调的高相关人物入口。",
+      "Miles Brundage 的节点简介涉及“Independent scrutiny of frontier-lab safety claims; AGI readiness; the gap between lab rhetor…”，是了解AI 生物技术安全尽调的高相关人物入口。",
+      "Association for Long Term Existence and Resilience 的节点简介涉及“AI safety|Biosecurity and pandemic preparedness; Organization in public AI Watch position dat…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "Carnegie Endowment for International Peace 的节点简介涉及“AI safety/governance; Biosecurity and pandemic preparedness; FIXME; International relations…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "EffiSciences 的节点简介涉及“Effective altruism|AI safety|Biosecurity and pandemic preparedness|Climate change; Organizati…”，是了解AI 生物技术安全尽调的高相关机构入口。",
+      "Emily Oehlsen 的节点简介涉及“President of Coefficient Giving with executive responsibility for the GCR portfolio (biosecur…”，是了解AI 生物技术安全尽调的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f38",
+    "role": "invest",
+    "question": "中国 AI 实验室与安全生态里有哪些关键机构？",
+    "keywords": {
+      "zh": [
+        "中国AI实验室",
+        "中国AI安全",
+        "基础模型",
+        "北京研究机构",
+        "中国科技公司",
+        "安全生态"
+      ],
+      "en": [
+        "Chinese AI labs",
+        "China AI safety",
+        "foundation models",
+        "Beijing institutes",
+        "Chinese tech companies",
+        "safety ecosystem"
+      ]
+    },
+    "top10": [
+      "yi-zeng-casia",
+      "cnaisda",
+      "irene-zhang-chinatalk",
+      "liang-fang",
+      "lily-ottinger",
+      "zhipu-ai",
+      "baai",
+      "brian-tse",
+      "china-mobile",
+      "ai-safety-hong-kong"
+    ],
+    "why": [
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解中国 AI 实验室与生态的高相关人物入口。",
+      "China AI Safety and Development Association (CnAISDA, 中国人工智能发展与安全研究网络) 的节点简介涉及“Representing China in the international AI-safety-institute network; the interface used at Pa…”，是了解中国 AI 实验室与生态的高相关机构入口。",
+      "Irene Zhang 的节点简介涉及“Chinese AI labs, data labelling, synthetic data, evaluation scepticism”，是了解中国 AI 实验室与生态的高相关人物入口。",
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解中国 AI 实验室与生态的高相关人物入口。",
+      "Lily Ottinger 的节点简介涉及“Chinese AI labs, export controls, editing ChinaTalk's commissioning pipeline”，是了解中国 AI 实验室与生态的高相关人物入口。",
+      "Zhipu AI / Z.ai (智谱) 的节点简介涉及“GLM model family; the first listed pure-play Chinese LLM company.”，是了解中国 AI 实验室与生态的高相关机构入口。",
+      "Beijing Academy of Artificial Intelligence (BAAI, 北京智源人工智能研究院) 的节点简介涉及“The BAAI annual conference remains the main open Chinese venue where AI-safety content is pro…”，是了解中国 AI 实验室与生态的高相关机构入口。",
+      "Brian Tse (谢旻希) 的节点简介涉及“State of AI Safety in China (2026); State of AI Safety in Singapore (2026); Frontier AI Risk…”，是了解中国 AI 实验室与生态的高相关人物入口。",
+      "China Mobile (中国移动) 的节点简介涉及“Compute infrastructure ('east data west compute') and now direct lab equity.”，是了解中国 AI 实验室与生态的高相关机构入口。",
+      "AI Safety Hong Kong (AISHK) 的节点简介涉及“Fellowships with ML4Good and TARA; translation projects with Chinese-focused AI-safety groups…”，是了解中国 AI 实验室与生态的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f39",
+    "role": "invest",
+    "question": "Are there startups building technical AI safety infrastructure?",
+    "keywords": {
+      "zh": [
+        "AI安全创业",
+        "安全基础设施",
+        "监控工具",
+        "模型评测",
+        "可解释性工具",
+        "保障平台"
+      ],
+      "en": [
+        "AI safety startups",
+        "safety infrastructure",
+        "monitoring tools",
+        "model evaluation",
+        "interpretability tools",
+        "assurance platforms"
+      ]
+    },
+    "top10": [
+      "neel-nanda",
+      "seldon-lab",
+      "lawrence-chan",
+      "rohin-shah",
+      "thinking-machines-lab",
+      "linda-linsefors",
+      "dmitry-vaintrob",
+      "clement-neo",
+      "fazl-barez",
+      "goodfire"
+    ],
+    "why": [
+      "Neel Nanda 的节点简介涉及“Applying interpretability to real-world safety problems - deception detection, model biology…”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Seldon Lab 的节点简介涉及“Incubates startups and develops projects focused on AI security, assurance, and risks from ad…”，是了解技术安全基础设施创业的高相关机构入口。",
+      "Lawrence Chan 的节点简介涉及“Evaluation and interpretability methodology; FAR.AI governance”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Rohin Shah 的节点简介涉及“Technical AGI safety: misalignment and misuse threat models, amplified oversight, interpretab…”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Thinking Machines Lab 的节点简介涉及“Multimodal AI, RL, infrastructure; publicly stated emphasis on human oversight and on interpr…”，是了解技术安全基础设施创业的高相关机构入口。",
+      "Linda Linsefors 的节点简介涉及“AISC project onboarding across interpretability and other areas; the 2026 virtual Research In…”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Dmitry Vaintrob 的节点简介涉及“Mathematical approaches to interpretability and AI safety”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Clement Neo 的节点简介涉及“Interpretability research and advising Apart fellows; Southeast Asia AI-safety community”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Fazl Barez 的节点简介涉及“Technical AI safety governance: interpretability, evaluations and auditing translated into go…”，是了解技术安全基础设施创业的高相关人物入口。",
+      "Goodfire 的节点简介涉及“Builds interpretability agents and infrastructure to understand, monitor, and align advanced…”，是了解技术安全基础设施创业的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f40",
+    "role": "invest",
+    "question": "如果 AI 风险论述遭到反弹，投资者该听哪些批评声音？",
+    "keywords": {
+      "zh": [
+        "AI风险批评",
+        "反对者",
+        "怀疑论",
+        "监管反弹",
+        "有效加速主义",
+        "风险争议"
+      ],
+      "en": [
+        "AI risk critics",
+        "opponents",
+        "skepticism",
+        "regulatory backlash",
+        "effective accelerationism",
+        "risk debate"
+      ]
+    },
+    "top10": [
+      "peter-thiel",
+      "zach-stein-perlman",
+      "openai-safety-and-security-committee",
+      "john-tasioulas",
+      "michael-gibson",
+      "timnit-gebru",
+      "alex-hanna",
+      "eric-weinstein",
+      "garrison-lovely",
+      "jack-titus"
+    ],
+    "why": [
+      "Peter Thiel 的节点简介涉及“Theological-political argument that safetyism and world government are the real danger; AI SK…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Zach Stein-Perlman 的节点简介涉及“AI Lab Watch scorecards on frontier-lab safety commitments; grantmaking-process criticism; ad…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "OpenAI Safety and Security Committee 的节点简介涉及“Oversees critical safety and security decisions across OpenAI projects and operations; receiv…”，是了解AI 风险批评与反弹的高相关机构入口。",
+      "John Tasioulas 的节点简介涉及“Human rights, the philosophy of law, and humanistic critiques of technocratic AI ethics; 2026…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Michael Gibson 的节点简介涉及“Funding uncredentialed and dropout founders; deep tech; the critique of credentialism”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Timnit Gebru 的节点简介涉及“Community-rooted AI research; critique of scale and of the TESCREAL bundle; a specific 2026 t…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Alex Hanna 的节点简介涉及“Sociology of AI labour and data work; hype criticism; the podcast and its 'Ridicule as Praxis…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Eric Weinstein 的节点简介涉及“Institutional critique of science and academia; heterodox physics; podcast commentary”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Garrison Lovely 的节点简介涉及“Labour and political-economy critique of the AI industry; book promotion (The Nation ran an o…”，是了解AI 风险批评与反弹的高相关人物入口。",
+      "Jack Titus 的节点简介涉及“Federal-agency AI policy and AI standards, including work in the Department of Energy's Offic…”，是了解AI 风险批评与反弹的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f41",
+    "role": "media",
+    "question": "我要写一篇 AI 安全入门报道，最该采访谁？",
+    "keywords": {
+      "zh": [
+        "AI安全入门",
+        "采访对象",
+        "专家",
+        "研究者",
+        "治理",
+        "技术安全"
+      ],
+      "en": [
+        "AI safety primer",
+        "interview sources",
+        "experts",
+        "researchers",
+        "governance",
+        "technical safety"
+      ]
+    },
+    "top10": [
+      "oxford-ai-safety-initiative",
+      "paul-christiano",
+      "alignment-project-fund",
+      "scott-emmons",
+      "lawrence-chan",
+      "adria-garriga-alonso",
+      "mit-ai-alignment",
+      "matt-macdermott",
+      "tomas-gavenciak",
+      "andrew-yao"
+    ],
+    "why": [
+      "Oxford AI Safety Initiative (OAISI) 的节点简介涉及“Runs technical and governance programmes intended to help Oxford students and researchers con…”，是了解AI 安全入门采访的高相关机构入口。",
+      "Paul Christiano 的节点简介涉及“Low-probability estimation and mechanistic explanation of neural network behaviour (ARC); fed…”，是了解AI 安全入门采访的高相关人物入口。",
+      "The Alignment Project 的节点简介涉及“£27M+ global fund for AI alignment research. Backers: UK AISI, CAISI, CIFAR, Australian DISR…”，是了解AI 安全入门采访的高相关机构入口。",
+      "Scott Emmons 的节点简介涉及“Chain-of-thought monitorability and monitorability metrics; obfuscated activations vs latent-…”，是了解AI 安全入门采访的高相关人物入口。",
+      "Lawrence Chan 的节点简介涉及“Evaluation and interpretability methodology; FAR.AI governance”，是了解AI 安全入门采访的高相关人物入口。",
+      "Adrià Garriga-Alonso 的节点简介涉及“AI Safety Camp; Center on Long-Term Risk; FAR.AI; Fund for Alignment Research”，是了解AI 安全入门采访的高相关人物入口。",
+      "MIT AI Alignment (MAIA) 的节点简介涉及“Supports MIT students learning about catastrophic AI risk, conducting alignment research, and…”，是了解AI 安全入门采访的高相关机构入口。",
+      "Matt MacDermott 的节点简介涉及“Evaluates technical AI safety grants; background in mathematical/agent-foundations-style alig…”，是了解AI 安全入门采访的高相关人物入口。",
+      "Tomáš Gavenčiak 的节点简介涉及“AI Safety Camp; Alignment of Complex Systems Research Group (ACS); European Summer Program on…”，是了解AI 安全入门采访的高相关人物入口。",
+      "Andrew Chi-Chih Yao (姚期智) 的节点简介涉及“AI safety and governance advocacy inside China; Qi Zhi's research programme; training the peo…”，是了解AI 安全入门采访的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f42",
+    "role": "media",
+    "question": "哪些记者和媒体长期跟踪 AI 公司与安全争议？",
+    "keywords": {
+      "zh": [
+        "AI记者",
+        "科技媒体",
+        "安全争议",
+        "调查报道",
+        "AI公司",
+        "新闻"
+      ],
+      "en": [
+        "AI journalists",
+        "tech media",
+        "safety controversy",
+        "investigative reporting",
+        "AI companies",
+        "news"
+      ]
+    },
+    "top10": [
+      "transformer-news",
+      "median-group",
+      "shakeel-hashim",
+      "concordia-ai",
+      "ahmed-yahia-al-idrissi",
+      "daniel-kokotajlo",
+      "tarbell-center",
+      "michiel-bakker",
+      "sayash-kapoor",
+      "robert-trager"
+    ],
+    "why": [
+      "Transformer 的节点简介涉及“Daily/weekly reporting on the power and politics of transformative AI; op-ed section open to…”，是了解AI 安全记者与媒体的高相关机构入口。",
+      "Median Group 的节点简介涉及“Global catastrophic risks; Organization in public AI Watch position data; journalism_media”，是了解AI 安全记者与媒体的高相关机构入口。",
+      "Shakeel Hashim 的节点简介涉及“Daily/weekly reporting on 'the power and politics of transformative AI'; grew a staff masthea…”，是了解AI 安全记者与媒体的高相关人物入口。",
+      "Concordia AI 安远AI 的节点简介涉及“Research, convenings, consulting for AI companies and policymakers, national/global standards…”，是了解AI 安全记者与媒体的高相关机构入口。",
+      "Ahmed Yahia Al Idrissi 的节点简介涉及“Deploying MGX's ~$49B AI Fund 1 across semiconductors, AI infrastructure and AI companies; po…”，是了解AI 安全记者与媒体的高相关人物入口。",
+      "Daniel Kokotajlo 的节点简介涉及“AI 2027 and its successor AI Futures Model; his median for the decisive breakthroughs has mov…”，是了解AI 安全记者与媒体的高相关人物入口。",
+      "Tarbell Center for AI Journalism 的节点简介涉及“Fellowship, residencies, grants and Transformer; funded by SFF ($520k 2024, $783k 2025) and b…”，是了解AI 安全记者与媒体的高相关机构入口。",
+      "Michiel A. Bakker 的节点简介涉及“Multi-agent LLM systems and pluralistic alignment: 'Emergent Misaligned Communication in Long…”，是了解AI 安全记者与媒体的高相关人物入口。",
+      "Sayash Kapoor 的节点简介涉及“A science of AI agent reliability (ICML 2026); large-scale agent evaluation infrastructure (H…”，是了解AI 安全记者与媒体的高相关人物入口。",
+      "Robert Trager 的节点简介涉及“International governance of emerging technologies, diplomatic practice, institutional design…”，是了解AI 安全记者与媒体的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f43",
+    "role": "media",
+    "question": "Who are the strongest critics of existential-risk-focused AI safety?",
+    "keywords": {
+      "zh": [
+        "AI末日论批评",
+        "存在风险批评",
+        "怀疑者",
+        "当前伤害",
+        "权力集中",
+        "批判AI"
+      ],
+      "en": [
+        "AI doom critics",
+        "existential risk critics",
+        "skeptics",
+        "present harms",
+        "concentration of power",
+        "critical AI"
+      ]
+    },
+    "top10": [
+      "rose-hadshar",
+      "aidan-ogara",
+      "simran-dhaliwal",
+      "peter-thiel",
+      "sean-o-heigeartaigh",
+      "cser",
+      "justin-shovelain",
+      "ryan-carey",
+      "toby-ord",
+      "josh-jacobson"
+    ],
+    "why": [
+      "Rose Hadshar 的节点简介涉及“Power concentration, AI-enabled coups, and the governance of the AI transition”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Aidan O'Gara 的节点简介涉及“Frontier AI Fund grantmaking; Longview's Extreme Power Concentration RFP (closed 2026-07-02)…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Simran Dhaliwal 的节点简介涉及“Advising donors giving >$1M/yr; the Extreme Power Concentration and Digital Minds RFPs; windi…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Peter Thiel 的节点简介涉及“Theological-political argument that safetyism and world government are the real danger; AI SK…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Seán Ó hÉigeartaigh 的节点简介涉及“Technology policy, catastrophic risk, horizon-scanning and foresight; 2026 work on technology…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Centre for the Study of Existential Risk (CSER) 的节点简介涉及“AI:FAR (with CFI), global catastrophic risk, technology governance”，是了解存在风险路线的批评者的高相关机构入口。",
+      "Justin Shovelain 的节点简介涉及“Existential-risk strategy and prioritisation frameworks; no individually attributable 2025-20…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Ryan Carey 的节点简介涉及“Centre for the Study of Existential Risk; Future of Humanity Institute; Machine Intelligence…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Toby Ord 的节点简介涉及“Existential risk and the long-term trajectory of humanity, with current focus on AI; based in…”，是了解存在风险路线的批评者的高相关人物入口。",
+      "Josh Jacobson 的节点简介涉及“Alignment Research Center; Berkeley Existential Risk Initiative; Centre for Effective Altruis…”，是了解存在风险路线的批评者的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f44",
+    "role": "media",
+    "question": "我想报道“AI 加速主义 vs 安全派”，双方代表人物有哪些？",
+    "keywords": {
+      "zh": [
+        "AI加速主义",
+        "安全派",
+        "有效加速主义",
+        "技术乐观主义",
+        "减速",
+        "争论"
+      ],
+      "en": [
+        "AI accelerationism",
+        "AI safety camp",
+        "effective accelerationism",
+        "techno-optimism",
+        "deceleration",
+        "debate"
+      ]
+    },
+    "top10": [
+      "coefficient-giving",
+      "ai-safety-camp",
+      "center-for-human-compatible-ai",
+      "future-of-humanity-institute",
+      "idais",
+      "cais",
+      "principles-of-intelligence",
+      "uc-berkeley",
+      "paul-christiano",
+      "dan-hendrycks"
+    ],
+    "why": [
+      "Coefficient Giving 的节点简介涉及“Largest AI-safety funder globally: ~$336M (12% of $4B+ total) to AI safety since 2014. Pivoti…”，是了解加速主义与安全派争论的高相关机构入口。",
+      "AI Safety Camp 的节点简介涉及“AI Safety Camp”，是了解加速主义与安全派争论的高相关机构入口。",
+      "Center for Human-Compatible AI 的节点简介涉及“AI safety; AI safety/technical research; Organization in public AI Watch position data; other”，是了解加速主义与安全派争论的高相关机构入口。",
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解加速主义与安全派争论的高相关机构入口。",
+      "International Dialogues on AI Safety (IDAIS) 的节点简介涉及“The IDAIS-London statement (Apr 2026) focuses on AI-enabled cyberattacks and biological misus…”，是了解加速主义与安全派争论的高相关机构入口。",
+      "Center for AI Safety 的节点简介涉及“Research, the Action Fund's policy work, and AI Frontiers as its publication”，是了解加速主义与安全派争论的高相关机构入口。",
+      "Principles of Intelligence 的节点简介涉及“Bringing complex-systems and other non-ML disciplines into AI safety; affiliates include Ilia…”，是了解加速主义与安全派争论的高相关机构入口。",
+      "UC Berkeley 的节点简介涉及“AI safety; AI safety/technical research; Animal welfare/meat alternatives/plant-based meat/ta…”，是了解加速主义与安全派争论的高相关机构入口。",
+      "Paul Christiano 的节点简介涉及“Low-probability estimation and mechanistic explanation of neural network behaviour (ARC); fed…”，是了解加速主义与安全派争论的高相关人物入口。",
+      "Dan Hendrycks 的节点简介涉及“Eigenism - identity as a graded distributed pattern, and 'identity engineering' as an alterna…”，是了解加速主义与安全派争论的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f45",
+    "role": "media",
+    "question": "OpenAI、Anthropic 等实验室的离职与安全争议该找哪些节点？",
+    "keywords": {
+      "zh": [
+        "实验室离职",
+        "OpenAI争议",
+        "Anthropic安全",
+        "安全团队解散",
+        "员工离开",
+        "内部冲突"
+      ],
+      "en": [
+        "lab departures",
+        "OpenAI controversy",
+        "Anthropic safety",
+        "safety team dissolution",
+        "employee exits",
+        "internal conflict"
+      ]
+    },
+    "top10": [
+      "alignment-project-fund",
+      "holden-karnofsky",
+      "johannes-heidecke",
+      "era-cambridge",
+      "founders-fund",
+      "amazon",
+      "benjamin-mann",
+      "catherine-olsson",
+      "jensen-huang",
+      "ahmed-yahia-al-idrissi"
+    ],
+    "why": [
+      "The Alignment Project 的节点简介涉及“£27M+ global fund for AI alignment research. Backers: UK AISI, CAISI, CIFAR, Australian DISR…”，是了解实验室离职与安全争议的高相关机构入口。",
+      "Holden Karnofsky 的节点简介涉及“Works on Anthropic's Responsible Scaling Policy and safety planning; quoted in 2026 on Anthro…”，是了解实验室离职与安全争议的高相关人物入口。",
+      "Johannes Heidecke 的节点简介涉及“Was: safety systems, rule-based rewards, dangerous-capability evaluations. Post-departure act…”，是了解实验室离职与安全争议的高相关人物入口。",
+      "ERA (Existential Risk Alliance) Cambridge 的节点简介涉及“Frontier AI safety, AI governance, AI security and biosecurity fellowships; mentors drawn fro…”，是了解实验室离职与安全争议的高相关机构入口。",
+      "Founders Fund 的节点简介涉及“Defense, space, AI and frontier hard tech; raised a record $6B in May 2026 after deploying $4…”，是了解实验室离职与安全争议的高相关机构入口。",
+      "Amazon 的节点简介涉及“Simultaneously the largest outside investor in Anthropic and a lead investor in OpenAI”，是了解实验室离职与安全争议的高相关机构入口。",
+      "Benjamin Mann 的节点简介涉及“Anthropic; Machine Intelligence Research Institute; OpenAI”，是了解实验室离职与安全争议的高相关人物入口。",
+      "Catherine Olsson 的节点简介涉及“Anthropic; Coefficient Giving; OpenAI”，是了解实验室离职与安全争议的高相关人物入口。",
+      "Jensen Huang 的节点简介涉及“Selling compute to every frontier lab simultaneously (Anthropic, OpenAI, xAI, SSI, Thinking M…”，是了解实验室离职与安全争议的高相关人物入口。",
+      "Ahmed Yahia Al Idrissi 的节点简介涉及“Deploying MGX's ~$49B AI Fund 1 across semiconductors, AI infrastructure and AI companies; po…”，是了解实验室离职与安全争议的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f46",
+    "role": "media",
+    "question": "有哪些重要的 AI 吹哨人、内部举报和信息披露案例？",
+    "keywords": {
+      "zh": [
+        "AI吹哨人",
+        "内部举报",
+        "信息披露",
+        "保密协议",
+        "员工维权",
+        "安全事件"
+      ],
+      "en": [
+        "AI whistleblowers",
+        "internal reporting",
+        "disclosures",
+        "NDAs",
+        "employee advocacy",
+        "safety incidents"
+      ]
+    },
+    "top10": [
+      "tc260",
+      "vincent-conitzer",
+      "neel-nanda",
+      "principles-of-intelligence",
+      "paul-christiano",
+      "lewis-hammond",
+      "iliad",
+      "allan-dafoe",
+      "dawn-song",
+      "demski"
+    ],
+    "why": [
+      "National Cybersecurity Standardization Technical Committee (TC260, 全国网络安全标准化技术委员会) 的节点简介涉及“Cybersecurity standards and guidance, including AI risk classification, model safety testing…”，是了解AI 吹哨与披露的高相关机构入口。",
+      "Vincent Conitzer 的节点简介涉及“Shutdown/off-switch mechanisms for advanced AI (solo-authored 2026 paper 'Shutdown Safety Val…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Neel Nanda 的节点简介涉及“Applying interpretability to real-world safety problems - deception detection, model biology…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Principles of Intelligence 的节点简介涉及“Bringing complex-systems and other non-ML disciplines into AI safety; affiliates include Ilia…”，是了解AI 吹哨与披露的高相关机构入口。",
+      "Paul Christiano 的节点简介涉及“Low-probability estimation and mechanistic explanation of neural network behaviour (ARC); fed…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Lewis Hammond 的节点简介涉及“Runs CAIF: PhD Fellowship (2026 cohort: 14 fellows), Cooperative AI Summer School, and co-iss…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Iliad 的节点简介涉及“Mathematical foundations of deep learning; research-integrity infrastructure for the AI safet…”，是了解AI 吹哨与披露的高相关机构入口。",
+      "Allan Dafoe 的节点简介涉及“Leads frontier safety and governance strategy at Google DeepMind; co-issued the $10M Multi-Ag…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Dawn Song (宋晓东) 的节点简介涉及“Agentic AI safety and security; agent security frameworks and intent-to-execution integrity…”，是了解AI 吹哨与披露的高相关人物入口。",
+      "Abram Demski 的节点简介涉及“Agent-foundations theory of *agentic trust*: when may one boundedly rational learning process…”，是了解AI 吹哨与披露的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f47",
+    "role": "media",
+    "question": "Who can explain the politics behind AI legislation in Washington?",
+    "keywords": {
+      "zh": [
+        "华盛顿AI政治",
+        "AI立法",
+        "国会游说",
+        "白宫",
+        "政策顾问",
+        "监管"
+      ],
+      "en": [
+        "Washington AI politics",
+        "AI legislation",
+        "Congress lobbying",
+        "White House",
+        "policy advisers",
+        "regulation"
+      ]
+    },
+    "top10": [
+      "center-for-ai-policy",
+      "michael-kratsios",
+      "sriram-krishnan",
+      "future-of-life-institute",
+      "foundation-for-american-innovation",
+      "center-for-new-american-security",
+      "horizon-institute-for-public-service",
+      "alex-bores",
+      "mark-beall",
+      "william-howell"
+    ],
+    "why": [
+      "Center for AI Policy (CAIP) 的节点简介涉及“Policy research and advocacy aimed at reducing catastrophic risks from advanced AI, including…”，是了解华盛顿 AI 立法政治的高相关机构入口。",
+      "Michael Kratsios 的节点简介涉及“Executing the AI Action Plan: US Tech Force, Genesis Mission, evaluations ecosystem, export c…”，是了解华盛顿 AI 立法政治的高相关人物入口。",
+      "Sriram Krishnan 的节点简介涉及“Building a new outside institution to influence technology policy; data centres, energy, diff…”，是了解华盛顿 AI 立法政治的高相关人物入口。",
+      "Future of Life Institute 的节点简介涉及“Policy advocacy and grantmaking; Buterin publicly distanced himself from its AI lobbying in M…”，是了解华盛顿 AI 立法政治的高相关机构入口。",
+      "Foundation for American Innovation (FAI) 的节点简介涉及“AI policy, state capacity, emerging technology governance from a heterodox-right position”，是了解华盛顿 AI 立法政治的高相关机构入口。",
+      "Center for a New American Security (CNAS) 的节点简介涉及“National-security and defense policy; its Technology and National Security program studies AI…”，是了解华盛顿 AI 立法政治的高相关机构入口。",
+      "Horizon Institute for Public Service 的节点简介涉及“Builds pathways into public service for experts in AI, computing, biotechnology, and other em…”，是了解华盛顿 AI 立法政治的高相关机构入口。",
+      "Alex Bores 的节点简介涉及“AI safety legislation; the aftermath of the most expensive AI-policy primary yet (>$40M outsi…”，是了解华盛顿 AI 立法政治的高相关人物入口。",
+      "Mark Beall 的节点简介涉及“Runs the AI Policy Network, a Washington advocacy vehicle on frontier AI risk; ex-Pentagon.”，是了解华盛顿 AI 立法政治的高相关人物入口。",
+      "William G. Howell 的节点简介涉及“Building out a new policy school in Washington DC; American political institutions and execut…”，是了解华盛顿 AI 立法政治的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f48",
+    "role": "media",
+    "question": "写中国 AI 安全生态，不能漏掉哪些人和机构？",
+    "keywords": {
+      "zh": [
+        "中国AI安全",
+        "中国AI治理",
+        "研究机构",
+        "科技公司",
+        "政策专家",
+        "中文社群"
+      ],
+      "en": [
+        "China AI safety",
+        "Chinese AI governance",
+        "research institutes",
+        "tech companies",
+        "policy experts",
+        "Chinese community"
+      ]
+    },
+    "top10": [
+      "yi-zeng-casia",
+      "kwan-yee-ng",
+      "cnaisda",
+      "liang-fang",
+      "isabella-duan",
+      "andrew-yao",
+      "xue-lan",
+      "ya-qin-zhang",
+      "lawrence-chan",
+      "yawen-duan"
+    ],
+    "why": [
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Kwan Yee Ng (吴君仪) 的节点简介涉及“International AI governance coordination between China and the rest of the world; State of AI…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "China AI Safety and Development Association (CnAISDA, 中国人工智能发展与安全研究网络) 的节点简介涉及“Representing China in the international AI-safety-institute network; the interface used at Pa…”，是了解中国 AI 安全生态报道的高相关机构入口。",
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Isabella Duan 的节点简介涉及“IDAIS convenings; US-China AI safety coordination”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Andrew Chi-Chih Yao (姚期智) 的节点简介涉及“AI safety and governance advocacy inside China; Qi Zhi's research programme; training the peo…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Xue Lan (薛澜) 的节点简介涉及“AI international governance research and China's engagement with global AI safety institution…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Zhang Ya-Qin (张亚勤) 的节点简介涉及“IDAIS; AI safety and governance interface between Chinese industry and the international scie…”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Lawrence Chan 的节点简介涉及“Evaluation and interpretability methodology; FAR.AI governance”，是了解中国 AI 安全生态报道的高相关人物入口。",
+      "Yawen Duan (段亚文) 的节点简介涉及“Concordia AI; frontier safety evaluations and China-facing AI governance within the Safe AI F…”，是了解中国 AI 安全生态报道的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f49",
+    "role": "media",
+    "question": "How should I report on model welfare without making it sound like science fiction?",
+    "keywords": {
+      "zh": [
+        "模型福利报道",
+        "机器意识",
+        "数字心智",
+        "感知能力",
+        "道德地位",
+        "科学传播"
+      ],
+      "en": [
+        "model welfare reporting",
+        "machine consciousness",
+        "digital minds",
+        "sentience",
+        "moral status",
+        "science communication"
+      ]
+    },
+    "top10": [
+      "lucius-caviola",
+      "jeff-sebo",
+      "nyu-center-mind-ethics-policy",
+      "geoff-keeling",
+      "miri",
+      "rob-bensinger",
+      "forethought",
+      "lowe-lundin",
+      "kyle-fish",
+      "yi-zeng-casia"
+    ],
+    "why": [
+      "Lucius Caviola 的节点简介涉及“Societal impact of AI and the psychology of moral judgement; digital minds, expert forecastin…”，是了解模型福利报道的高相关人物入口。",
+      "Jeff Sebo 的节点简介涉及“The moral status and welfare of nonhuman minds including AI systems; AI welfare policy; emoti…”，是了解模型福利报道的高相关人物入口。",
+      "NYU Center for Mind, Ethics, and Policy 的节点简介涉及“AI moral status and welfare; consciousness indicators; emotional-alignment design policy.”，是了解模型福利报道的高相关机构入口。",
+      "Geoff Keeling 的节点简介涉及“Manipulation and trust in human-AI interaction; machine consciousness and AI welfare (CUP boo…”，是了解模型福利报道的高相关人物入口。",
+      "Machine Intelligence Research Institute 的节点简介涉及“Shifted to communications and policy advocacy rather than technical research”，是了解模型福利报道的高相关机构入口。",
+      "Rob Bensinger 的节点简介涉及“127 posts on LessWrong, 15 of them on the Alignment Forum; 27 with 100+ karma. Forum karma 23…”，是了解模型福利报道的高相关人物入口。",
+      "Forethought 的节点简介涉及“Navigating the transition to superintelligence; AI-enabled coups; digital minds; improving co…”，是了解模型福利报道的高相关机构入口。",
+      "Lowe Lundin 的节点简介涉及“Standing up a new AI-focused fund: technical AI safety, AI governance incl. post-AGI governan…”，是了解模型福利报道的高相关人物入口。",
+      "Kyle Fish 的节点简介涉及“Model welfare evaluations and mitigations; Claude's nature section of the constitution”，是了解模型福利报道的高相关人物入口。",
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解模型福利报道的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f50",
+    "role": "media",
+    "question": "有哪些可靠来源能解释 AI、生物安全和双重用途风险？",
+    "keywords": {
+      "zh": [
+        "AI生物安全",
+        "可靠来源",
+        "双重用途",
+        "病原体",
+        "风险报道",
+        "科学专家"
+      ],
+      "en": [
+        "AI biosecurity",
+        "reliable sources",
+        "dual use",
+        "pathogens",
+        "risk reporting",
+        "scientific experts"
+      ]
+    },
+    "top10": [
+      "future-of-humanity-institute",
+      "cltr",
+      "luisa-rodriguez",
+      "era-cambridge",
+      "jason-matheny",
+      "kevin-esvelt",
+      "vitalik-buterin",
+      "david-manheim",
+      "association-for-long-term-existence-and-resilience",
+      "carnegie-endowment-for-international-peace"
+    ],
+    "why": [
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解AI 生物安全报道的高相关机构入口。",
+      "Centre for Long-Term Resilience (CLTR) 的节点简介涉及“UK government risk management, AI policy, biosecurity”，是了解AI 生物安全报道的高相关机构入口。",
+      "Luisa Rodriguez 的节点简介涉及“Interviews on AI risk, biosecurity and careers”，是了解AI 生物安全报道的高相关人物入口。",
+      "ERA (Existential Risk Alliance) Cambridge 的节点简介涉及“Frontier AI safety, AI governance, AI security and biosecurity fellowships; mentors drawn fro…”，是了解AI 生物安全报道的高相关机构入口。",
+      "Jason Matheny 的节点简介涉及“AI policy, biosecurity, emerging-technology risk at RAND”，是了解AI 生物安全报道的高相关人物入口。",
+      "Kevin Esvelt 的节点简介涉及“Biosecurity, delay-and-defend strategies, AI-bio risk.”，是了解AI 生物安全报道的高相关人物入口。",
+      "Vitalik Buterin 的节点简介涉及“d/acc; open-source defensive tech; AI-agent settlement layers on Ethereum; Deep Funding as di…”，是了解AI 生物安全报道的高相关人物入口。",
+      "David Manheim 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; multi_agent; other”，是了解AI 生物安全报道的高相关人物入口。",
+      "Association for Long Term Existence and Resilience 的节点简介涉及“AI safety|Biosecurity and pandemic preparedness; Organization in public AI Watch position dat…”，是了解AI 生物安全报道的高相关机构入口。",
+      "Carnegie Endowment for International Peace 的节点简介涉及“AI safety/governance; Biosecurity and pandemic preparedness; FIXME; International relations…”，是了解AI 生物安全报道的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f51",
+    "role": "curious",
+    "question": "我刚接触 AI 安全，先从哪些组织和人物逛起？",
+    "keywords": {
+      "zh": [
+        "AI安全入门",
+        "新手",
+        "关键组织",
+        "代表人物",
+        "学习路线",
+        "生态地图"
+      ],
+      "en": [
+        "AI safety beginner",
+        "newcomer",
+        "key organizations",
+        "leading people",
+        "learning path",
+        "ecosystem map"
+      ]
+    },
+    "top10": [
+      "oxford-ai-safety-initiative",
+      "ya-qin-zhang",
+      "cambridge-ai-safety-hub",
+      "jueyan-zhang",
+      "halcyon-futures",
+      "liang-fang",
+      "ai-safety-student-team-harvard",
+      "paul-christiano",
+      "alignment-project-fund",
+      "scott-emmons"
+    ],
+    "why": [
+      "Oxford AI Safety Initiative (OAISI) 的节点简介涉及“Runs technical and governance programmes intended to help Oxford students and researchers con…”，是了解AI 安全入门的高相关机构入口。",
+      "Zhang Ya-Qin (张亚勤) 的节点简介涉及“IDAIS; AI safety and governance interface between Chinese industry and the international scie…”，是了解AI 安全入门的高相关人物入口。",
+      "Cambridge AI Safety Hub (CAISH) 的节点简介涉及“Builds the Cambridge AI-safety community through technical and governance courses, mentored r…”，是了解AI 安全入门的高相关机构入口。",
+      "JueYan Zhang 的节点简介涉及“Fast, opportunistic grants across governance, technical alignment and evaluations/audit. 2026…”，是了解AI 安全入门的高相关人物入口。",
+      "Halcyon Futures 的节点简介涉及“AI safety and alignment, biosecurity, cybersecurity, governance and policy; founder support…”，是了解AI 安全入门的高相关人物入口。",
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解AI 安全入门的高相关人物入口。",
+      "AI Safety Student Team (AISST) 的节点简介涉及“Supports Harvard undergraduate and graduate students doing technical and policy research on c…”，是了解AI 安全入门的高相关机构入口。",
+      "Paul Christiano 的节点简介涉及“Low-probability estimation and mechanistic explanation of neural network behaviour (ARC); fed…”，是了解AI 安全入门的高相关人物入口。",
+      "The Alignment Project 的节点简介涉及“£27M+ global fund for AI alignment research. Backers: UK AISI, CAISI, CIFAR, Australian DISR…”，是了解AI 安全入门的高相关机构入口。",
+      "Scott Emmons 的节点简介涉及“Chain-of-thought monitorability and monitorability metrics; obfuscated activations vs latent-…”，是了解AI 安全入门的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f52",
+    "role": "curious",
+    "question": "What are the main camps in the AI risk debate?",
+    "keywords": {
+      "zh": [
+        "AI风险流派",
+        "阵营",
+        "存在风险",
+        "当前风险",
+        "加速主义",
+        "监管派"
+      ],
+      "en": [
+        "AI risk camps",
+        "schools of thought",
+        "existential risk",
+        "present harms",
+        "accelerationism",
+        "regulation camp"
+      ]
+    },
+    "top10": [
+      "cser",
+      "leverhulme-cfi",
+      "andrew-koh",
+      "inesia-france",
+      "ryan-carey",
+      "toby-ord",
+      "angus-mercer",
+      "brent-mittelstadt",
+      "josh-jacobson",
+      "kyle-scott"
+    ],
+    "why": [
+      "Centre for the Study of Existential Risk (CSER) 的节点简介涉及“AI:FAR (with CFI), global catastrophic risk, technology governance”，是了解AI 风险主要流派的高相关机构入口。",
+      "Leverhulme Centre for the Future of Intelligence (CFI) 的节点简介涉及“AI narratives and imaginaries, AI ethics, global/Southern perspectives on AI governance, AI:F…”，是了解AI 风险主要流派的高相关机构入口。",
+      "Andrew Koh 的节点简介涉及“AI-race and technology-regulation theory: 'Racing to Ruin' with Drew Fudenberg models R&D com…”，是了解AI 风险主要流派的高相关人物入口。",
+      "French National Institute for AI Evaluation and Security (INESIA) 的节点简介涉及“Coordinates French public expertise in AI regulation support, systemic-risk analysis, and eva…”，是了解AI 风险主要流派的高相关机构入口。",
+      "Ryan Carey 的节点简介涉及“Centre for the Study of Existential Risk; Future of Humanity Institute; Machine Intelligence…”，是了解AI 风险主要流派的高相关人物入口。",
+      "Toby Ord 的节点简介涉及“Existential risk and the long-term trajectory of humanity, with current focus on AI; based in…”，是了解AI 风险主要流派的高相关人物入口。",
+      "Angus Mercer 的节点简介涉及“UK risk policy and AI regulation advocacy”，是了解AI 风险主要流派的高相关人物入口。",
+      "Brent Mittelstadt 的节点简介涉及“How AI-mediated communication shifts collective opinion; methodological standards for using L…”，是了解AI 风险主要流派的高相关人物入口。",
+      "Josh Jacobson 的节点简介涉及“Alignment Research Center; Berkeley Existential Risk Initiative; Centre for Effective Altruis…”，是了解AI 风险主要流派的高相关人物入口。",
+      "Kyle Scott 的节点简介涉及“Alignment Research Center; Berkeley Existential Risk Initiative; Center for Applied Rationali…”，是了解AI 风险主要流派的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f53",
+    "role": "curious",
+    "question": "想看最有影响力的 AI 安全实验室和研究机构，有哪些？",
+    "keywords": {
+      "zh": [
+        "AI安全实验室",
+        "研究机构",
+        "前沿实验室",
+        "对齐团队",
+        "治理中心",
+        "影响力"
+      ],
+      "en": [
+        "AI safety labs",
+        "research organizations",
+        "frontier labs",
+        "alignment teams",
+        "governance centers",
+        "influence"
+      ]
+    },
+    "top10": [
+      "ben-goldhaber",
+      "ben-hoskin",
+      "rob-bensinger",
+      "paul-christiano",
+      "noam-kolt",
+      "lawzero",
+      "anastasiia-gaidashenko",
+      "wojciech-zaremba",
+      "deepmind",
+      "adria-garriga-alonso"
+    ],
+    "why": [
+      "Ben Goldhaber 的节点简介涉及“Center for Applied Rationality; Coefficient Giving; FAR.AI; Fund for Alignment Research; Ough…”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Ben Hoskin 的节点简介涉及“Alignment Research Center; Machine Intelligence Research Institute”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Rob Bensinger 的节点简介涉及“127 posts on LessWrong, 15 of them on the Alignment Forum; 27 with 100+ karma. Forum karma 23…”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Paul Christiano 的节点简介涉及“Low-probability estimation and mechanistic explanation of neural network behaviour (ARC); fed…”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Noam Kolt 的节点简介涉及“Principal-agent economics and common-law agency doctrine applied to AI agents; legal alignmen…”，是了解主要实验室与研究机构的高相关人物入口。",
+      "LawZero 的节点简介涉及“Building and evaluating a non-agentic guardrail model that can supervise agentic systems; rec…”，是了解主要实验室与研究机构的高相关机构入口。",
+      "Anastasiia Gaidashenko 的节点简介涉及“AI Safety Camp; AI Standards Lab; FAR.AI; Fund for Alignment Research”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Wojciech Zaremba 的节点简介涉及“Cross-lab safety evaluation as an industry norm; setting shared safety standards despite comp…”，是了解主要实验室与研究机构的高相关人物入口。",
+      "Google DeepMind 的节点简介涉及“Gemini frontier models; Frontier Safety Framework; AGI Safety & Alignment org; Frontier Strat…”，是了解主要实验室与研究机构的高相关机构入口。",
+      "Adrià Garriga-Alonso 的节点简介涉及“AI Safety Camp; Center on Long-Term Risk; FAR.AI; Fund for Alignment Research”，是了解主要实验室与研究机构的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f54",
+    "role": "curious",
+    "question": "AI 治理和技术对齐到底有什么区别，各看哪些节点？",
+    "keywords": {
+      "zh": [
+        "AI治理",
+        "技术对齐",
+        "区别",
+        "政策",
+        "技术安全",
+        "研究方向"
+      ],
+      "en": [
+        "AI governance",
+        "technical alignment",
+        "difference",
+        "policy",
+        "technical safety",
+        "research areas"
+      ]
+    },
+    "top10": [
+      "fazl-barez",
+      "seb-krier",
+      "americans-for-responsible-innovation",
+      "luke-muehlhauser",
+      "un-high-level-advisory-body-on-ai",
+      "united-nations-ai-governance",
+      "baobao-zhang",
+      "oscar-delaney",
+      "michelle-nie",
+      "ai-safety-student-team-harvard"
+    ],
+    "why": [
+      "Fazl Barez 的节点简介涉及“Technical AI safety governance: interpretability, evaluations and auditing translated into go…”，是了解治理与技术对齐的高相关人物入口。",
+      "Seb Krier 的节点简介涉及“Governance of frontier AI; international institutions for advanced AI; a personal speculative…”，是了解治理与技术对齐的高相关人物入口。",
+      "Americans for Responsible Innovation (ARI) 的节点简介涉及“Bipartisan advocacy for AI governance addressing current harms, national security, and emergi…”，是了解治理与技术对齐的高相关机构入口。",
+      "Luke Muehlhauser 的节点简介涉及“Runs Coefficient's AI governance and international policy grantmaking; team includes Alex Law…”，是了解治理与技术对齐的高相关人物入口。",
+      "UN Secretary-General’s High-level Advisory Body on AI 的节点简介涉及“Analyzed international AI governance and recommended a global scientific panel and an inclusi…”，是了解治理与技术对齐的高相关机构入口。",
+      "United Nations AI Governance 的节点简介涉及“Umbrella for UN multilateral cooperation on artificial intelligence governance, including sci…”，是了解治理与技术对齐的高相关机构入口。",
+      "Baobao Zhang (张宝宝) 的节点简介涉及“Public opinion on AI, AI governance, social policy”，是了解治理与技术对齐的高相关人物入口。",
+      "Oscar Delaney 的节点简介涉及“AI policy and governance grantmaking at Macroscopic”，是了解治理与技术对齐的高相关人物入口。",
+      "Michelle Nie 的节点简介涉及“AI and competition policy, public-sector AI capacity building, AI and the rule of law, and AI…”，是了解治理与技术对齐的高相关人物入口。",
+      "AI Safety Student Team (AISST) 的节点简介涉及“Supports Harvard undergraduate and graduate students doing technical and policy research on c…”，是了解治理与技术对齐的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f55",
+    "role": "curious",
+    "question": "谁在研究 AI 会不会有意识、是否值得道德关怀？",
+    "keywords": {
+      "zh": [
+        "AI意识",
+        "道德关怀",
+        "模型福利",
+        "感知",
+        "数字心智",
+        "机器心灵"
+      ],
+      "en": [
+        "AI consciousness",
+        "moral consideration",
+        "model welfare",
+        "sentience",
+        "digital minds",
+        "machine minds"
+      ]
+    },
+    "top10": [
+      "lucius-caviola",
+      "jeff-sebo",
+      "butlin",
+      "nyu-center-mind-ethics-policy",
+      "forethought",
+      "lowe-lundin",
+      "simon-goldstein",
+      "kyle-fish",
+      "samuel-hammond",
+      "zach-freitas-groff"
+    ],
+    "why": [
+      "Lucius Caviola 的节点简介涉及“Societal impact of AI and the psychology of moral judgement; digital minds, expert forecastin…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Jeff Sebo 的节点简介涉及“The moral status and welfare of nonhuman minds including AI systems; AI welfare policy; emoti…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Patrick Butlin 的节点简介涉及“Philosophy of mind at Eleos: AI consciousness, agency, moral patienthood and welfare-relevant…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "NYU Center for Mind, Ethics, and Policy 的节点简介涉及“AI moral status and welfare; consciousness indicators; emotional-alignment design policy.”，是了解AI 意识与道德关怀的高相关机构入口。",
+      "Forethought 的节点简介涉及“Navigating the transition to superintelligence; AI-enabled coups; digital minds; improving co…”，是了解AI 意识与道德关怀的高相关机构入口。",
+      "Lowe Lundin 的节点简介涉及“Standing up a new AI-focused fund: technical AI safety, AI governance incl. post-AGI governan…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Simon Goldstein 的节点简介涉及“Individuation and liability for AI agents ('How to Count AIs', arXiv:2603.10028 / SSRN:627319…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Kyle Fish 的节点简介涉及“Model welfare evaluations and mitigations; Claude's nature section of the constitution”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Samuel Hammond 的节点简介涉及“Empiricists vs Extrapolators (Feb 2026); AI consciousness (May 2026); 'The Sorcerer's Apprent…”，是了解AI 意识与道德关怀的高相关人物入口。",
+      "Zach Freitas-Groff 的节点简介涉及“Digital minds research and field-building; 'Field-building.”，是了解AI 意识与道德关怀的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f56",
+    "role": "curious",
+    "question": "Where can I follow forecasts about AGI timelines and AI progress?",
+    "keywords": {
+      "zh": [
+        "AGI时间线",
+        "AI进展预测",
+        "预测平台",
+        "能力趋势",
+        "专家调查",
+        "概率"
+      ],
+      "en": [
+        "AGI timelines",
+        "AI progress forecasts",
+        "forecasting platforms",
+        "capability trends",
+        "expert surveys",
+        "probability"
+      ]
+    },
+    "top10": [
+      "mit-futuretech",
+      "lucius-caviola",
+      "transformative-ai-fund",
+      "jaime-sevilla",
+      "lowe-lundin",
+      "beth-barnes",
+      "nate-silver",
+      "shane-legg",
+      "yoav-shoham",
+      "steinhardt"
+    ],
+    "why": [
+      "MIT FutureTech 的节点简介涉及“Studies technical and economic trends in computing and AI, including AI progress, labor impac…”，是了解AGI 时间线与预测的高相关机构入口。",
+      "Lucius Caviola 的节点简介涉及“Societal impact of AI and the psychology of moral judgement; digital minds, expert forecastin…”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Transformative AI Fund (EA Funds) 的节点简介涉及“Early-stage grants to individuals, new organisations and existing organisations starting some…”，是了解AGI 时间线与预测的高相关机构入口。",
+      "Jaime Sevilla 的节点简介涉及“Measuring drivers of AI progress, capabilities and economic impact; independent benchmarks”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Lowe Lundin 的节点简介涉及“Standing up a new AI-focused fund: technical AI safety, AI governance incl. post-AGI governan…”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Beth Barnes 的节点简介涉及“Scientific methods for assessing catastrophic risks from AI autonomy; task-length capability…”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Nate Silver 的节点简介涉及“Forecasting, prediction markets, 'River vs Village' analysis of risk-taking elites.”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Shane Legg 的节点简介涉及“AGI timelines and definitions; safeguarding processes against extreme AGI risk; sponsorship o…”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Yoav Shoham 的节点简介涉及“AI21's reasoning/agent products; measurement of AI progress through the AI Index; long-standi…”，是了解AGI 时间线与预测的高相关人物入口。",
+      "Jacob Steinhardt 的节点简介涉及“Open-source model auditing and behaviour elicitation at Transluce; forecasting rare and emerg…”，是了解AGI 时间线与预测的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f57",
+    "role": "curious",
+    "question": "中国 AI 安全圈有哪些适合继续探索的入口？",
+    "keywords": {
+      "zh": [
+        "中国AI安全圈",
+        "中文资源",
+        "研究组织",
+        "治理网络",
+        "北京",
+        "社区"
+      ],
+      "en": [
+        "China AI safety community",
+        "Chinese resources",
+        "research organizations",
+        "governance network",
+        "Beijing",
+        "community"
+      ]
+    },
+    "top10": [
+      "yi-zeng-casia",
+      "liang-fang",
+      "cnaisda",
+      "concordia-ai",
+      "baai",
+      "zhipu-ai",
+      "irene-zhang-chinatalk",
+      "jeffrey-ding",
+      "huey-meei-chang",
+      "lily-ottinger"
+    ],
+    "why": [
+      "Zeng Yi (曾毅) 的节点简介涉及“AI safety and ethics governance in China; international AI safety dialogue; brain-inspired AI…”，是了解中国 AI 安全探索入口的高相关人物入口。",
+      "Liang Fang (方亮) 的节点简介涉及“Chinese AI policy advisory; domestic AI safety standards and governance engagement; Concordia…”，是了解中国 AI 安全探索入口的高相关人物入口。",
+      "China AI Safety and Development Association (CnAISDA, 中国人工智能发展与安全研究网络) 的节点简介涉及“Representing China in the international AI-safety-institute network; the interface used at Pa…”，是了解中国 AI 安全探索入口的高相关机构入口。",
+      "Concordia AI 安远AI 的节点简介涉及“Research, convenings, consulting for AI companies and policymakers, national/global standards…”，是了解中国 AI 安全探索入口的高相关机构入口。",
+      "Beijing Academy of Artificial Intelligence (BAAI, 北京智源人工智能研究院) 的节点简介涉及“The BAAI annual conference remains the main open Chinese venue where AI-safety content is pro…”，是了解中国 AI 安全探索入口的高相关机构入口。",
+      "Zhipu AI / Z.ai (智谱) 的节点简介涉及“GLM model family; the first listed pure-play Chinese LLM company.”，是了解中国 AI 安全探索入口的高相关机构入口。",
+      "Irene Zhang 的节点简介涉及“Chinese AI labs, data labelling, synthetic data, evaluation scepticism”，是了解中国 AI 安全探索入口的高相关人物入口。",
+      "Jeffrey Ding (丁昱) 的节点简介涉及“Diffusion (rather than innovation) as the driver of AI's effect on national power; Chinese AI…”，是了解中国 AI 安全探索入口的高相关人物入口。",
+      "Huey-Meei Chang 的节点简介涉及“Chinese science-and-technology analysis; the CSET translation programme”，是了解中国 AI 安全探索入口的高相关人物入口。",
+      "Lily Ottinger 的节点简介涉及“Chinese AI labs, export controls, editing ChinaTalk's commissioning pipeline”，是了解中国 AI 安全探索入口的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f58",
+    "role": "curious",
+    "question": "AI 风险的反对者和怀疑者都在批评什么？",
+    "keywords": {
+      "zh": [
+        "AI风险反对者",
+        "怀疑者",
+        "批评",
+        "末日论",
+        "监管成本",
+        "当前伤害"
+      ],
+      "en": [
+        "AI risk opponents",
+        "skeptics",
+        "criticism",
+        "doom narratives",
+        "regulatory costs",
+        "present harms"
+      ]
+    },
+    "top10": [
+      "peter-thiel",
+      "john-tasioulas",
+      "michael-gibson",
+      "timnit-gebru",
+      "eric-weinstein",
+      "garrison-lovely",
+      "lesswrong",
+      "jaan-tallinn",
+      "clr",
+      "future-of-humanity-institute"
+    ],
+    "why": [
+      "Peter Thiel 的节点简介涉及“Theological-political argument that safetyism and world government are the real danger; AI SK…”，是了解AI 风险反对观点的高相关人物入口。",
+      "John Tasioulas 的节点简介涉及“Human rights, the philosophy of law, and humanistic critiques of technocratic AI ethics; 2026…”，是了解AI 风险反对观点的高相关人物入口。",
+      "Michael Gibson 的节点简介涉及“Funding uncredentialed and dropout founders; deep tech; the critique of credentialism”，是了解AI 风险反对观点的高相关人物入口。",
+      "Timnit Gebru 的节点简介涉及“Community-rooted AI research; critique of scale and of the TESCREAL bundle; a specific 2026 t…”，是了解AI 风险反对观点的高相关人物入口。",
+      "Eric Weinstein 的节点简介涉及“Institutional critique of science and academia; heterodox physics; podcast commentary”，是了解AI 风险反对观点的高相关人物入口。",
+      "Garrison Lovely 的节点简介涉及“Labour and political-economy critique of the AI industry; book promotion (The Nation ran an o…”，是了解AI 风险反对观点的高相关人物入口。",
+      "LessWrong 的节点简介涉及“Community blog on rationality and AI risk, run by Lightcone Infrastructure”，是了解AI 风险反对观点的高相关机构入口。",
+      "Jaan Tallinn 的节点简介涉及“~$150M directed via SFF to 300+ projects; $51M endpoint grants in 2024; shifting from technic…”，是了解AI 风险反对观点的高相关人物入口。",
+      "CLR (Center on Long-Term Risk) 的节点简介涉及“CLR (Center on Long-Term Risk)”，是了解AI 风险反对观点的高相关机构入口。",
+      "Future of Humanity Institute 的节点简介涉及“AI safety; Biosecurity and pandemic preparedness; Global catastrophic risks; Global catastrop…”，是了解AI 风险反对观点的高相关机构入口。"
+    ]
+  },
+  {
+    "id": "f59",
+    "role": "curious",
+    "question": "如果只想理解“算力为什么是治理抓手”，该看哪些节点？",
+    "keywords": {
+      "zh": [
+        "算力治理入门",
+        "芯片",
+        "云计算",
+        "数据中心",
+        "出口管制",
+        "算力监测"
+      ],
+      "en": [
+        "compute governance primer",
+        "chips",
+        "cloud computing",
+        "data centers",
+        "export controls",
+        "compute monitoring"
+      ]
+    },
+    "top10": [
+      "dario-amodei",
+      "lennart-heim",
+      "jensen-huang",
+      "marius-hobbhahn",
+      "david-krueger",
+      "govai",
+      "macroscopic-ventures",
+      "julian-stastny",
+      "oxford-martin-aigi",
+      "david-lindner"
+    ],
+    "why": [
+      "Dario Amodei 的节点简介涉及“Scaling Claude; IPO preparation; public advocacy for AI transparency regulation and chip expo…”，是了解算力治理入门的高相关人物入口。",
+      "Lennart Heim 的节点简介涉及“AI compute governance, semiconductor policy, technical verification, and empirical trends in…”，是了解算力治理入门的高相关人物入口。",
+      "Jensen Huang 的节点简介涉及“Selling compute to every frontier lab simultaneously (Anthropic, OpenAI, xAI, SSI, Thinking M…”，是了解算力治理入门的高相关人物入口。",
+      "Marius Hobbhahn 的节点简介涉及“Science of scheming; the Watcher production monitoring tool for coding agents; technical AI g…”，是了解算力治理入门的高相关人物入口。",
+      "David Krueger 的节点简介涉及“Advocacy to stop the race to superintelligence ('The simplest, most robust way would be to ce…”，是了解算力治理入门的高相关人物入口。",
+      "Centre for the Governance of AI (GovAI) 的节点简介涉及“Frontier AI regulation, compute governance, international governance, agent infrastructure, s…”，是了解算力治理入门的高相关机构入口。",
+      "Macroscopic Ventures 的节点简介涉及“Gave ~$30M in grants in 2025; states it plans to distribute up to $100M this year. Focus: AI…”，是了解算力治理入门的高相关机构入口。",
+      "Julian Stastny 的节点简介涉及“AI control protocols, untrusted-monitoring, control evaluations”，是了解算力治理入门的高相关人物入口。",
+      "Oxford Martin AI Governance Initiative (AIGI) 的节点简介涉及“Technical AI Governance Programme; international AI regimes; verification and compute governance”，是了解算力治理入门的高相关机构入口。",
+      "David Lindner 的节点简介涉及“Misalignment science; AI control and monitoring; capability and propensity evaluations”，是了解算力治理入门的高相关人物入口。"
+    ]
+  },
+  {
+    "id": "f60",
+    "role": "curious",
+    "question": "What should I read to understand AI incidents, failures, and real-world harms?",
+    "keywords": {
+      "zh": [
+        "AI事故",
+        "模型失败",
+        "现实伤害",
+        "事件数据库",
+        "安全案例",
+        "风险记录"
+      ],
+      "en": [
+        "AI incidents",
+        "model failures",
+        "real-world harms",
+        "incident database",
+        "safety cases",
+        "risk records"
+      ]
+    },
+    "top10": [
+      "jaime-raldua-veuthey",
+      "rohin-shah",
+      "sam-bowman",
+      "neel-nanda",
+      "tc260",
+      "alan-chan",
+      "zico-kolter",
+      "goodfire",
+      "evan-hubinger",
+      "peter-thiel"
+    ],
+    "why": [
+      "Jaime Raldúa Veuthey 的节点简介涉及“Apart's sprint-to-fellowship pipeline (next sprint: AI Incident Response, 11-13 Sep 2026); or…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Rohin Shah 的节点简介涉及“Technical AGI safety: misalignment and misuse threat models, amplified oversight, interpretab…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Sam Bowman 的节点简介涉及“Alignment safety cases; agentic misalignment case studies; alignment auditing benchmarks; men…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Neel Nanda 的节点简介涉及“Applying interpretability to real-world safety problems - deception detection, model biology…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "National Cybersecurity Standardization Technical Committee (TC260, 全国网络安全标准化技术委员会) 的节点简介涉及“Cybersecurity standards and guidance, including AI risk classification, model safety testing…”，是了解AI 事故与现实伤害的高相关机构入口。",
+      "Alan Chan 的节点简介涉及“Agent infrastructure (IDs, protocols, certification, rollback); incident analysis for AI agen…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Zico Kolter 的节点简介涉及“Adversarial robustness and safety evaluation of LLMs and agents: sample-efficient reliability…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Goodfire 的节点简介涉及“Builds interpretability agents and infrastructure to understand, monitor, and align advanced…”，是了解AI 事故与现实伤害的高相关机构入口。",
+      "Evan Hubinger 的节点简介涉及“Deceptive alignment, sleeper agents, model organisms of misalignment; regranting to independe…”，是了解AI 事故与现实伤害的高相关人物入口。",
+      "Peter Thiel 的节点简介涉及“Theological-political argument that safetyism and world government are the real danger; AI SK…”，是了解AI 事故与现实伤害的高相关人物入口。"
+    ]
+  }
+]
