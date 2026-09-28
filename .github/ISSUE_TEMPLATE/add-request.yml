@@ -1,0 +1,40 @@
+name: 添加条目 / Add an entry
+description: 提议添加公开人物、机构或关系 / Propose a public person, organisation, or relation
+title: "[Add]: "
+labels:
+  - add-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只提交公开信息。每条关系请给一个直接支持它的公开来源。
+        Submit public information only. Give each relation a public source that directly supports it.
+  - type: input
+    id: entry
+    attributes:
+      label: 条目 / Entry
+      description: 要添加的人物、机构或关系名称 / Name the person, organisation, or relation
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: 是谁或什么机构 / Who or what is it
+      description: 用一两句话说明公开身份及其与 AI 风险的关系 / Briefly explain the public role and relevance to AI risk
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 公开来源链接 / Public source URL
+      description: 必填；请链接到直接支持该事实的公开页面 / Required; link to a public page that directly supports the fact
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: relations
+    attributes:
+      label: 与哪些节点有什么关系 / Relations to existing nodes
+      description: 写清节点、关系类型、方向和时间；不同关系分别列出 / Name the nodes, relation type, direction, and date; list relations separately
+    validations:
+      required: true
