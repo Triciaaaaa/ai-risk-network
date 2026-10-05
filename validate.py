@@ -1,22 +1,88 @@
 #!/usr/bin/env python3
-"""CI check for pull requests: schema, unique ids, sourced edges, no contact details in text."""
-import json, re, sys, pathlib
+"""CI checks for the core graph and optional Atlas v2 data files."""
+import json
+import pathlib
+import re
+import sys
+
 P = pathlib.Path(__file__).resolve().parent
-nodes = json.load(open(P/'data/nodes.json')); edges = json.load(open(P/'data/edges.json'))
-errs = []; ids = set()
-for n in nodes:
-    for k in ('id', 'name', 'type', 'cluster'):
-        if not n.get(k): errs.append(f"node missing {k}: {n.get('id') or n}")
-    if n.get('type') not in ('person', 'org'): errs.append(f"bad type: {n.get('id')}")
-    if n.get('id') in ids: errs.append(f"duplicate id: {n['id']}")
-    ids.add(n.get('id'))
-    if n.get('url') and not n['url'].startswith(('http://', 'https://')): errs.append(f"non-web url on {n['id']}")
-    blob = ' '.join(str(n.get(k, '')) for k in ('affil', 'focus', 'writings'))
-    if re.search(r"[\w.+-]+@[\w-]+\.[\w.]+|\+\d{1,3}[ -]?\(?\d{2,4}\)?[ -]?\d{3,4}[ -]?\d{3,4}|\(?\d{3}\)?[ -]\d{3}-\d{4}", blob): errs.append(f"contact detail in text of {n['id']}")
-for e in edges:
-    if e.get('s') not in ids or e.get('t') not in ids: errs.append(f"edge with unknown endpoint: {e.get('s')} -> {e.get('t')}")
-    if not e.get('label'): errs.append(f"edge without label: {e.get('s')} -> {e.get('t')}")
-    if e.get('u') and not e['u'].startswith(('http://', 'https://')): errs.append(f"edge source must be a web URL: {e.get('s')} -> {e.get('t')}")
-for x in errs[:50]: print('ERROR', x)
+DATA_DIR = P / "data"
+
+
+def load(path):
+    with path.open(encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+nodes = load(DATA_DIR / "nodes.json")
+edges = load(DATA_DIR / "edges.json")
+errs = []
+ids = set()
+for node in nodes:
+    for key in ("id", "name", "type", "cluster"):
+        if not node.get(key):
+            errs.append(f"node missing {key}: {node.get('id') or node}")
+    if node.get("type") not in ("person", "org"):
+        errs.append(f"bad type: {node.get('id')}")
+    if node.get("id") in ids:
+        errs.append(f"duplicate id: {node['id']}")
+    ids.add(node.get("id"))
+    if node.get("url") and not node["url"].startswith(("http://", "https://")):
+        errs.append(f"non-web url on {node['id']}")
+    blob = " ".join(str(node.get(key, "")) for key in ("affil", "focus", "writings"))
+    if re.search(r"[\w.+-]+@[\w-]+\.[\w.]+|\+\d{1,3}[ -]?\(?\d{2,4}\)?[ -]?\d{3,4}[ -]?\d{3,4}|\(?\d{3}\)?[ -]\d{3}-\d{4}", blob):
+        errs.append(f"contact detail in text of {node['id']}")
+
+for edge in edges:
+    if edge.get("s") not in ids or edge.get("t") not in ids:
+        errs.append(f"edge with unknown endpoint: {edge.get('s')} -> {edge.get('t')}")
+    if not edge.get("label"):
+        errs.append(f"edge without label: {edge.get('s')} -> {edge.get('t')}")
+    if edge.get("u") and not edge["u"].startswith(("http://", "https://")):
+        errs.append(f"edge source must be a web URL: {edge.get('s')} -> {edge.get('t')}")
+
+topics_path = DATA_DIR / "topics.json"
+if topics_path.exists():
+    topics = load(topics_path)
+    topic_ids = {
+        item.get("id") if isinstance(item, dict) else item[0]
+        for item in topics.get("taxonomy", [])
+        if (isinstance(item, dict) and item.get("id")) or (isinstance(item, list) and item)
+    }
+    for node_id, values in topics.get("nodes", {}).items():
+        if node_id not in ids:
+            errs.append(f"topics.json has unknown node id: {node_id}")
+        if not isinstance(values, dict):
+            errs.append(f"topics.json values must be an object: {node_id}")
+            continue
+        for topic_id, probability in values.items():
+            if topic_id not in topic_ids:
+                errs.append(f"topics.json has unknown topic id: {node_id} -> {topic_id}")
+            if not isinstance(probability, (int, float)) or not 0 <= probability <= 1:
+                errs.append(f"topics.json has bad probability: {node_id} -> {topic_id} = {probability}")
+
+history_path = DATA_DIR / "history.json"
+if history_path.exists():
+    history_data = load(history_path)
+    for node_id, value in history_data.get("nodes", {}).items():
+        if node_id not in ids:
+            errs.append(f"history.json has unknown node id: {node_id}")
+        if not isinstance(value, dict):
+            errs.append(f"history.json values must be an object: {node_id}")
+
+aliases_path = DATA_DIR / "aliases_zh.json"
+if aliases_path.exists():
+    aliases = load(aliases_path)
+    if not isinstance(aliases, dict):
+        errs.append("aliases_zh.json must be an object")
+    else:
+        for node_id, values in aliases.items():
+            if node_id not in ids:
+                errs.append(f"aliases_zh.json has unknown node id: {node_id}")
+            if not isinstance(values, list) or not all(isinstance(value, str) and value.strip() for value in values):
+                errs.append(f"aliases_zh.json aliases must be non-empty strings: {node_id}")
+
+for error in errs[:50]:
+    print("ERROR", error)
 print(f"{len(nodes)} nodes, {len(edges)} edges, {len(errs)} errors")
 sys.exit(1 if errs else 0)
