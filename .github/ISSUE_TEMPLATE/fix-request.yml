@@ -1,0 +1,40 @@
+name: 修正数据 / Correct data
+description: 报告不准确的节点或关系 / Report an inaccurate node or relation
+title: "[Fix]: "
+labels:
+  - fix-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请指出具体事实，并给出可核查的公开来源。
+        Identify the specific fact and provide a verifiable public source.
+  - type: input
+    id: target
+    attributes:
+      label: 节点或关系 / Node or relation
+      description: 写节点名称，或“节点 A → 节点 B” / Give the node name or “Node A → Node B”
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪里不准确 / What is inaccurate
+      description: 引用或概述当前内容 / Quote or summarise the current record
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 应改为 / Proposed correction
+      description: 写明应修改或删除的内容 / State what should be changed or removed
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源链接 / Source URL
+      description: 链接到直接支持修正内容的公开页面 / Link to a public page that directly supports the correction
+      placeholder: https://
+    validations:
+      required: true

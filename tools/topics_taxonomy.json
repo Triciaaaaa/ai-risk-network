@@ -1,0 +1,158 @@
+[
+[
+"interp",
+"可解释性",
+"Interpretability",
+"interpretability of neural networks, including mechanistic interpretability"
+],
+[
+"evals",
+"评测与红队",
+"Evals & red-teaming",
+"evaluating AI capabilities or safety: dangerous-capability evaluations, red-teaming, benchmarks"
+],
+[
+"control",
+"AI 控制与监控",
+"AI control & monitoring",
+"the specific 'AI control' research agenda: keeping AI systems safe even if they are misaligned, e.g. trusted monitoring, control evaluations, detecting scheming or sabotage (as done at Redwood Research)"
+],
+[
+"alignment",
+"对齐方法",
+"Alignment methods",
+"alignment training methods such as RLHF, scalable oversight, reward modelling, value learning, honesty"
+],
+[
+"agent_foundations",
+"智能体基础",
+"Agent foundations",
+"agent foundations, decision theory, embedded agency, mathematical or theoretical alignment"
+],
+[
+"corrigibility",
+"可纠正性",
+"Corrigibility",
+"corrigibility, the shutdown problem, interruptibility, deference to human correction"
+],
+[
+"robustness",
+"鲁棒与对抗",
+"Robustness & jailbreaks",
+"adversarial robustness, jailbreaks, prompt injection, attacks on models"
+],
+[
+"ai_security",
+"AI 安全防护",
+"AI security",
+"cybersecurity for AI: protecting model weights, AI-enabled cyber risk, information security"
+],
+[
+"welfare",
+"模型福利",
+"Model welfare",
+"AI welfare, AI consciousness or sentience, the moral status of AI systems"
+],
+[
+"forecasting",
+"预测",
+"Forecasting",
+"forecasting AI progress, AI timelines, trend analysis, prediction markets, scenario writing"
+],
+[
+"governance",
+"治理与政策",
+"Governance & policy",
+"AI governance and public policy in general"
+],
+[
+"compute",
+"算力治理",
+"Compute governance",
+"compute governance, AI chips, semiconductors, export controls, data centres"
+],
+[
+"international",
+"国际协调",
+"International coordination",
+"international AI coordination: treaties, AI summits, US-China dialogue, UN or OECD processes"
+],
+[
+"law",
+"法律与立法",
+"Law & legislation",
+"AI law, liability, legislation and regulation such as the EU AI Act or California SB 1047"
+],
+[
+"standards",
+"标准与审计",
+"Standards & audits",
+"AI standards, audits, safety frameworks, third-party or government evaluation institutes"
+],
+[
+"bio",
+"生物安全",
+"Biosecurity",
+"biosecurity, pandemics, AI-enabled chemical or biological misuse"
+],
+[
+"funding",
+"资助与投资",
+"Funding & investment",
+"grantmaking, philanthropy, or investing in AI safety work or AI companies"
+],
+[
+"fieldbuilding",
+"人才与社区",
+"Field-building",
+"field-building: training programmes, fellowships, courses, reading groups, community building, mentoring"
+],
+[
+"communication",
+"传播与写作",
+"Communication & media",
+"public communication about AI as a main activity: journalism, writing books or newsletters, podcasts, video, science outreach"
+],
+[
+"advocacy",
+"倡导运动",
+"Advocacy",
+"advocacy and campaigning about AI risk, for example calls to pause or regulate AI, public mobilisation"
+],
+[
+"frontier_dev",
+"前沿模型研发",
+"Frontier AI development",
+"building frontier AI models, or being a frontier AI developer company"
+],
+[
+"china",
+"中国相关",
+"China",
+"China-related: based in China, part of the Chinese AI ecosystem, or focused on China's AI policy"
+],
+[
+"ethics",
+"伦理与现时伤害",
+"Ethics & present harms",
+"AI ethics, fairness, bias, present-day harms, rights, accountability"
+],
+[
+"open_source",
+"开源",
+"Open source",
+"open-source or open-weight AI development or advocacy"
+],
+[
+"xrisk",
+"灾难与存亡风险",
+"Catastrophic & existential risk",
+"catastrophic or existential risk from advanced AI as an explicit focus"
+],
+[
+"economics",
+"经济与社会影响",
+"Economic & societal impact",
+"economic and labour impacts of AI, power concentration, how AI transforms society"
+]
+]

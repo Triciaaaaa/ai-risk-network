@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+type: software
+title: "AI Risk Network"
+abstract: "An interactive, source-backed public graph and downloadable dataset of people, organisations, and relations in the AI-risk field."
+authors:
+  - name: "AI Risk Network contributors"
+repository-code: "https://github.com/Triciaaaaa/ai-risk-network"
+url: "https://triciaaaaa.github.io/ai-risk-network/"
+license: MIT
+date-released: 2026-09-28
+keywords:
+  - AI risk
+  - network graph
+  - open data
+  - research infrastructure
+  - data visualization
