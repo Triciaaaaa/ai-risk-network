@@ -1,0 +1,2848 @@
+[
+ {
+  "id": "f01",
+  "role": "research",
+  "question": "我想做机械可解释性，应该先关注哪些团队和研究者？",
+  "keywords": {
+   "zh": [
+    "机械可解释性",
+    "可解释性",
+    "神经网络内部",
+    "特征",
+    "回路",
+    "稀疏自编码器",
+    "模型解释"
+   ],
+   "en": [
+    "mechanistic interpretability",
+    "interpretability",
+    "circuits",
+    "features",
+    "sparse autoencoder",
+    "model internals",
+    "representation"
+   ]
+  },
+  "top10": [
+   "chris-olah",
+   "neel-nanda",
+   "jack-lindsey",
+   "zhonghao-he",
+   "encode",
+   "goodfire",
+   "transformer-lens",
+   "rohin-shah",
+   "lawrence-chan",
+   "thinking-machines-lab"
+  ],
+  "why": [
+   "Anthropic 联合创始人，长期做机械可解释性，写过 Transformer Circuits，还提出 AI 助手本质上是 persona 选择的观点。",
+   "他带 Google DeepMind 的机械可解释性团队，把可解释性用在欺骗检测、模型生物学和线上系统监控上，也担任 MATS 导师。",
+   "Anthropic 可解释性团队研究员，研究模型心理与 persona、模型内省和电路分析，是机械可解释性一线的研究视角。",
+   "剑桥大学 AI 伦理与社会方向的硕士生，兴趣横跨机械可解释性、神经科学和人机交互，适合看跨学科思路，近况未核实。",
+   "美国非营利 AI 政策倡导组织，原名 Encode Justice，由青年主导推动 AI 立法，议题包括模型问责、可解释性和硬件安全。",
+   "旧金山的公益公司兼可解释性研究实验室，开发可解释性 agent 和基础设施，用于模型审计、红队测试和失败模式识别。",
+   "Neel Nanda 创建的开源机械可解释性库，现由 Bryce Meyer 等人维护，能加载语言模型、查看和修改内部激活，适合上手做实验。",
+   "Google DeepMind AGI 对齐与安全负责人，研究包括可解释性和思维链可监控性，能把机械可解释性放回整体安全图景里看。",
+   "FAR.AI 的董事会成员，研究方向是评测与可解释性的方法论，适合了解这两块工作如何配合。",
+   "做多模态、强化学习和基础设施的实验室，公开强调人类监督和可解释性，希望模型能解释自己的推理。"
+  ]
+ },
+ {
+  "id": "f02",
+  "role": "research",
+  "question": "有哪些人在做危险能力评测和安全基准？",
+  "keywords": {
+   "zh": [
+    "危险能力评测",
+    "模型评测",
+    "安全基准",
+    "红队",
+    "能力测试",
+    "审计",
+    "基准测试"
+   ],
+   "en": [
+    "dangerous capability evals",
+    "model evaluations",
+    "safety benchmarks",
+    "red teaming",
+    "capability testing",
+    "auditing",
+    "benchmark"
+   ]
+  },
+  "top10": [
+   "deedy-das",
+   "steinhardt",
+   "ai-safety-fund",
+   "transluce",
+   "natasha-crampton",
+   "anka-reuel",
+   "zico-kolter",
+   "irene-solaiman",
+   "ariel-procaccia",
+   "hoda-heidari"
+  ],
+  "why": [
+   "Menlo Ventures 合伙人，关注早期 AI 和基础设施投资，经常公开评论模型能力、基准和评测，是投资圈的视角。",
+   "Transluce 联合创始人、伯克利统计系助理教授，做开源模型审计和行为引出，也预测稀有和涌现的模型行为。",
+   "由 Frontier Model Forum 管理的安全研究基金，资助前沿模型风险研究，包括标准化第三方评测、红队测试和基准。",
+   "伯克利和旧金山的非营利组织，做开源模型审计和行为引出，专门挖稀有和意外的模型行为，并建公共评测基础设施。",
+   "微软首席负责任 AI 官，推动评测工具和自适应的负责任 AI 标准，还对接多国 AI 安全研究所和 18 所大学的外部红队联盟。",
+   "斯坦福计算机系博士生，同时在两个实验室做研究，关心评测是否真测到了它声称的东西，以及基准的失效与饱和。",
+   "CMU 教授、机器学习系主任，联合创办 Gray Swan，研究大模型与 agent 的对抗鲁棒性和安全评测，包括基准饱和后怎么测。",
+   "Hugging Face 首席政策官，关心基准饱和和评测结果的持久性，推动建立社区共用的评测结果规范和仓库。",
+   "哈佛计算机教授，用社会选择理论给 AI 评测打基础，提出最大彩票、多元排行榜和轻量基准的代表性指标等方案。",
+   "CMU 教授，研究通用 AI 的风险与收益评估，做第三方保证与审查、加入 persona 的基准测试和开放性的经济建模。"
+  ]
+ },
+ {
+  "id": "f03",
+  "role": "research",
+  "question": "AI control 到底有哪些值得跟进的研究路线？",
+  "keywords": {
+   "zh": [
+    "AI控制",
+    "控制评估",
+    "不可信模型",
+    "监控",
+    "沙箱",
+    "遏制",
+    "破坏行为"
+   ],
+   "en": [
+    "AI control",
+    "control evaluations",
+    "untrusted models",
+    "monitoring",
+    "sandboxing",
+    "containment",
+    "sabotage"
+   ]
+  },
+  "top10": [
+   "julian-stastny",
+   "buck-shlegeris",
+   "david-lindner",
+   "fabien-roger",
+   "joe-benton",
+   "he-he-nyu",
+   "gdm-mats-stream",
+   "neel-nanda",
+   "uk-aisi",
+   "ryan-greenblatt"
+  ],
+  "why": [
+   "Redwood Research 研究员，做 AI 控制协议、不可信模型监控和控制评测，也担任 Constellation Astra 的导师。",
+   "Redwood Research 的创始人和 CEO，做 AI 控制和不可信模型协议，还为前沿实验室提供控制相关的咨询。",
+   "Google DeepMind 研究员，研究失准科学、AI 控制与监控、能力和倾向评测，是控制路线在大实验室里的代表。",
+   "Anthropic 对齐科学团队研究员，做 AI 控制、谎言检测和破坏风险，关注模型不诚实时该怎么办。",
+   "Anthropic 对齐科学团队研究员，负责破坏评测和概念推理基准，也管理对外的合作研究。",
+   "纽约大学副教授，研究大语言模型的工作原理和潜在风险，覆盖控制、监控和监督这条线。",
+   "MATS 项目与 Google DeepMind 合办的研究流，2026 秋季聚焦权谋倾向评测和 AI 控制的研究训练，适合找入门课题。",
+   "他带 Google DeepMind 的可解释性团队，把监控部署中的模型和欺骗检测落到实用，是控制路线里偏务实的一支。",
+   "英国政府的 AI 安全研究所，有一百多名技术人员，做评测、安全防护、AI 控制与自主性研究，还发外部资助。",
+   "Redwood Research 首席科学家，研究 AI 控制协议、权谋与假装对齐，以及接管类的威胁模型。"
+  ]
+ },
+ {
+  "id": "f04",
+  "role": "research",
+  "question": "做 scalable oversight 和对齐研究，我该从谁的工作读起？",
+  "keywords": {
+   "zh": [
+    "可扩展监督",
+    "对齐",
+    "弱监督强模型",
+    "辩论",
+    "递归监督",
+    "奖励模型",
+    "人类反馈"
+   ],
+   "en": [
+    "scalable oversight",
+    "alignment",
+    "weak-to-strong",
+    "debate",
+    "recursive supervision",
+    "reward models",
+    "human feedback"
+   ]
+  },
+  "top10": [
+   "jan-leike",
+   "jiaxin-wen",
+   "yanchen-liu",
+   "dylan-hadfield-menell",
+   "geoffrey-irving",
+   "evan-hubinger",
+   "rohin-shah",
+   "samuel-marks",
+   "acs-research",
+   "casper"
+  ],
+  "why": [
+   "Anthropic 对齐科学团队的研究者，做可扩展监督、自动化的对齐研究和 agent 失准的缓解，也参与 Fellows 项目。",
+   "伯克利博士生、Anthropic 兼职研究员和 Fellows 项目毕业生，做语言模型的对齐失败、弱到强泛化和引出。",
+   "MIT CSAIL 算法对齐组的博士生，研究方向是超人类 AI 系统的可扩展监督与监督，和这个问题直接对口。",
+   "MIT 算法对齐组的研究者，组内工作覆盖解读模型内部、稳健地从人类反馈中学习，以及用多智能体结构做监督。",
+   "Resolution 首席科学家，曾任英国 AI 安全研究所首席科学家，他的工作属于 debate 这条可扩展监督的脉络。",
+   "Anthropic 对齐压力测试方向的研究者，做欺骗性对齐、sleeper agents 和失准的模型有机体，也向独立研究者转拨资助。",
+   "Google DeepMind AGI 对齐与安全负责人，做放大监督、思维链可监控性和威胁模型，正是可扩展监督的核心议题。",
+   "Anthropic 对齐科学团队研究员，做对齐审计、隐藏目标，以及模型规范训练能否泛化的问题。",
+   "布拉格查理大学的理论研究中心，研究人与 AI 混合的多智能体系统和合作的数学理论，还有 LLM 心理与社会学小组。",
+   "MIT 算法对齐组的毕业生，现在哈佛肯尼迪学院任助理教授，参与过模型篡改攻击和潜在对抗训练的论文。"
+  ]
+ },
+ {
+  "id": "f05",
+  "role": "research",
+  "question": "Who is working on formal verification and provably safe AI?",
+  "keywords": {
+   "zh": [
+    "形式化验证",
+    "可证明安全",
+    "验证式AI",
+    "定理证明",
+    "安全保证",
+    "形式化方法"
+   ],
+   "en": [
+    "formal verification",
+    "provably safe AI",
+    "verified AI",
+    "theorem proving",
+    "safety guarantees",
+    "formal methods"
+   ]
+  },
+  "top10": [
+   "david-dalrymple",
+   "richardson",
+   "steve-omohundro",
+   "cameron-winklevoss",
+   "remmelt-ellen",
+   "tom-everitt",
+   "michael-k-cohen",
+   "alessandro-abate",
+   "safe-trusted-ai-cdt",
+   "yonadav-shavit"
+  ],
+  "why": [
+   "ARIA Safeguarded AI 项目的项目主任，研究有保证的安全 AI，以及用 AI agent 群对网络和信息物理系统做形式化验证。",
+   "LawZero 的高级研究员、蒙特利尔大学博士后，用概率依赖图和形式化方法研究非 agent 式的 Scientist AI。",
+   "Beneficial AI Research 创始人，提出 Safe-AI Scaffolding：先从可证明安全的受限系统做起，再造更强的系统。",
+   "Gemini 联合创始人，但资料里没有他参与形式化验证或安全 AI 的记录，他的标签是比特币和政治立场。",
+   "AI Safety Camp 的组织者，做关于 AGI 可控性的形式化推理，营里还有线上 Research Incubator，适合找同行。",
+   "Google DeepMind 研究员、因果激励工作组负责人，做安全 AGI 的因果基础、形式化的激励分析、奖励篡改和诚实保证。",
+   "在伯克利 CHAI 跟 Stuart Russell 做过博士后，研究可证明安全的 agent 设计，2026 年提出 Golden Handcuffs 机制。",
+   "牛津大学验证与控制教授，在 ARIA Safeguarded AI 项目下，研究可验证 AI 的形式化和范畴论基础。",
+   "伦敦国王学院和帝国理工合办的博士培训中心，用符号 AI 做安全与可信，覆盖显式表示、验证、解释和伦理训练。",
+   "在 OpenAI 做 AI 政策与验证相关的工作，也是 Schmidt Sciences 安全 AI 资助的顾问，连接工业界与资助方。"
+  ]
+ },
+ {
+  "id": "f06",
+  "role": "research",
+  "question": "我想研究欺骗、权谋和潜在目标，图里该看谁？",
+  "keywords": {
+   "zh": [
+    "模型欺骗",
+    "权谋",
+    "潜在目标",
+    "欺骗性对齐",
+    "隐藏行为",
+    "情境意识",
+    "目标错位"
+   ],
+   "en": [
+    "deception",
+    "scheming",
+    "latent goals",
+    "deceptive alignment",
+    "hidden behavior",
+    "situational awareness",
+    "misaligned goals"
+   ]
+  },
+  "top10": [
+   "krakovna",
+   "apollo-research",
+   "charlotte-stix",
+   "alexander-meinke",
+   "matteo-pistillo",
+   "alejandro-ortega",
+   "chris-akin",
+   "abhay-sheshadri",
+   "ryan-greenblatt",
+   "evan-hubinger"
+  ],
+  "why": [
+   "Google DeepMind 研究员、Future of Life Institute 联合创始人，做欺骗性对齐、权谋倾向评测，还整理了 specification gaming 的分类。",
+   "专门做权谋与欺骗评测的机构，研究模型有机体和评测治理，是这个问题下最直接相关的组织。",
+   "Apollo Research 首席治理官，负责评测和欺骗研究的治理，以及这些工作与政策界的对接。",
+   "Apollo Research 研究负责人，做前沿模型的权谋与欺骗评测，也研究评测方法学。",
+   "Apollo Research 治理团队成员，参与欺骗与权谋行为的评测，也关注评测本身的治理。",
+   "Apollo Research 治理团队的一员，工作与欺骗、权谋行为的评测和评测治理相关。",
+   "Apollo Research 的 COO，同样参与欺骗与权谋行为的评测和治理，可以从机构运营的角度了解这条线。",
+   "与 Anthropic 对齐科学团队合作的外部研究者，做对齐审计基准和带隐藏行为的模型，直接对应潜在目标问题。",
+   "Redwood Research 首席科学家，研究权谋、假装对齐和接管类的威胁模型，是这条线上的核心研究者之一。",
+   "Anthropic 对齐压力测试方向的研究者，研究欺骗性对齐和 sleeper agents，是研究潜在目标必读的作者。"
+  ]
+ },
+ {
+  "id": "f07",
+  "role": "research",
+  "question": "哪些研究者在做模型福利、数字心智或机器意识？",
+  "keywords": {
+   "zh": [
+    "模型福利",
+    "数字心智",
+    "机器意识",
+    "人工意识",
+    "感知能力",
+    "道德地位",
+    "AI福祉"
+   ],
+   "en": [
+    "model welfare",
+    "digital minds",
+    "machine consciousness",
+    "artificial consciousness",
+    "sentience",
+    "moral status",
+    "AI welfare"
+   ]
+  },
+  "top10": [
+   "jeff-sebo",
+   "geoff-keeling",
+   "nyu-center-mind-ethics-policy",
+   "lucius-caviola",
+   "david-chalmers",
+   "kyle-fish",
+   "forethought",
+   "butlin",
+   "yi-zeng-casia",
+   "zach-freitas-groff"
+  ],
+  "why": [
+   "纽约大学副教授、NYU Center for Mind, Ethics, and Policy 主任，研究包括 AI 在内的非人类心智的道德地位与福利。",
+   "Google 研究员，与 Winnie Street 合著机器意识与 AI 福利的书，还研究安全微调如何改变模型对自身意识的判断。",
+   "纽约大学的研究中心，做 AI 的道德地位与福利、意识指标，以及情感对齐的设计政策，正好覆盖这个问题的两个方向。",
+   "剑桥大学 AI 社会科学助理教授，研究数字心智、专家对 AI 意识的预测，以及道德判断的心理学。",
+   "纽约大学哲学与神经科学教授，研究命题可解释性、LLM 是否有功能性福利维度，以及 AI 的意识指标。",
+   "Anthropic 的模型福利研究员，做模型福利的评测和缓解措施，还参与 Claude 宪法中关于模型本性的部分。",
+   "非营利研究机构，议题包括过渡到超级智能、数字心智和集体决策的改进，数字心智正是这个问题关心的方向。",
+   "Eleos 的高级研究负责人，从心灵哲学出发研究 AI 意识、能动性、道德受体地位和与福利相关的属性。",
+   "中科院自动化所教授、Beijing Institute of AI Safety and Governance 院长，做类脑 AI 与机器意识，也参与联合国层面的 AI 咨询。",
+   "Longview Philanthropy 的 AI 项目官员，负责 Digital Minds Fund，做数字心智方向的研究资助、领域建设和资金布局。"
+  ]
+ },
+ {
+  "id": "f08",
+  "role": "research",
+  "question": "Where should I look for technical work on AI-enabled biosecurity risks?",
+  "keywords": {
+   "zh": [
+    "生物安全",
+    "生物风险",
+    "AI生物设计",
+    "病原体",
+    "双重用途",
+    "大流行",
+    "实验室安全"
+   ],
+   "en": [
+    "biosecurity",
+    "biorisk",
+    "AI-enabled biology",
+    "pathogens",
+    "dual use",
+    "pandemic",
+    "lab safety"
+   ]
+  },
+  "top10": [
+   "future-of-humanity-institute",
+   "david-manheim",
+   "association-for-long-term-existence-and-resilience",
+   "carnegie-endowment-for-international-peace",
+   "center-for-global-development",
+   "kevin-esvelt",
+   "effisciences",
+   "idais",
+   "ai-safety-fund",
+   "cltr"
+  ],
+  "why": [
+   "它的研究同时覆盖 AI 安全、生物安全和大流行防范，正好落在 AI 与生物风险交叉的位置上，也是 LTFF 等资助的受助机构。",
+   "同时与 Association for Long Term Existence and Resilience 等机构相关，研究横跨 AI 安全、生物安全和大流行防范，也涉及多智能体。",
+   "关注长期生存与韧性的机构，议题同时包括 AI 安全、生物安全和大流行防范，可以看两个领域的交叉工作。",
+   "国际关系领域的智库，议题覆盖 AI 安全与治理、生物安全和大流行防范，适合从政策和国际关系角度看 AI 生物风险。",
+   "全球发展领域的智库，做生物安全、大流行防范和全球健康研究，适合补上 AI 生物风险里的公共卫生视角。",
+   "在 MIT Media Lab 的 Sculpting Evolution 小组，研究生物安全、延迟与防御策略，以及 AI 带来的生物风险。",
+   "研究议题横跨 AI 安全、生物安全与大流行防范和气候变化，可以看有效利他主义视角下的风险工作。",
+   "Safe AI Forum 主办的国际对话，2026 年伦敦声明聚焦 AI 驱动的生物滥用，警告双重用途能力扩散并呼吁中美协调。",
+   "由 Frontier Model Forum 管理的研究基金，资助前沿模型风险研究，其中明确包括生物风险和网络安全风险。",
+   "伦敦的智库，做英国政府的风险管理、AI 政策和生物安全，可以看政策侧如何应对 AI 带来的生物风险。"
+  ]
+ },
+ {
+  "id": "f09",
+  "role": "research",
+  "question": "想做 AI 预测、时间线和能力趋势研究，有哪些关键节点？",
+  "keywords": {
+   "zh": [
+    "AI预测",
+    "时间线",
+    "能力趋势",
+    "技术预测",
+    "算力趋势",
+    "预见",
+    "概率预测"
+   ],
+   "en": [
+    "AI forecasting",
+    "timelines",
+    "capability trends",
+    "technology forecasting",
+    "compute trends",
+    "foresight",
+    "probabilistic forecasting"
+   ]
+  },
+  "top10": [
+   "deger-turan",
+   "anthony-aguirre",
+   "nate-silver",
+   "beth-barnes",
+   "dean",
+   "katja-grace",
+   "steve-newman",
+   "taren-stinebrickner-kauffman",
+   "steinhardt",
+   "metaculus"
+  ],
+  "why": [
+   "Metaculus 的 CEO，做预测基础设施和 AI 与人类预测者的对比，估计 2029 年 AI 预测能追上最好的人类预测者。",
+   "Future of Life Institute CEO、Metaculus 联合创始人，管理 FLI 的资助与政策，也长期参与预测基础设施建设。",
+   "Silver Bulletin 的作者、Polymarket 顾问，研究预测和预测市场，还写了 River vs Village 框架下对风险承担精英的分析。",
+   "METR 创始人，研究评估 AI 自主性灾难风险的科学方法，包括任务时长的能力趋势和评测的严谨性。",
+   "AI Futures Project 的研究员，在情景研究里负责算力和硬件的预测，是时间线研究里的算力视角。",
+   "AI Impacts 的研究者，通过调查专家意见研究 AI 时间线和风险，也讨论 AI 安全论证的质量。",
+   "来自 Golden Gate Institute for AI，围绕 AI 时间线、能力趋势和经济影响持续写作，也组织相关的讨论。",
+   "来自 Golden Gate Institute for AI，机构公开的方向包括 AI 时间线与能力、经济影响、民主治理和收益实现。",
+   "Transluce 联合创始人、伯克利统计系助理教授，预测稀有和涌现的模型行为，做前沿模型的测量与评测科学。",
+   "Deger Turan 任 CEO、Anthony Aguirre 联合创办的预测平台，属于 AI 预测和时间线研究的基础设施。"
+  ]
+ },
+ {
+  "id": "f10",
+  "role": "research",
+  "question": "Who studies multi-agent safety, cooperation, and bargaining between AIs?",
+  "keywords": {
+   "zh": [
+    "多智能体安全",
+    "合作式AI",
+    "博弈",
+    "谈判",
+    "机制设计",
+    "多代理系统"
+   ],
+   "en": [
+    "multi-agent safety",
+    "cooperative AI",
+    "game theory",
+    "bargaining",
+    "mechanism design",
+    "multi-agent systems"
+   ]
+  },
+  "top10": [
+   "kate-larson",
+   "yali-du",
+   "vincent-conitzer",
+   "mark-braverman",
+   "alessandro-veneri",
+   "lewis-hammond",
+   "allan-dafoe",
+   "gdm-multi-agent-safety-call",
+   "pku-institute-for-ai",
+   "yang-yaodong"
+  ],
+  "why": [
+   "University of Waterloo 教授，做机制设计、计算社会选择和合作型多智能体系统，也担任 Cooperative AI Foundation 顾问。",
+   "King's College London 信息系合作 AI 实验室，做多智能体合作、人机协调与价值学习，每年招收两三名博士生。",
+   "CMU 计算机与经济学教授，研究高级 AI 的关机机制和自主体的博弈论基础，2026 年发表 Shutdown Safety Valves 论文。",
+   "普林斯顿计算机教授，做信息复杂性、机制设计和算法博弈论，不过资料未核实到他在 AI 智能体上的近期产出。",
+   "欧洲大学学院经济学博士生、PIBBSS fellow，从机制设计切入合作型 AI，是这条线上偏经济学的研究者。",
+   "Cooperative AI Foundation 研究主任，负责博士奖学金和暑期学校，还与多方共同发起一千万美元的多智能体安全基金。",
+   "Google DeepMind 前沿战略与治理高级总监，合作型 AI 议程的奠基思想者之一，共同发起多智能体安全基金。",
+   "五家机构联合的项目，列出多智能体安全的四个优先方向，包括沙盒与测试床和 agent 网络的科学。",
+   "北京大学 Institute for AI 的 PKU-Alignment 组，做 Safe RLHF、多智能体强化学习与博弈论，并开源对齐数据集和基准。",
+   "北京大学 Institute for AI 助理教授，做对齐、Safe RLHF、多智能体强化学习和博弈论，也开源对齐数据集与基准。"
+  ]
+ },
+ {
+  "id": "f11",
+  "role": "funding",
+  "question": "我是个人研究者，哪里能申请 AI 安全小额资助或奖学金？",
+  "keywords": {
+   "zh": [
+    "个人资助",
+    "小额资助",
+    "奖学金",
+    "研究经费",
+    "开放申请",
+    "独立研究者",
+    "研究基金"
+   ],
+   "en": [
+    "individual grants",
+    "small grants",
+    "fellowships",
+    "research funding",
+    "open applications",
+    "independent researcher",
+    "research fund"
+   ]
+  },
+  "top10": [
+   "jaime-raldua-veuthey",
+   "ryan-kidd",
+   "cosmos-institute",
+   "evan-hubinger",
+   "transformative-ai-fund",
+   "ai-safety-fund",
+   "tarbell-center",
+   "gavin-leech",
+   "effective-altruism-funds-effective-altruism-infrastructure-fund",
+   "blake-borgeson-2"
+  ],
+  "why": [
+   "Apart Research 的 sprint 到 fellowship 通道对个人研究者友好，最近一场 AI Incident Response sprint 在 2026 年 9 月 11–13 日，可以先参加再看后续资助。",
+   "他在 Manifund 主页上公开逐项列出的 RFP，给 AI 安全方向 $500–$20K 的小额快速资助，也运营 MATS 的 cohort。",
+   "Cosmos Grants 给 $1k–$10k 的 90 天原型项目资助并附带 Prime Intellect 算力，Cosmos Fellowship 每年 $75k 且可续，适合个人研究者申请。",
+   "他是 Anthropic 做对齐研究的科学家，在 Manifund 上有 $450K 的额度向独立研究者 regrant，做 deceptive alignment 的个人可以找他。",
+   "这个基金给个人、新组织和刚起步的新项目提供早期资助，覆盖技术 AI 安全、AI 治理和预测，正对个人研究者的需求。",
+   "这个由 Frontier Model Forum 管理的基金，资助前沿模型风险的独立研究，包括第三方评估、red-teaming 和基准测试，个人研究者可以直接申请。",
+   "想写 AI 报道的个人研究者可以看这里，它提供 fellowship、residency 和小额资助，资金来自 SFF 和 Manifund 的 regrantor。",
+   "他资助 evals 科学、对齐哲学和宏观策略方向的独立研究，并把资助理由公开写出来，申请者能看懂他的偏好。",
+   "它的资助记录和资金来源都公开，个人研究者可以查它过去给过哪些项目钱，判断自己适不适合申请。",
+   "他公开自己的资助发放和资金来源记录，关联 Alvea、Redwood Research 等机构，个人研究者可以从他的记录里看资助是怎么发出去的。"
+  ]
+ },
+ {
+  "id": "f12",
+  "role": "funding",
+  "question": "哪些基金会长期资助 AI 安全和长期主义项目？",
+  "keywords": {
+   "zh": [
+    "基金会",
+    "慈善资助",
+    "AI安全资助",
+    "长期主义",
+    "捐赠方",
+    "公益基金",
+    "项目资助"
+   ],
+   "en": [
+    "foundations",
+    "philanthropic funding",
+    "AI safety funding",
+    "longtermism",
+    "donors",
+    "charitable foundation",
+    "grants"
+   ]
+  },
+  "top10": [
+   "alignment-project-fund",
+   "vitalik-buterin",
+   "dustin-moskovitz",
+   "zach-stein-perlman",
+   "anthony-aguirre",
+   "luke-muehlhauser",
+   "aidan-ogara",
+   "gentzel",
+   "palladium-magazine",
+   "bill-gates"
+  ],
+  "why": [
+   "这是由 UK AISI 牵头的国际出资方联盟，设了 £27M+ 的全球 AI 对齐研究基金，OpenAI、Anthropic 等也在出资方名单里。",
+   "他出钱支持 d/acc、开源防御性技术和生物安全项目，是 FLI fellowship 的冠名出资人，还公开与 FLI 的 AI 监管游说拉开距离。",
+   "他和 Cari Tuna 自 2011 年起捐出超过 $4B，约 $336M 投向 AI 安全，还把 Anthropic 股份转入非营利实体，是这一领域的大额长期资金来源。",
+   "他办 AI Lab Watch 给前沿实验室的安全承诺打分，又批评资助流程，想盯着基金会怎么花钱的人应该读他。",
+   "他以 FLI CEO 身份主管该机构的资助、政策和传播，同时是 Metaculus 的联合创始人，能看出长期主义机构的钱往哪走。",
+   "他在 Open Philanthropy 负责 AI 治理方向的资助，也管 Coefficient Giving 的 AI 治理与国际政策拨款，团队有多名专职人员。",
+   "他在 Longview Philanthropy 负责 Frontier AI Fund 的资助，发起过 Extreme Power Concentration 主题的 RFP，自己也做 AI 研究，能看出长期资助方的偏好。",
+   "他在 Longview Philanthropy 负责核武器政策方向的资助，关注 AI 与核风险的交叉议题，做长期主义项目的人可以从他这里找钱。",
+   "这本杂志由 Jaan Tallinn 和 SFF 出钱，长期讨论制度衰退、技术治理这类长期主义议题，是圈子里有钱在流动的媒体。",
+   "他的 Gates Foundation 长期投入全球健康公益，他个人也投资 AI，并公开看好 AI 在健康和教育里的应用，是长期资金的一个来源。"
+  ]
+ },
+ {
+  "id": "f13",
+  "role": "funding",
+  "question": "I run a small nonprofit—who funds AI governance organizations?",
+  "keywords": {
+   "zh": [
+    "非营利机构",
+    "治理资助",
+    "机构经费",
+    "核心支持",
+    "项目拨款",
+    "政策研究资助"
+   ],
+   "en": [
+    "nonprofit",
+    "governance funding",
+    "organizational funding",
+    "core support",
+    "project grants",
+    "policy research funding"
+   ]
+  },
+  "top10": [
+   "luke-muehlhauser",
+   "macroscopic-ventures",
+   "transformative-ai-fund",
+   "center-for-ai-policy",
+   "marius-hobbhahn",
+   "good-food-institute",
+   "americans-for-responsible-innovation",
+   "oscar-delaney",
+   "gavin-leech",
+   "blake-borgeson-2"
+  ],
+  "why": [
+   "他主管 Coefficient Giving 的 AI 治理与国际政策资助，团队有 Alex Lawsen 等多名专职人员，做治理的小非营利可以直接找他谈。",
+   "这家瑞士非营利 2025 年发了约 $30M 资助，今年计划最多发 $100M，重点方向里就有 AI 治理，包括算力治理和信息安全。",
+   "它给个人、新组织和老组织的新项目发早期资助，明确覆盖 AI 治理和 post-AGI 治理，小型治理机构正符合它的申请条件。",
+   "这家华盛顿 AI 政策机构 2025 年因资金耗尽停了大部分运营，小型治理组织能从它的经历看清这个方向的找钱难度。",
+   "他是 Apollo Research 的 CEO，做 scheming 研究和 coding agent 监控工具，也在 Manifund 上转拨资助，技术治理方向的小机构可以找他。",
+   "它做的是替代蛋白，但把研究、政策、行业合作和对外资助结合的运作方式，可以给小型 AI 治理组织当参考。",
+   "这家 2023 年成立的美国非营利专做两党路线的 AI 治理倡导，覆盖当前危害、国家安全和新兴风险，是治理类小机构的同行样本。",
+   "他是 Macroscopic Ventures 的 AI 治理资助负责人，掌握该机构在 AI 政策与治理方向的拨款，小型治理组织可以直接联系他。",
+   "他资助 evals 科学、对齐哲学和宏观策略，并把资助理由公开发出来，治理方向的小机构可以看他的公开记录判断是否匹配。",
+   "他公开自己的资助发放和资金来源记录，关联 Alvea、Redwood Research 等机构，小非营利可以从这些记录里找资助线索。"
+  ]
+ },
+ {
+  "id": "f14",
+  "role": "funding",
+  "question": "想办 AI 安全暑研、训练营或学者项目，可以找谁资助？",
+  "keywords": {
+   "zh": [
+    "暑研资助",
+    "训练营",
+    "学者项目",
+    "人才培养",
+    "课程资助",
+    "研究项目",
+    "能力建设"
+   ],
+   "en": [
+    "summer research funding",
+    "bootcamp",
+    "fellowship program",
+    "talent development",
+    "course funding",
+    "research program",
+    "capacity building"
+   ]
+  },
+  "top10": [
+   "ben-esche",
+   "jaime-raldua-veuthey",
+   "cosmos-institute",
+   "tarbell-center",
+   "asterisk-magazine",
+   "emergent-ventures",
+   "natalie-cargill",
+   "openai-foundation",
+   "thiel-fellowship",
+   "cecilia-elena-tilli"
+  ],
+  "why": [
+   "他在 Coefficient Giving 负责 GCR 能力建设，专门资助培训项目、活动、团体和媒体，办暑研或训练营可以直接找他申请。",
+   "Apart 在他的带领下用 sprint 筛选人再转成 fellowship，这套从短期活动到学者项目的流程，正是办训练营的人可以借鉴和对接的。",
+   "它同时跑两种形式：$1k–$10k 的 90 天小额原型资助，和每年 $75k、与 Oxford Human-Centred AI Lab 合办的 Fellowship，办学者项目的人可以直接对照。",
+   "它用 fellowship、residency 和小额资助支持 AI 新闻方向的人才项目，资金来自 SFF 和 Manifund 的 regrantor，办类似项目的人可以学它的结构。",
+   "它拿过 Coefficient Giving 的资助，Manifund 也出钱支持它的 fellowship，是学者型项目拿到资助的一个实例。",
+   "这个挂在 George Mason University 下的项目运营成本低，给从零到一的想法发 fellowship 和资助，设印度、非洲等区域通道，学员可以直接申请。",
+   "她给每年捐 $1M 以上的大捐赠人做教育和资助推荐，办暑研的人若能进入她的推荐名单，就有机会对接大额资金。",
+   "它给用 AI 做教育、健康等服务的美国社区非营利发不指定用途的资助，上限是机构年预算的 10%，训练营若依托这类机构可以申请。",
+   "它给入选者两年 $250,000 的资助，还提供人脉、导师和工作坊，办学者项目的人可以参考它的培养设计，也可以推荐学员申请。",
+   "她在 Cooperative AI Foundation 把资助项目改成一年两轮，并负责 PhD Fellowship，2026 年一届从 240 人里选了 14 人，办学者项目可以对照她的做法。"
+  ]
+ },
+ {
+  "id": "f15",
+  "role": "funding",
+  "question": "Are there funders specifically interested in compute governance or hardware policy?",
+  "keywords": {
+   "zh": [
+    "算力治理资助",
+    "硬件政策",
+    "芯片政策",
+    "半导体",
+    "数据中心",
+    "研究基金"
+   ],
+   "en": [
+    "compute governance funding",
+    "hardware policy",
+    "chip policy",
+    "semiconductors",
+    "data centers",
+    "research grants"
+   ]
+  },
+  "top10": [
+   "lennart-heim",
+   "macroscopic-ventures",
+   "lisa-thiergart",
+   "transformative-ai-fund",
+   "ronn",
+   "gavin-leech",
+   "asterisk-magazine",
+   "effective-altruism-funds-effective-altruism-infrastructure-fund",
+   "blake-borgeson-2",
+   "ea-giving-group"
+  ],
+  "why": [
+   "他曾任 RAND 算力团队负责人，现以独立研究者和 GovAI Adjunct Fellow 身份做算力治理、半导体政策和技术验证，方向完全对口。",
+   "这家瑞士机构 2025 年发了约 $30M 资助，今年计划最多发 $100M，重点方向明确列出算力治理和信息安全，正是提问者要找的出资方。",
+   "她领导 SL5 Task Force，做硬件安全、验证和技术治理，在 Manifund 上还有尚未动用的 regrant 额度，硬件政策方向的人可以联系她。",
+   "它给个人和新组织发早期资助，覆盖技术 AI 安全与 AI 治理，算力治理项目可归入治理方向向它申请。",
+   "他联合创办 Lucid Computing，做用硬件强制执行的算力治理，也就是硬件级保证，是硬件政策方向最对口的一线从业者。",
+   "他资助 evals 科学、对齐哲学和宏观策略，并公开写出每笔资助的理由，做算力治理的人可以看他的公开记录判断匹配度。",
+   "它由 Coefficient Giving 资助、Manifund 出钱支持 fellowship，关注治理类议题，算力治理的研究者可以向它投稿。",
+   "它的资助记录和资金来源都公开，做算力治理的人可以查它过去给过哪些项目钱，判断自己适不适合申请。",
+   "他公开自己的资助发放和资金来源记录，涉及 Alvea、Redwood Research 等，算力治理方向的人可从这些公开记录里找资助线索。",
+   "它作为公开资助的接受方，资金来源记录可查，做算力治理的人可以顺着这些记录找到背后的出资方。"
+  ]
+ },
+ {
+  "id": "f16",
+  "role": "funding",
+  "question": "在中国或面向中文社群做 AI 安全项目，可能找哪些支持方？",
+  "keywords": {
+   "zh": [
+    "中国AI安全",
+    "中文社群",
+    "中国资助",
+    "亚洲项目",
+    "本土研究",
+    "能力建设"
+   ],
+   "en": [
+    "China AI safety",
+    "Chinese community",
+    "China funding",
+    "Asia programs",
+    "local research",
+    "capacity building"
+   ]
+  },
+  "top10": [
+   "liang-fang",
+   "cnaisda",
+   "transformative-ai-fund",
+   "yi-zeng-casia",
+   "gavin-leech",
+   "asterisk-magazine",
+   "effective-altruism-funds-effective-altruism-infrastructure-fund",
+   "blake-borgeson-2",
+   "ea-giving-group",
+   "irene-zhang-chinatalk"
+  ],
+  "why": [
+   "他负责 Concordia AI 的中国 AI 安全与治理工作，参与国内 AI 安全标准，也在建设国内中文社群，能为在华项目提供政策和人脉上的支持。",
+   "它是中国参与国际 AI 安全研究所网络的接口，在巴黎、上海 WAIC 和 2026 AI Impact Summit 上代表中方，背后是国内学术和准官方机构网络。",
+   "它向个人、新机构和老机构的新尝试提供早期资助，范围包括技术 AI 安全、AI 治理和领域建设，适合刚起步的中国项目申请。",
+   "他是北京 AI 安全与治理研究所所长，做中国 AI 安全与伦理治理和国际对话，所在机构也是 CnAISDA 成员，在国内根基很深。",
+   "他在 Manifund 上资助 evals 科学、对齐哲学和宏观战略，并公开写明资助理由，申请前能直接看到他的资助逻辑。",
+   "它拿过 Coefficient Giving 的资助和 Manifund 的 fellowship 资金，正在为专题刊约稿，Dagger 博客还收较短的时效性文章。",
+   "它是 Effective Altruism Funds 体系里的基础设施基金，受助和资助记录都是公开的，能查到资金流向，适合拿来摸底。",
+   "他在 Alvea、Redwood Research 等多家机构工作过，资助记录公开，能顺着记录找到他经手的资助渠道。",
+   "它的受助和资助记录都是公开的，能查到资金流向，想了解 EA 社群资助怎么运作的人可以从它入手。",
+   "她是 ChinaTalk 撰稿人，写中国 AI 实验室、数据标注和合成数据，想了解国内 AI 生态的人可以直接读她的报道。"
+  ]
+ },
+ {
+  "id": "f17",
+  "role": "funding",
+  "question": "I want funding for empirical alignment experiments, not just policy work. Who fits?",
+  "keywords": {
+   "zh": [
+    "实证对齐",
+    "实验资助",
+    "技术安全",
+    "机器学习实验",
+    "研究经费",
+    "对齐项目"
+   ],
+   "en": [
+    "empirical alignment",
+    "experiment funding",
+    "technical safety",
+    "ML experiments",
+    "research grants",
+    "alignment project"
+   ]
+  },
+  "top10": [
+   "matt-macdermott",
+   "transformative-ai-fund",
+   "uk-aisi",
+   "gavin-leech",
+   "joel-becker",
+   "jake-mendel",
+   "asya-bergal",
+   "peter-favaloro",
+   "jaan-tallinn",
+   "paul-christiano"
+  ],
+  "why": [
+   "他在 Coefficient Giving 评审技术 AI 安全资助，背景是数学和 agent 基础方向的对齐研究，能看懂实证实验类提案。",
+   "它向个人和新机构提供早期资助，范围覆盖技术 AI 安全，实验性的对齐工作在起步阶段就能申请。",
+   "它自己做评估、安全措施和对齐研究，有 100 多名技术人员，还设对外资助项目，能直接支持实证对齐实验。",
+   "他资助 evals 科学、对齐哲学和宏观战略，并公开写明资助理由，做实证评估的人能对照着看提案是否对路。",
+   "他是 Manifund 的 regrantor，资助评估研究和个人职业转型，还给过 Lyptus Research $150K 过桥资金，做实证评估的人可以找他。",
+   "他是 Coefficient Giving 技术 AI 安全团队的 grant investigator，团队 2025 年资助 $40M、2026 年超过 $140M，还在扩招评审人手。",
+   "她在 Coefficient Giving 做技术 AI 安全和领域建设的资助，还担任 Constellation Astra 的导师，早期研究者也能找她。",
+   "他与 Rossa O'Keeffe-O'Donovan 共同主持 Coefficient Giving 的技术 AI 安全资助，团队里有多位资助官员，是技术提案的直接评审方。",
+   "他通过 Survival and Flourishing Fund 向 300 多个项目投了约 $150M，但近年重心正从技术对齐转向面向公众的草根组织。",
+   "他创办的 ARC 研究神经网络的机制解释和低概率估计，现在又在 CAISI 负责安全事务，做实证对齐研究绕不开他。"
+  ]
+ },
+ {
+  "id": "f18",
+  "role": "funding",
+  "question": "调查 AI 公司或做深度报道，有哪些媒体资助和 fellowship？",
+  "keywords": {
+   "zh": [
+    "调查报道资助",
+    "AI新闻",
+    "媒体项目",
+    "记者奖学金",
+    "新闻基金",
+    "深度报道"
+   ],
+   "en": [
+    "investigative reporting grants",
+    "AI journalism",
+    "media projects",
+    "journalism fellowship",
+    "news fund",
+    "deep reporting"
+   ]
+  },
+  "top10": [
+   "tarbell-center",
+   "median-group",
+   "cillian-crosson",
+   "cosmos-institute",
+   "asterisk-magazine",
+   "emergent-ventures",
+   "jacob-haimes",
+   "transformer-news",
+   "thiel-fellowship",
+   "cecilia-elena-tilli"
+  ],
+  "why": [
+   "它为 AI 新闻提供 fellowship、驻场和资助，资金来自 SFF 和 Manifund regrantors，还出版 Transformer 这个报道平台。",
+   "它拿过 SFF 的资助，工作涉及全球灾难性风险，也被 AI Watch 归在媒体类数据里，可以顺着它摸到更多资源。",
+   "他是 Tarbell 的执行董事，管 fellowship、驻场和资助项目，驻场给到 $80k 加补贴，对外筹款也由他负责。",
+   "小额的 Cosmos Grants 支持 90 天原型，Cosmos Fellowship 每年 $75k、最多一年、可续期，还和牛津的 Human-Centred AI Lab 合办，适合试水报道选题。",
+   "它拿过 Coefficient Giving 的资助，正为专题刊约稿，Dagger 博客收较短的时效性文章，调查类写作有投稿入口。",
+   "它为从零到一的想法提供低门槛 fellowship 和资助，不限国籍，还有针对印度、非洲等地的区域轨道。",
+   "他是 Apart Research 的 fellowship 顾问，做 AI 安全媒体，想做 AI 安全方向报道的人可以找他咨询。",
+   "它每天和每周报道变革性 AI 的权力与政治，评论版对外部专家开放，调查报道的成果可以在这里发表。",
+   "它两年给 $250,000，还配网络、导师指导和培训，适合想全身心投入 AI 相关项目的人申请。",
+   "她把 Cooperative AI Foundation 的资助改成每年两轮，还负责 PhD Fellowship，想申请 CAIF 资助可以直接找她。"
+  ]
+ },
+ {
+  "id": "f19",
+  "role": "funding",
+  "question": "哪些捐赠者或机构愿意支持生物安全与 AI 交叉项目？",
+  "keywords": {
+   "zh": [
+    "生物安全资助",
+    "AI生物风险",
+    "大流行防范",
+    "双重用途",
+    "科研资助",
+    "全球健康"
+   ],
+   "en": [
+    "biosecurity funding",
+    "AI biorisk",
+    "pandemic preparedness",
+    "dual use",
+    "research funding",
+    "global health"
+   ]
+  },
+  "top10": [
+   "center-for-global-development",
+   "future-of-humanity-institute",
+   "david-manheim",
+   "association-for-long-term-existence-and-resilience",
+   "effisciences",
+   "joan-gass",
+   "bill-gates",
+   "vitalik-buterin",
+   "gavin-leech",
+   "emily-oehlsen"
+  ],
+  "why": [
+   "它的研究覆盖生物安全和大流行病准备，也做全球健康与发展，是生物方向交叉项目可以接触的机构。",
+   "它同时研究 AI 安全和生物安全、大流行病准备，拿过 LTFF 和 Tallinn 个人的资助，议题正好覆盖交叉方向。",
+   "他关联 Coefficient Giving、FHI 和 Association for Long Term Existence and Resilience，工作横跨 AI 安全和生物安全，也做 multi_agent 研究，交叉项目可以找他聊。",
+   "它的工作同时覆盖 AI 安全和生物安全、大流行病准备，拿过 SFF 和 Tallinn 个人的资助，交叉方向可以直接接触。",
+   "它覆盖 AI 安全、生物安全和大流行病准备，也涉及气候变化，拿过 Tallinn 个人的资助，交叉项目可以接触。",
+   "她做过全球健康和生物安全生态项目，现在帮新兴技术专家进入公共服务部门，能给交叉项目对接公共资源。",
+   "他的基金会做全球健康慈善，他个人也投 AI，并公开表示看好 AI 在健康和教育上的应用，对交叉方向有动机。",
+   "他支持开源防御技术，通过 Balvi 资助生物安全，也是 FLI fellowship 的出资人，兴趣点和交叉项目对得上。",
+   "他资助宏观战略、对齐哲学和 evals 科学，并公开写明资助理由，交叉项目可以先对照他的标准再申请。",
+   "她是 Coefficient Giving 总裁，直接管全球灾难性风险组合，范围包括生物安全和技术 AI 安全，交叉项目可以找她。"
+  ]
+ },
+ {
+  "id": "f20",
+  "role": "funding",
+  "question": "Where can a very early-stage AI safety idea get seed funding?",
+  "keywords": {
+   "zh": [
+    "种子资助",
+    "早期项目",
+    "概念验证",
+    "启动资金",
+    "孵化器",
+    "创业资助"
+   ],
+   "en": [
+    "seed funding",
+    "early-stage project",
+    "proof of concept",
+    "startup funding",
+    "incubator",
+    "venture grant"
+   ]
+  },
+  "top10": [
+   "transformative-ai-fund",
+   "1517-fund",
+   "macroscopic-ventures",
+   "austin-chen",
+   "ruairi-donnelly",
+   "emergent-ventures",
+   "oscar-delaney",
+   "danielle-strachman",
+   "ryan-kidd",
+   "coefficient-giving"
+  ],
+  "why": [
+   "它向个人、新机构和老机构的新尝试提供早期资助，范围包括技术 AI 安全和 AI 治理，适合早期想法起步。",
+   "它支持辍学者、无学历创始人和深科技科学家，首笔支票 $50k 到 $1M，Medici 项目资助从 $1,000 起。",
+   "它 2025 年发了约 $30M 资助，今年计划最多发到 $100M，方向包括 AI 治理、AI Welfare 和合作 AI，资助规模还在扩大。",
+   "他运营 Manifund 的 regranting 和财政托管项目，还办 Surplus 孵化器，共同资助过 Agent Island 等项目，想做早期项目的人可以找他对接。",
+   "他掌管 Macroscopic Ventures 每年约 $30M 的资助和投资计划，目标提高到 $100M，早期项目申请直接对他。",
+   "它为从零到一的想法提供低门槛 fellowship 和资助，不限国籍，还有多个区域轨道，个人也能申请。",
+   "他负责 Macroscopic Ventures 的 AI 治理资助，政策和治理方向的早期想法可以直接递给他。",
+   "她在 1517 Fund 做 pre-seed 和想法阶段的资助，面向年轻、无学历的构建者，也管 Medici 资助项目。",
+   "他运营 MATS cohort，在 Manifund 上提供 $500 到 $20K 的小额快速资助，还在个人页公布逐项的 RFP。",
+   "它是全球最大的 AI 安全资助方，2014 年以来投了约 $336M，现在转向多捐赠人基金，其他捐赠人的钱还在翻倍。"
+  ]
+ },
+ {
+  "id": "f21",
+  "role": "policy",
+  "question": "如果我在政府做 AI 政策，最值得关注哪些治理机构？",
+  "keywords": {
+   "zh": [
+    "政府AI政策",
+    "治理机构",
+    "政策智库",
+    "监管",
+    "公共部门",
+    "AI治理"
+   ],
+   "en": [
+    "government AI policy",
+    "governance organizations",
+    "policy think tank",
+    "regulation",
+    "public sector",
+    "AI governance"
+   ]
+  },
+  "top10": [
+   "owen-larter",
+   "michelle-nie",
+   "foundation-for-american-innovation",
+   "center-for-new-american-security",
+   "govai",
+   "markus-anderljung",
+   "daniel-e-ho",
+   "americans-for-responsible-innovation",
+   "luke-muehlhauser",
+   "robert-trager"
+  ],
+  "why": [
+   "他负责 Google DeepMind 的前沿政策与公共事务，并进入 Frontier Model Forum 董事会，做美英欧及全球的 AI 标准与监管框架，也做政府采用 AI 的合作。",
+   "Michelle Nie 是新美国安全中心的 Horizon AI 研究员，研究 AI 与竞争政策、公共部门 AI 能力建设和立法机构的 AI 治理，议题贴着政府需求。",
+   "Foundation for American Innovation 是设在华盛顿和旧金山的智库，从非正统右翼立场讨论 AI 政策、国家能力和新兴技术治理，提供和主流机构不同的视角。",
+   "Center for a New American Security 是华盛顿的两党独立国家安全智库，其技术与国家安全项目研究 AI 领导力、治理、风险管理、算力和国际竞争。",
+   "Centre for the Governance of AI 是牛津和伦敦的独立非营利机构，覆盖前沿 AI 监管、算力治理、国际治理和智能体基础设施，还自带研究员培养管道。",
+   "Markus Anderljung 担任 Centre for the Governance of AI 的政策与研究主管，主要做前沿 AI 监管、算力治理和模型的结构化访问。",
+   "Daniel E. Ho 在斯坦福法学院通过 RegLab 与 IRS、EPA、劳工部合作，把前沿 AI 用到公共部门，并研究 AI 数据透明度政策的局限。",
+   "Americans for Responsible Innovation 是 2023 年成立的美国非营利 AI 政策倡导组织，做跨党派倡导，针对现实危害、国家安全和新兴风险推动 AI 治理。",
+   "Luke Muehlhauser 是 Open Philanthropy 的 AI 治理高级项目官员，并负责 Coefficient 的 AI 治理与国际政策资助，能看到资助方在治理研究上的布局。",
+   "Robert Trager 在 GovAI 负责国际治理，在牛津研究新兴技术的国际治理、外交实践与制度设计，参与全球 AI 峰会和 HAIP 报告框架。"
+  ]
+ },
+ {
+  "id": "f22",
+  "role": "policy",
+  "question": "算力治理有哪些真正可执行的政策工具？",
+  "keywords": {
+   "zh": [
+    "算力治理",
+    "芯片管制",
+    "云计算",
+    "数据中心",
+    "算力监测",
+    "出口管制",
+    "许可证"
+   ],
+   "en": [
+    "compute governance",
+    "chip controls",
+    "cloud computing",
+    "data centers",
+    "compute monitoring",
+    "export controls",
+    "licensing"
+   ]
+  },
+  "top10": [
+   "lennart-heim",
+   "dario-amodei",
+   "public-first-action",
+   "jensen-huang",
+   "david-krueger",
+   "govai",
+   "macroscopic-ventures",
+   "oxford-martin-aigi",
+   "oracle",
+   "felipe-calero-forero"
+  ],
+  "why": [
+   "Lennart Heim 曾任 RAND 算力团队负责人，现为独立研究员和 GovAI 兼职研究员，专做算力治理、半导体政策、技术验证和机器学习算力与硬件的趋势。",
+   "Dario Amodei 是 Anthropic 的 CEO，公开倡导 AI 透明度监管和芯片出口管制，是直接参与算力政策讨论的前沿实验室负责人。",
+   "Public First Action 是由共和、民主两党策略人士领导的两党组织，支持主张 AI 保障的候选人，优先事项包括先进半导体出口管制和前沿实验室透明度。",
+   "Jensen Huang 领导 Nvidia 同时向 Anthropic、OpenAI 等所有前沿实验室出售算力，并反对美国对华出口管制，是算力治理绕不开的芯片方视角。",
+   "David Krueger 是蒙特利尔大学助理教授、Mila 核心成员，主张停止生产先进 AI 芯片以阻止超级智能竞赛，并把能力控制当作独立于对齐的目标。",
+   "Centre for the Governance of AI 把算力治理列为主线之一，同时做前沿 AI 监管、国际治理和智能体基础设施，方便对照政策工具的完整清单。",
+   "Macroscopic Ventures 是瑞士非营利组织，2025 年发出约 3000 万美元资助，把算力治理和信息安全列为 AI 治理资助重点，可以看出资助方认为哪些工具可行。",
+   "Oxford Martin AI Governance Initiative 设在牛津马丁学院，运行技术 AI 治理项目，研究国际 AI 制度、验证和算力治理。",
+   "Oracle 在各前沿实验室之间做算力换股权和云承诺，是政策制定者需要了解的算力分配新形式。",
+   "Felipe Calero Forero 是 Horizon AI 初级研究员，在 RAND 完成智库实习，研究 AI 治理和半导体产业合作的历史，也曾在 GovAI 做研究、在 Open Philanthropy 实习。"
+  ]
+ },
+ {
+  "id": "f23",
+  "role": "policy",
+  "question": "Who should policymakers follow on international AI coordination and diplomacy?",
+  "keywords": {
+   "zh": [
+    "国际协调",
+    "AI外交",
+    "多边治理",
+    "国际合作",
+    "条约",
+    "峰会",
+    "标准"
+   ],
+   "en": [
+    "international coordination",
+    "AI diplomacy",
+    "multilateral governance",
+    "international cooperation",
+    "treaty",
+    "summit",
+    "standards"
+   ]
+  },
+  "top10": [
+   "united-nations-ai-governance",
+   "robert-trager",
+   "lewis-ho",
+   "fu-ying",
+   "kenya-ai-safety-network-office",
+   "govai",
+   "kwan-yee-ng",
+   "oxford-martin-aigi",
+   "chris-meserole",
+   "richard-ngo"
+  ],
+  "why": [
+   "联合国的 AI 治理合作由数字与新兴技术办公室统筹，设有科学评估和包容性政策对话机制，是多边协调的主框架。",
+   "Robert Trager 在 GovAI 负责国际治理，研究新兴技术的国际治理、外交实践、制度设计与技术监管，参与全球 AI 峰会和 HAIP 报告框架。",
+   "Lewis Ho 在 Google DeepMind 做 AGI 战略与治理，研究前沿 AI 治理的制度化路径、前沿安全框架设计和国际协调机制。",
+   "傅莹在清华大学国际安全与战略中心工作，是 CnAISDA 的公众面孔，专做中国的国际 AI 治理外交。",
+   "Kenya AI Safety Network Office 是肯尼亚政府授权的机构，曾由技术特使出席网络启动，代表肯尼亚参与基础模型测试和先进系统风险评估等国际合作。",
+   "Centre for the Governance of AI 是牛津和伦敦的独立非营利机构，把国际治理列为主线，同时覆盖前沿 AI 监管、算力治理和智能体基础设施。",
+   "吴君仪在 Concordia AI 负责国际 AI 治理，做中国与世界其他地区之间的治理协调，产出中国和新加坡的 2026 年 AI 安全状况报告。",
+   "Oxford Martin AI Governance Initiative 隶属牛津马丁学院，研究国际 AI 制度、验证和算力治理，并运行技术 AI 治理项目。",
+   "Chris Meserole 是 Frontier Model Forum 的执行董事，推动跨实验室安全与安保标准、能力阈值和评估时机，也做国际 AI 政策对话。",
+   "Richard Ngo 是独立研究者与哲学家，研究联盟、德性伦理与合作的基础，写过 21st Century Civilization 政治哲学课程，为国际协调提供思想准备。"
+  ]
+ },
+ {
+  "id": "f24",
+  "role": "policy",
+  "question": "欧盟 AI Act、责任和前沿模型法律问题该看谁？",
+  "keywords": {
+   "zh": [
+    "欧盟AI法案",
+    "法律责任",
+    "前沿模型",
+    "合规",
+    "产品责任",
+    "监管法"
+   ],
+   "en": [
+    "EU AI Act",
+    "legal liability",
+    "frontier models",
+    "compliance",
+    "product liability",
+    "regulatory law"
+   ]
+  },
+  "top10": [
+   "ketan-ramakrishnan",
+   "gabriel-weil",
+   "jonathan-zittrain",
+   "christoph-winter",
+   "noam-kolt",
+   "sayash-kapoor",
+   "cullen-okeefe",
+   "john-morley",
+   "lydia-liu",
+   "john-tasioulas"
+  ],
+  "why": [
+   "Ketan Ramakrishnan 在 RAND 和耶鲁法学院工作，担任美国法学会 AI 民事责任项目的副报告人，研究横跨侵权法、AI 监管、宪法和法律哲学。",
+   "Gabriel Weil 是 Touro 大学法学院助理教授，专做灾难性 AI 风险的 liability rules 与侵权法，以及面向 AI 的法律制度设计。",
+   "Jonathan Zittrain 在哈佛横跨法学院、肯尼迪学院和计算机科学系任教，联合创办 Berkman Klein 中心，研究 AI 伦理治理和智能体的中介责任。",
+   "Christoph Winter 在剑桥担任法律与 AI 助理教授，创办 Institute for Law & AI，研究算力阈值、如何定义前沿模型和人工司法决策。",
+   "Noam Kolt 在耶路撒冷希伯来大学领导 GOAL 实验室，把委托代理经济学和普通法代理原则用到 AI 智能体上，并把 legal alignment 当作研究纲领。",
+   "Sayash Kapoor 是普林斯顿博士生，做 AI 智能体可靠性与大规模智能体评测基础设施 HAL、长时程开放世界评测 CRUX 和 AI 缺陷报告 FLARE-AI。",
+   "Cullen O'Keefe 担任 Institute for Law & AI 的研究主管，专做 law-following AI 和如何对 AI 智能体施加法律约束，工作直接落在前沿模型的法律问题上。",
+   "John D. Morley 是耶鲁法学院教授，是 Anthropic Long-Term Benefit Trust 协议的主要起草人，并自 2023 年起担任其主要法律顾问，就 AI 安全治理提供建议。",
+   "Lydia T. Liu 在普林斯顿计算机科学系工作，研究数据访问约束和法律合规制度下如何评估 AI 模型，也做算法合谋。",
+   "John Tasioulas 是牛津大学伦理与法律哲学教授，研究人权和法律哲学，对技术官僚式 AI 伦理提出人文主义批判，可为前沿模型法律问题提供规范框架。"
+  ]
+ },
+ {
+  "id": "f25",
+  "role": "policy",
+  "question": "美国国会和联邦政府里，谁在推动 AI 安全立法？",
+  "keywords": {
+   "zh": [
+    "美国国会",
+    "联邦政府",
+    "AI立法",
+    "参议院",
+    "行政命令",
+    "监管机构"
+   ],
+   "en": [
+    "US Congress",
+    "federal government",
+    "AI legislation",
+    "Senate",
+    "executive order",
+    "regulators"
+   ]
+  },
+  "top10": [
+   "ted-cruz",
+   "josh-hawley",
+   "helen-toner",
+   "center-for-ai-policy",
+   "jd-vance",
+   "openai-strategic-futures",
+   "nate-soares",
+   "alex-bores",
+   "jacob-helberg",
+   "seth-lazar"
+  ],
+  "why": [
+   "Ted Cruz 是参议院商务委员会主席，主张以联邦法抢占州 AI 立法、建立轻触式的联邦 AI 框架，跟踪立法进程绕不开他。",
+   "Josh Hawley 是共和党参议员，持反大科技民粹立场，关注 AI 对劳动的替代，主张限制 AI 用于重大决策。",
+   "Helen Toner 是乔治城 CSET 的执行董事，2026 年 4 月向参议院司法委员会作证，写可控性、防扩散和专制国家算力的文章。",
+   "Center for AI Policy 是华盛顿的无党派非营利组织，2025 年因资金耗尽停止大部分运作，其示范立法、标准和测试方面的产出仍可回看。",
+   "JD Vance 是美国副总统，把 AI 视为国家竞争机会，反对欧盟式监管，2026 年 5 月起明确主张致命自主决策必须保留人类控制。",
+   "OpenAI 的 Strategic Futures 团队研究灾难性风险、递归自我改进和前沿实验室与美国联邦政府的关系，可以看到实验室自己如何思考监管。",
+   "Nate Soares 是 MIRI 主席，与 Yudkowsky 合著 If Anyone Builds It, Everyone Dies，这本书成为纽约时报畅销书，并被美国国会和英国上议院引用。",
+   "Alex Bores 是纽约州众议员，推动 AI 安全立法，他的选区刚经历最昂贵的一场 AI 政策初选，外部支出超过 4000 万美元。",
+   "Jacob Helberg 是美国国务院分管经济事务的副国务卿，创办把硅谷和国会拉到一起的 Hill & Valley Forum，做中美技术竞争、出口管制和 AI 外交。",
+   "Seth Lazar 在澳大利亚国立大学教哲学，运行 Normative Competence 和 Governing Agents 等项目，思考 AI 治理需要什么新基础设施和新制度。"
+  ]
+ },
+ {
+  "id": "f26",
+  "role": "policy",
+  "question": "中国的 AI 安全治理网络和政策讨论有哪些关键参与者？",
+  "keywords": {
+   "zh": [
+    "中国AI治理",
+    "中国AI安全",
+    "政策网络",
+    "北京",
+    "监管",
+    "中美AI"
+   ],
+   "en": [
+    "China AI governance",
+    "China AI safety",
+    "policy network",
+    "Beijing",
+    "regulation",
+    "US-China AI"
+   ]
+  },
+  "top10": [
+   "yi-zeng-casia",
+   "liang-fang",
+   "concordia-ai",
+   "matt-sheehan",
+   "xue-lan",
+   "tsinghua-i-aiig",
+   "andrew-yao",
+   "xiao-qian",
+   "robert-trager",
+   "yawen-duan"
+  ],
+  "why": [
+   "曾毅是中科院自动化所研究员，任北京 AI 安全与治理研究院院长，参加联合国 AI 咨询机构，也做国际 AI 安全对话。",
+   "方亮在 Concordia AI 负责中国区的 AI 安全与治理，是 AIIA 专家成员，参与国内 AI 安全标准制定和政策咨询。",
+   "Concordia AI 安远AI 设在北京和新加坡，为 AI 公司和政策制定者做研究、会议和咨询，参与国家和全球标准工作，并做前沿能力风险监测。",
+   "Matt Sheehan 是卡内基国际和平基金会高级研究员，专做中国 AI 监管与标准，2026 年发表了关于中国 AI 伴侣治理和中美 AI 对话的分析。",
+   "薛澜是清华大学苏世民书院院长、人工智能国际治理研究院院长，研究中国参与全球 AI 安全机构，参与在巴黎 AI 行动峰会成立的 CnAISDA。",
+   "清华大学人工智能国际治理研究院做 AI 国际治理研究，承办二轨对话的中方一侧，其专家在 2026 年 6 月签署了 IDAIS-London 宣言。",
+   "姚期智任清华大学交叉信息研究院和人工智能学院院长，在国内倡导 AI 安全与治理，主持期智研究院项目，智谱等实验室的创始人都出自清华谱系。",
+   "肖茜是清华大学人工智能国际治理研究院副院长、薛澜的操作性副手，专注中国参与国际 AI 治理。",
+   "Robert Trager 在 GovAI 负责国际治理，研究新兴技术的外交实践与制度设计，参与全球 AI 峰会和 HAIP 报告框架，提供中国行动所处的多边背景。",
+   "段亚文是 Concordia AI 高级研究员、Safe AI Forum 方向的导师，做前沿安全评估和面向中国的 AI 治理。"
+  ]
+ },
+ {
+  "id": "f27",
+  "role": "policy",
+  "question": "How can governments regulate AI labs without freezing useful innovation?",
+  "keywords": {
+   "zh": [
+    "监管AI实验室",
+    "创新政策",
+    "风险分级",
+    "许可制度",
+    "前沿模型监管",
+    "监管沙盒"
+   ],
+   "en": [
+    "regulating AI labs",
+    "innovation policy",
+    "risk tiers",
+    "licensing",
+    "frontier model regulation",
+    "regulatory sandbox"
+   ]
+  },
+  "top10": [
+   "dean-ball",
+   "adam-thierer",
+   "owen-larter",
+   "chris-meserole",
+   "openai",
+   "deepmind",
+   "steinhardt",
+   "josh-jacobson",
+   "ai-safety-fund",
+   "frontier-model-forum"
+  ],
+  "why": [
+   "Dean W. Ball 是 OpenAI 的 Strategic Futures 负责人，在实验室内部处理灾难性风险、递归自我改进和实验室与政府的关系，是从实验室内部想监管的人。",
+   "Adam Thierer 是 R Street Institute 高级研究员，是美国技术政策中最高产的许可式创新写作者，一贯反对前沿 AI 监管。",
+   "Owen Larter 负责 Google DeepMind 的前沿政策与公共事务，做美英欧及全球的监管与治理框架，也做公共部门采用 AI 的政府合作。",
+   "Chris Meserole 是 Frontier Model Forum 的执行董事，推动跨实验室安全与安保标准、能力阈值和评估时机，是实验室自己接受的监管接口。",
+   "OpenAI 在准备 IPO 的同时把 Model Spec 作为公开行为宪法，并通过 Strategic Futures 团队做政策研究，是观察前沿实验室如何回应监管的样本。",
+   "Google DeepMind 设有 Frontier Safety Framework 和 AGI Safety & Alignment 团队，并把多智能体安全列为新资助的外部优先方向。",
+   "Jacob Steinhardt 是加州大学伯克利分校助理教授，联合创办 Transluce，做开源模型审计、行为引出和前沿模型的测量与评测科学。",
+   "Josh Jacobson 曾在 Alignment Research Center、伯克利生存风险倡议和 Future of Life Foundation 等机构工作，是 LTFF 受助人，代表监管平衡中的安全研究一侧。",
+   "AI Safety Fund 成立于 2023 年 10 月，2025 年 6 月起由 Frontier Model Forum 直接管理，资助第三方标准化评估、红队测试和生物与网络安全风险的独立研究。",
+   "Frontier Model Forum 推动跨实验室的共享技术理解，覆盖威胁模型、安全评估、缓解措施和前沿安全框架的设计。"
+  ]
+ },
+ {
+  "id": "f28",
+  "role": "policy",
+  "question": "AI 事故报告、吹哨人保护和透明度制度该怎么设计？",
+  "keywords": {
+   "zh": [
+    "事故报告",
+    "吹哨人保护",
+    "透明度",
+    "内部举报",
+    "安全事件",
+    "问责"
+   ],
+   "en": [
+    "incident reporting",
+    "whistleblower protection",
+    "transparency",
+    "internal reporting",
+    "safety incidents",
+    "accountability"
+   ]
+  },
+  "top10": [
+   "alan-chan",
+   "midas-project",
+   "tyler-johnston",
+   "nick-beckstead",
+   "frontier-ai-safety-commitments",
+   "apollo-research",
+   "percy-liang",
+   "dario-amodei",
+   "daniel-e-ho",
+   "joseph-bloom"
+  ],
+  "why": [
+   "Alan Chan 是 GovAI 研究员，研究 AI 智能体的事故分析、模型规范遵守的透明度、AI 作为吹哨人和 EU AI Act 第 50 条的智能体标注。",
+   "The Midas Project 是独立的非营利监督组织，专做 AI 公司问责、重组透明度和 super-PAC 调查。",
+   "Tyler Johnston 是独立非营利监督组织 The Midas Project 的主任，负责 AI 公司问责、OpenAI 重组透明度和 super-PAC 调查。",
+   "Nick Beckstead 联合创办 Secure AI Project 并任 CEO，聚焦透明度和加州州级政策，倡导降低先进 AI 严重危害的政策，并公开为加州政府 AI 岗位招人。",
+   "Frontier AI Safety Commitments 由英国和韩国在 2024 年 AI Seoul Summit 上宣布，要求开发者为严重前沿风险建立安全框架，包括能力阈值、外部评估和公开透明。",
+   "Apollo Research 设在伦敦，专做 scheming 与欺骗评估、model organisms 和评估的治理，在 EU Transparency Register 有登记，也在美国注册。",
+   "Percy Liang 在斯坦福基础模型研究中心工作，把透明度指数当作治理工具，也做智能体评测基础设施和红队测试平台。",
+   "Dario Amodei 是 Anthropic 的 CEO，公开倡导 AI 透明度监管，是支持透明度制度的前沿实验室负责人。",
+   "Daniel E. Ho 在斯坦福法学院研究 AI 数据透明度政策的局限，并把披露和评估作为通用 AI 的公平性干预手段。",
+   "Joseph Bloom 在英国 AI Security Institute 负责 Model Transparency 工作流，同时在 Alignment Forum 和 LessWrong 写作，已发表二十余篇帖子，其中 5 篇超过 100 karma。"
+  ]
+ },
+ {
+  "id": "f29",
+  "role": "policy",
+  "question": "国家安全部门应该如何看待 AI 与生物风险？",
+  "keywords": {
+   "zh": [
+    "国家安全",
+    "AI生物风险",
+    "生物安全",
+    "双重用途",
+    "威胁评估",
+    "大流行防范"
+   ],
+   "en": [
+    "national security",
+    "AI biorisk",
+    "biosecurity",
+    "dual use",
+    "threat assessment",
+    "pandemic preparedness"
+   ]
+  },
+  "top10": [
+   "future-of-humanity-institute",
+   "david-manheim",
+   "association-for-long-term-existence-and-resilience",
+   "carnegie-endowment-for-international-peace",
+   "center-for-global-development",
+   "charity-entrepreneurship",
+   "effisciences",
+   "era-cambridge",
+   "americans-for-responsible-innovation",
+   "center-for-new-american-security"
+  ],
+  "why": [
+   "Future of Humanity Institute 同时把 AI 安全和生物安全与大流行准备列为方向，并放在全球灾难性风险的统一框架下。",
+   "David Manheim 与 Association for Long Term Existence and Resilience、Coefficient Giving、Future of Humanity Institute 等多个机构相关，研究覆盖 AI 安全与生物安全和大流行准备。",
+   "Association for Long Term Existence and Resilience 同时以 AI 安全和生物安全与大流行准备为方向，是 SFF S-Process 的受资助机构。",
+   "Carnegie Endowment for International Peace 覆盖 AI 安全与治理、生物安全与大流行准备和国际关系，方便安全部门把技术风险和外交放在一起看。",
+   "Center for Global Development 做生物安全与大流行准备，包括与新冠相关的议题，也做全球健康与发展。",
+   "Charity Entrepreneurship 的方向包括生物安全与大流行准备，也涉及动物福利和培育新组织。",
+   "EffiSciences 的工作横跨 AI 安全、生物安全与大流行准备和气候变化，也是 Tallinn-personal 的受资助方。",
+   "ERA (Existential Risk Alliance) Cambridge 在英国剑桥办前沿 AI 安全、AI 治理和生物安全的 fellowship，导师来自剑桥、UK AISI、Google DeepMind、OpenAI 和 Anthropic。",
+   "Americans for Responsible Innovation 是 2023 年成立的美国非营利倡导组织，为 AI 治理做跨党派倡导，把国家安全和新兴风险列为重点。",
+   "Center for a New American Security 是华盛顿的两党国家安全智库，其技术与国家安全项目研究 AI 领导力、治理、风险管理和算力。"
+  ]
+ },
+ {
+  "id": "f30",
+  "role": "policy",
+  "question": "What institutions could govern advanced AI across borders?",
+  "keywords": {
+   "zh": [
+    "跨境治理",
+    "国际机构",
+    "全球AI治理",
+    "条约机构",
+    "核查机制",
+    "多边组织"
+   ],
+   "en": [
+    "cross-border governance",
+    "international institution",
+    "global AI governance",
+    "treaty body",
+    "verification regime",
+    "multilateral organization"
+   ]
+  },
+  "top10": [
+   "oxford-martin-aigi",
+   "seb-krier",
+   "lennart-heim",
+   "lisa-thiergart",
+   "mauricio-baker",
+   "united-nations-ai-governance",
+   "global-challenges-foundation",
+   "un-high-level-advisory-body-on-ai",
+   "marina-favaro",
+   "govai"
+  ],
+  "why": [
+   "Oxford Martin AI Governance Initiative 设在牛津马丁学院，运行技术 AI 治理项目，研究国际 AI 制度、验证和算力治理。",
+   "Seb Krier 在 Google DeepMind 做前沿 AI 治理与政策，研究面向先进 AI 的国际制度，也写先进 AI 之后的生活会是什么样。",
+   "Lennart Heim 曾任 RAND 算力团队负责人，专做算力治理、半导体政策和技术验证，这些是跨境治理的技术基础。",
+   "Lisa Thiergart 担任 SL5 Task Force 的主任，专做 SL5 级别的 AI 安全、硬件安全、验证和技术治理，也是 Manifund 的 regrantor。",
+   "Mauricio Baker 在 RAND 做 AI 政策研究，研究国际 AI 协议的技术验证机制，包括中美军控类比。",
+   "联合国的 AI 治理合作由数字与新兴技术办公室统筹，设有科学评估和包容性政策对话机制，是现成的多边框架。",
+   "Global Challenges Foundation 是 2012 年在斯德哥尔摩成立的基金会，其公开报告把 AI 当作灾难性风险和治理问题，推动加强全球治理。",
+   "联合国秘书长 AI 问题高级别咨询机构是 2023 至 2024 年设立的多利益攸关方咨询机构，分析了国际 AI 治理，并建议设立全球科学小组和包容性联合国政策对话。",
+   "Marina Favaro 在 Anthropic Institute 做政策与递归自我改进研究，研究遥测与早期预警指标、协调暂停的验证机制和智能爆炸演习。",
+   "Centre for the Governance of AI 是牛津和伦敦的独立非营利机构，覆盖国际治理、算力治理和前沿 AI 监管，并自带研究员培养管道。"
+  ]
+ },
+ {
+  "id": "f31",
+  "role": "invest",
+  "question": "投资 AI 公司时，怎么判断它的安全治理是不是认真的？",
+  "keywords": {
+   "zh": [
+    "AI投资",
+    "安全治理",
+    "尽职调查",
+    "风险管理",
+    "公司治理",
+    "安全承诺"
+   ],
+   "en": [
+    "AI investing",
+    "safety governance",
+    "due diligence",
+    "risk management",
+    "corporate governance",
+    "safety commitments"
+   ]
+  },
+  "top10": [
+   "zico-kolter",
+   "openai-safety-and-security-committee",
+   "paul-nakasone",
+   "lawrence-chan",
+   "toby-ord",
+   "jueyan-zhang",
+   "brian-tse",
+   "chris-liddell",
+   "halcyon-futures",
+   "center-for-new-american-security"
+  ],
+  "why": [
+   "他既在 Carnegie Mellon 主管机器学习系，又在 OpenAI Foundation 董事会，长期做 LLM 与 agent 的安全评测，可用来对照一家公司的安全功底。",
+   "这是 OpenAI 董事会下设的安全委员会，能收到模型技术评估和发布后监测报告，可在安全问题未解决时推迟发布，是观察董事会级安全治理的样本。",
+   "他在 OpenAI Foundation 董事会负责网络安全与国家安全层面的监督，看他的角色可以理解 AI 公司如何把安全审查放到董事会层面。",
+   "他在 FAR.AI 董事会参与治理，自己做的就是评测和可解释性方法研究，能帮助投资人分辨公司的安全评测是否有方法学支撑。",
+   "他是 Oxford 的生存风险研究者，现在在 AI Governance Initiative 做治理研究，还在 GovAI 董事会，可用来校准对公司长期风险治理的判断。",
+   "她管理 AI Safety Tactical Opportunities Fund，快速资助治理、对齐和审计类项目，从她的资助清单能看出哪些安全实践被专业基金认可。",
+   "他创办 Concordia AI，主导中国和新加坡的 AI 安全状况报告，又参与前沿 AI 风险管理框架，适合评估亚洲 AI 公司的安全治理水平。",
+   "他做过 Microsoft 和 GM 的 CFO，现在关注变革性技术的治理，从他的视角能看清一家 AI 公司的董事会治理是否专业。",
+   "它覆盖 AI 安全、生物安全、网络安全和治理政策，还给创始人提供支持和董事会参与，可作为观察安全导向机构如何运作的参照。",
+   "这家华盛顿的两党国家安全智库设有技术与国家安全项目，研究 AI 治理、风险管理和算力竞争，可为尽调提供国家安全视角。"
+  ]
+ },
+ {
+  "id": "f32",
+  "role": "invest",
+  "question": "哪些投资机构明确把 AI 安全或负责任 AI 当成主题？",
+  "keywords": {
+   "zh": [
+    "AI安全投资",
+    "负责任AI",
+    "主题基金",
+    "风险投资",
+    "影响力投资",
+    "投资机构"
+   ],
+   "en": [
+    "AI safety investing",
+    "responsible AI",
+    "thematic fund",
+    "venture capital",
+    "impact investing",
+    "investment firms"
+   ]
+  },
+  "top10": [
+   "coefficient-giving",
+   "dustin-moskovitz",
+   "transformative-ai-fund",
+   "solina-chau",
+   "natasha-crampton",
+   "cais",
+   "principles-of-intelligence",
+   "dan-hendrycks",
+   "alignment-project-fund",
+   "adria-garriga-alonso"
+  ],
+  "why": [
+   "它是全球最大的 AI 安全资助方，2014 年以来投入约 3.36 亿美元，正转向多捐赠人基金，是安全主题资助的标杆。",
+   "他把 Anthropic 股份转入非营利载体以避嫌，累计捐出超过 40 亿美元、其中约 3.36 亿投向 AI 安全，是个人资金进入该主题的代表案例。",
+   "它隶属 EA Funds，还获得 Coefficient Giving 追加资金，给个人和新机构发早期资助，覆盖技术 AI 安全与治理。",
+   "她所在的 Horizons Ventures 2026 年 1 月新募 3.5 亿美元，投向深科技、AI 和生物，可观察亚洲资金在前沿科技的配置。",
+   "她是 Microsoft 首席负责任 AI 官，建评测工具、外部红队联盟并对接多国 AI 安全研究所，展示了大公司把负责任 AI 建成体系的样子。",
+   "它获得 Jaan Tallinn 和 SFF 的大额资助，做研究、政策行动并出版 AI Frontiers，是把 AI 安全当核心主题的机构。",
+   "它的资金来自 AISI、SFF 等五家安全资助方，把复杂系统等非 ML 学科带入 AI 安全，旗下聚集了多个研究组织。",
+   "他执掌 Center for AI Safety 及其 Action Fund，同时担任 xAI 与 Scale AI 顾问，能看出安全研究机构与产业资本的关系。",
+   "这是由 UK AISI 牵头的全球对齐研究基金，规模超过 2700 万英镑，出资方含 OpenAI、Anthropic 等，是多方共担安全投入的实例。",
+   "他同时参与 AI Safety Camp、Center on Long-Term Risk、FAR.AI 和 Fund for Alignment Research，这些多重身份可以帮助追踪对齐研究的资金与人才流向。"
+  ]
+ },
+ {
+  "id": "f33",
+  "role": "invest",
+  "question": "Where is the market opportunity in AI evaluation and auditing?",
+  "keywords": {
+   "zh": [
+    "AI评测市场",
+    "模型审计",
+    "安全测试",
+    "第三方评估",
+    "合规科技",
+    "红队服务"
+   ],
+   "en": [
+    "AI evaluation market",
+    "model auditing",
+    "safety testing",
+    "third-party assessment",
+    "regtech",
+    "red-team services"
+   ]
+  },
+  "top10": [
+   "international-network-advanced-ai-measurement-evaluation-science",
+   "natasha-crampton",
+   "ai-safety-fund",
+   "logan-graham",
+   "xai",
+   "steinhardt",
+   "dawn-song",
+   "sam-bowman",
+   "seth-lazar",
+   "rishi-bommasani"
+  ],
+  "why": [
+   "这个跨国网络汇集十个司法辖区的 AI 安全研究所和官方评测机构，协调测评标准并发布自动化评测的共识领域，代表评测需求端的官方走向。",
+   "她在 Microsoft 推动评测工具和外部红队联盟，联合 18 所高校，还对接多国 AI 安全研究所，展示了企业评测需求的规模。",
+   "它由 Frontier Model Forum 管理，资助标准化第三方评测、红队和基准等独立研究，直接回答评测审计的资金从哪里来。",
+   "他领导 Anthropic Institute 的前沿红队，做网络、生物、自主性等方向的能力压力测试，是了解一线评测如何组织的视角。",
+   "它按加州 TFAIA 的时间表做合规，公开的安全研究产出却很少，这种落差正是第三方评测与审计的机会。",
+   "他创办 Transluce 做开源模型审计和行为引导，同时是 UC Berkeley 统计学助理教授，是把评测做成生意的例子。",
+   "她在 UC Berkeley 做 agent 安全与评测，推出 BenchJack 审计和 AgentBeats 标准化评估，指向 agent 评测这块新市场。",
+   "他在 Anthropic 的对齐科学团队做对齐审计基准和 agent 错位案例，是观察对齐审计需求的一线视角。",
+   "他在 Australian National University 主持 MINT Lab，把哲学研究接进技术评测，并研究治理 agent 所需的新基础设施。",
+   "他在 Stanford HAI 和 CRFM 做第三方评测、缺陷披露和开放权重模型风险管理，正对应这个市场的核心业务。"
+  ]
+ },
+ {
+  "id": "f34",
+  "role": "invest",
+  "question": "算力、芯片和数据中心的 AI 风险格局该看哪些节点？",
+  "keywords": {
+   "zh": [
+    "算力投资",
+    "AI芯片",
+    "数据中心",
+    "半导体",
+    "云计算",
+    "供应链风险"
+   ],
+   "en": [
+    "compute investment",
+    "AI chips",
+    "data centers",
+    "semiconductors",
+    "cloud computing",
+    "supply-chain risk"
+   ]
+  },
+  "top10": [
+   "lennart-heim",
+   "ren-zhengfei",
+   "oracle",
+   "wu-yongming",
+   "nvidia",
+   "lydia-liu",
+   "percy-liang",
+   "helen-toner",
+   "peter-wildeford",
+   "center-for-new-american-security"
+  ],
+  "why": [
+   "他曾在 RAND 领导算力团队，研究算力治理、半导体政策和技术验证，是理解算力与芯片风险研究的代表人物。",
+   "他公开淡化芯片瓶颈，主张用集群和堆叠应对，几乎完全依托国内供应链，是观察中国算力路线的一手来源。",
+   "它以算力换股权并向前沿实验室提供云承诺，是理解算力如何进入 AI 公司资本结构的样本。",
+   "他给出 Alibaba 单季 677 亿元资本开支和算力回报周期等数字，是观察中国大厂算力投入与回报口径的窗口。",
+   "它用算力换股权、许可加雇人等结构深度绑定 AI 公司，还传出最高 30 亿美元收购 AI21 的谈判，是算力资本化的核心节点。",
+   "她在 Princeton 研究数据受限和合规条件下的模型评测、算法合谋等问题，为算力格局补上法律与评测维度。",
+   "他在 Stanford 建 agent 评测设施和透明度指数，并做开放模型与红队平台，是观察算力与模型治理指标化趋势的人。",
+   "她执掌 Georgetown CSET 并组建前沿 AI 团队，研究算力流向威权国家等问题，还曾向美国参议院作证。",
+   "他共同创立 IAPS，研究硬件治理和美国 AI 政策，并在 Substack 和 X 上高频输出，是跟踪算力政策讨论的活跃来源。",
+   "它的技术与国家安全项目研究算力、AI 治理和国际竞争，可为芯片与数据中心风险提供国家安全视角。"
+  ]
+ },
+ {
+  "id": "f35",
+  "role": "invest",
+  "question": "实验室董事会在重大安全决策中到底起什么作用？",
+  "keywords": {
+   "zh": [
+    "实验室董事会",
+    "公司治理",
+    "安全委员会",
+    "董事责任",
+    "监督",
+    "高管问责"
+   ],
+   "en": [
+    "AI lab boards",
+    "corporate governance",
+    "safety committee",
+    "director duties",
+    "oversight",
+    "executive accountability"
+   ]
+  },
+  "top10": [
+   "zico-kolter",
+   "openai-safety-and-security-committee",
+   "chris-liddell",
+   "fynn-heide",
+   "lightcone-foundation",
+   "toby-ord",
+   "yuval-noah-harari",
+   "john-rose",
+   "maria-eitel",
+   "valerie-pisano"
+  ],
+  "why": [
+   "他是 Carnegie Mellon 机器学习系主任，在 OpenAI Foundation 董事会，又主持 OpenAI 安全委员会，是董事会介入安全决策的实例。",
+   "它听取模型技术评估和发布后监测报告，能在安全问题未解决时推迟发布，展示了董事会安全权力的具体形态。",
+   "他有 Microsoft、GM 的 CFO 和董事会经验，现在研究变革性技术治理，能说明传统公司治理经验如何进入 AI 实验室。",
+   "他共同创办 Safe AI Forum 并运营 IDAIS 系列会议，且声明不接受任何 AI 实验室资助，提供了独立于实验室的治理讨论场合。",
+   "它由 Max Tegmark 任董事会主席、Jaan Tallinn 任董事，掌管最大一笔加密资产来源的 AI 安全捐赠，展示了资金方如何组织安全治理。",
+   "他在 Oxford 研究生存风险，担任 GovAI 董事，可从治理研究者视角理解董事会应如何对待重大安全决策。",
+   "他是 LawZero 董事会成员，参与该机构治理，可作为观察非实验室安全机构董事会如何运作的例子。",
+   "他是 LawZero 董事会成员，参与该机构治理，可与其余董事对照观察安全机构董事会的组成。",
+   "她以董事身份参与 LawZero 治理，是观察安全机构董事会人员构成与职责的具体样本。",
+   "她在 LawZero 董事会任职并参与治理，与另外几位董事一起构成观察安全机构董事会运作的窗口。"
+  ]
+ },
+ {
+  "id": "f36",
+  "role": "invest",
+  "question": "Who tracks frontier model economics, scaling laws, and investment requirements?",
+  "keywords": {
+   "zh": [
+    "前沿模型经济学",
+    "扩展定律",
+    "资本开支",
+    "训练成本",
+    "AI经济",
+    "投资需求"
+   ],
+   "en": [
+    "frontier model economics",
+    "scaling laws",
+    "capital expenditure",
+    "training costs",
+    "AI economics",
+    "investment requirements"
+   ]
+  },
+  "top10": [
+   "tamay-besiroglu",
+   "eli-dourado",
+   "ruth-porat",
+   "solina-chau",
+   "wu-yongming",
+   "kai-fu-lee",
+   "nick-bostrom",
+   "astera-institute",
+   "ruairi-donnelly",
+   "hillhouse"
+  ],
+  "why": [
+   "他共同创立 Epoch AI 后又创办 Mechanize，一直做 AI 经济学与预测，是追踪前沿模型经济的研究者。",
+   "他在 Astera Institute 负责战略投资，专注把资本投入受监管的重资产行业，可用来理解 AI 基建的投资逻辑。",
+   "她是 Alphabet 总裁兼首席投资官，主管资本配置和 AI 资本开支，是跟踪大厂前沿投入的一手来源。",
+   "她带领的 Horizons Ventures 新募 3.5 亿美元，拥有 20 多名投资人员，投向 AI 等深科技，反映前沿资金动向。",
+   "他披露 Alibaba 单季 677 亿元资本开支、算力回报周期和 AI 收入口径，提供前沿模型投入产出的公司级数据。",
+   "他创办 01.AI 和 Sinovation Ventures，转向企业级 agent 的商业化，并明确表示不再谈 AGI 与 scaling laws，代表了从投入转向回报的口径。",
+   "他写有超级智能最优时机和以开放全球投资治理 AGI 的论文，从宏观策略角度讨论前沿 AI 的投入节奏。",
+   "这家 Berkeley 机构同时布局神经科学、AGI 研究和战略投资，是观察前沿研究资本如何组织的样本。",
+   "他掌管 Macroscopic Ventures 每年约 3000 万美元、目标增至 1 亿美元的资助与投资计划，能看到前沿资金的投放规模。",
+   "它在北京、香港、新加坡布局，持有上市后 AI 头寸并做全球科技配置，是观察大资金如何参与前沿模型经济的窗口。"
+  ]
+ },
+ {
+  "id": "f37",
+  "role": "invest",
+  "question": "做 AI 生物技术投资，哪些安全风险最值得尽调？",
+  "keywords": {
+   "zh": [
+    "AI生物技术",
+    "生物安全尽调",
+    "双重用途",
+    "病原体风险",
+    "实验室安全",
+    "生命科学投资"
+   ],
+   "en": [
+    "AI biotech",
+    "biosecurity diligence",
+    "dual use",
+    "pathogen risk",
+    "lab safety",
+    "life-science investing"
+   ]
+  },
+  "top10": [
+   "idais",
+   "future-of-humanity-institute",
+   "ai-safety-fund",
+   "brian-tse",
+   "david-manheim",
+   "miles-brundage",
+   "association-for-long-term-existence-and-resilience",
+   "carnegie-endowment-for-international-peace",
+   "effisciences",
+   "emily-oehlsen"
+  ],
+  "why": [
+   "它的伦敦声明聚焦 AI 驱动的网络攻击和生物滥用，警告双用途能力正扩散到非国家行为体，直接给出生物尽调的风险清单。",
+   "它研究 AI 安全、生物安全和大流行防范等全球灾难风险，并获得 LTFF 等资助，可为生物交叉投资提供风险框架。",
+   "它资助前沿模型风险研究，明确涵盖生物与网络安全风险及第三方评测，可用来对照生物方向尽调该查什么。",
+   "他参与 NTI 与 Concordia 的生物能力评测工作组，又推前沿 AI 风险管理框架，是生物风险评测的一线人物。",
+   "他关联长期存续协会、Coefficient Giving 和 FHI，研究 AI 安全与生物安全、大流行防范，是生物风险网络中的研究者。",
+   "他领导 AVERI，独立审查前沿实验室的安全声明，专查说法与做法的差距，可为生物安全承诺提供外部校验。",
+   "它获得 SFF 和 Tallinn 个人的资助，做 AI 安全与生物安全、大流行防范工作，是尽调时可参考的执行机构。",
+   "这家国际关系智库研究 AI 治理、生物安全和大流行防范，可把生物投资放进地缘政治背景里审视。",
+   "它获 Tallinn 个人资助，覆盖 AI 安全与生物安全等方向，可作为了解生物安全研究供给的线索。",
+   "她以 Coefficient Giving 总裁身份负责全球灾难风险组合，涵盖生物安全与技术 AI 安全，能看到主要资助方如何权衡生物风险。"
+  ]
+ },
+ {
+  "id": "f38",
+  "role": "invest",
+  "question": "中国 AI 实验室与安全生态里有哪些关键机构？",
+  "keywords": {
+   "zh": [
+    "中国AI实验室",
+    "中国AI安全",
+    "基础模型",
+    "北京研究机构",
+    "中国科技公司",
+    "安全生态"
+   ],
+   "en": [
+    "Chinese AI labs",
+    "China AI safety",
+    "foundation models",
+    "Beijing institutes",
+    "Chinese tech companies",
+    "safety ecosystem"
+   ]
+  },
+  "top10": [
+   "yi-zeng-casia",
+   "cnaisda",
+   "andrew-yao",
+   "liang-fang",
+   "lily-ottinger",
+   "zhipu-ai",
+   "baai",
+   "brian-tse",
+   "china-mobile",
+   "ai-safety-hong-kong"
+  ],
+  "why": [
+   "他主持北京 AI 安全与治理研究院，参与联合国 AI 咨询，研究类脑智能与机器意识，是中国安全治理架构内的代表人物。",
+   "它代表中国参与国际 AI 安全研究所网络，并在巴黎、WAIC 和 AI Impact Summit 上充当接口，是理解中国生态对外通道的关键。",
+   "他执掌清华 IIIS 与 AI 学院，在国内推动 AI 安全治理，学生创办了 Zhipu、MiniMax 等实验室，是理解中国 AI 人才与安全话语的源头。",
+   "他在 Concordia AI 负责中国区安全与治理，又是 AIIA 专家，参与国内安全标准工作，是连接国际机构与中国政策的桥梁。",
+   "她主编 ChinaTalk，关注中国 AI 实验室与出口管制，是外部观察者跟踪中国 AI 生态的信息源。",
+   "它是第一家上市的中国纯 LLM 公司，拥有 GLM 模型系列，可用来观察中国头部实验室的商业与安全处境。",
+   "它的年会是中国少有的把 AI 安全与能力研究同场安排的公开场合，是观察中国安全生态开放程度的窗口。",
+   "他发布中国 AI 安全状况报告，在中国 AI 产业联盟安全委员会任职，是了解中国实验室安全实践的一手来源。",
+   "它建设东数西算等算力基础设施，如今又直接入股实验室，可观察算力与资本如何塑造中国 AI 格局。",
+   "它通过奖学金、翻译项目和高校社团做连接，并说全球 AI 安全运动与本地之间几乎没有联系，正尝试补上这一缺口。"
+  ]
+ },
+ {
+  "id": "f39",
+  "role": "invest",
+  "question": "Are there startups building technical AI safety infrastructure?",
+  "keywords": {
+   "zh": [
+    "AI安全创业",
+    "安全基础设施",
+    "监控工具",
+    "模型评测",
+    "可解释性工具",
+    "保障平台"
+   ],
+   "en": [
+    "AI safety startups",
+    "safety infrastructure",
+    "monitoring tools",
+    "model evaluation",
+    "interpretability tools",
+    "assurance platforms"
+   ]
+  },
+  "top10": [
+   "buck-shlegeris",
+   "seldon-lab",
+   "lawrence-chan",
+   "rohin-shah",
+   "thinking-machines-lab",
+   "linda-linsefors",
+   "dmitry-vaintrob",
+   "clement-neo",
+   "fazl-barez",
+   "goodfire"
+  ],
+  "why": [
+   "他创办并执掌 Redwood Research，做 AI 控制、不可信模型协议和控制评测，并为前沿实验室提供咨询，是安全基础设施创业的代表。",
+   "这个由 Finn Metz 和 Esben Kran 共同创办的加速器专门孵化 AI 安全与保证方向的创业公司，是观察该赛道创业供给的样本。",
+   "他在 FAR.AI 董事会参与治理，研究评测与可解释性方法，可用来判断技术安全工具的真实水平。",
+   "他在 Google DeepMind 主管 AGI 对齐与安全，还致力于把安全论证讲给外部人听，是了解大厂安全技术栈的视角。",
+   "它公开强调人类监督和可解释性，要做能解释自身推理的模型，是把安全写进产品路线的创业公司。",
+   "她创办 AI Safety Camp，为可解释性等方向对接项目，并运营线上研究孵化器，是安全技术创业人才的上游。",
+   "他在 Principles of Intelligence 担任技术总监，用数学方法研究可解释性和 AI 安全，代表安全研究的学理路线。",
+   "他为 Apart Research 的可解释性研究提供指导，又参与东南亚 AI 安全社群，能反映安全研究的社区支撑。",
+   "他在 Oxford 领导技术安全治理实验室，把可解释性、评测和审计转成治理机制，是技术工具对接治理需求的连接点。",
+   "这家公益公司建可解释性 agent 和基础设施，用于模型审计、红队和故障识别，正是题目所指的技术安全基础设施创业。"
+  ]
+ },
+ {
+  "id": "f40",
+  "role": "invest",
+  "question": "如果 AI 风险论述遭到反弹，投资者该听哪些批评声音？",
+  "keywords": {
+   "zh": [
+    "AI风险批评",
+    "反对者",
+    "怀疑论",
+    "监管反弹",
+    "有效加速主义",
+    "风险争议"
+   ],
+   "en": [
+    "AI risk critics",
+    "opponents",
+    "skepticism",
+    "regulatory backlash",
+    "effective accelerationism",
+    "risk debate"
+   ]
+  },
+  "top10": [
+   "peter-thiel",
+   "zach-stein-perlman",
+   "openai-safety-and-security-committee",
+   "john-tasioulas",
+   "michael-gibson",
+   "timnit-gebru",
+   "alex-hanna",
+   "eric-weinstein",
+   "garrison-lovely",
+   "jack-titus"
+  ],
+  "why": [
+   "他从神学政治角度抨击安全主义，自称长期对 AI 过敏，还有卖出 Nvidia 的报道，是反弹声音里投资人该先听的批评者。",
+   "他创办 AI Lab Watch，给前沿实验室的安全承诺打分，也批评资助流程，是盯着安全叙事是否兑现的批评者。",
+   "它听取技术评估报告，能在安全顾虑未解决时推迟发布，可用来检验安全叙事是否有真实的制度约束。",
+   "他是 Oxford 伦理与法律哲学教授，从人权角度批评技术官僚式的 AI 伦理，提供人文立场的反思。",
+   "他共同执掌 1517 Fund，专投无学历和辍学创业者，并批评学历主义，代表对 AI 精英叙事持怀疑的资本声音。",
+   "她在 DAIR 做扎根社区的 AI 研究，公开批评规模化路线和 TESCREAL 思潮，提供与主流风险叙事不同的角度。",
+   "她在 DAIR 主管研究，从社会学角度分析 AI 劳动与数据工作，并用播客嘲讽炒作，是批评 AI 叙事的活跃声音。",
+   "他主持 The Portal，长期批评科学与学术体制，可为理解对 AI 风险建制的怀疑提供体制批评的背景。",
+   "他写 Obsolete 也为 NYT、Nature 等撰稿，从劳动和政治经济学角度批评 AI 产业，代表媒体端的反弹声音。",
+   "他在能源部等联邦机构参与 AI 政策与标准工作，可帮助投资人判断风险叙事在政策圈的处境。"
+  ]
+ },
+ {
+  "id": "f41",
+  "role": "media",
+  "question": "我要写一篇 AI 安全入门报道，最该采访谁？",
+  "keywords": {
+   "zh": [
+    "AI安全入门",
+    "采访对象",
+    "专家",
+    "研究者",
+    "治理",
+    "技术安全"
+   ],
+   "en": [
+    "AI safety primer",
+    "interview sources",
+    "experts",
+    "researchers",
+    "governance",
+    "technical safety"
+   ]
+  },
+  "top10": [
+   "oxford-ai-safety-initiative",
+   "paul-christiano",
+   "alignment-project-fund",
+   "scott-emmons",
+   "lawrence-chan",
+   "adria-garriga-alonso",
+   "mit-ai-alignment",
+   "matt-macdermott",
+   "tomas-gavenciak",
+   "andrew-yao"
+  ],
+  "why": [
+   "它是 Jericho Alignment Infrastructure 旗下的牛津社区项目，为学生和研究者开设技术与治理项目，能讲清新手如何进入 AI 安全。",
+   "他创办 ARC，研究神经网络行为的机理解释，又参与美国联邦 AI 安全标准，技术和政策两条线都能讲。",
+   "这是 UK AISI 牵头的对齐研究基金，规模超过 2700 万英镑，OpenAI 和 Anthropic 都在出资方之列，能帮新手看清资助版图。",
+   "他在 Anthropic 做安全研究，关注思维链可监控性和部分可观测下的 AI 控制，是入门报道里技术路线的好样本。",
+   "他参与 FAR.AI 治理，研究评估与可解释性方法，能把 AI 安全评估怎么做讲明白。",
+   "他的履历横跨 AI Safety Camp、Center on Long-Term Risk、FAR.AI、Fund for Alignment Research，采访他能帮新手一次了解社区里的多个机构。",
+   "这个 MIT 学生社团支持学生学习灾难性 AI 风险、参与对齐研究，能说明年轻人如何入门。",
+   "他在 Coefficient Giving 评审技术 AI 安全的资助申请，又有数学方向的对齐研究背景，能讲钱往哪里去。",
+   "他参与 AI Safety Camp 和 Alignment of Complex Systems 研究组，也是 LTFF 受助人，适合作为了解欧洲安全社区一线研究者的窗口。",
+   "他在清华和期智研究院推动 AI 安全与治理，智谱、MiniMax、StepFun 的创始人都出自清华与 SenseTime 一线，能给出中国视角。"
+  ]
+ },
+ {
+  "id": "f42",
+  "role": "media",
+  "question": "哪些记者和媒体长期跟踪 AI 公司与安全争议？",
+  "keywords": {
+   "zh": [
+    "AI记者",
+    "科技媒体",
+    "安全争议",
+    "调查报道",
+    "AI公司",
+    "新闻"
+   ],
+   "en": [
+    "AI journalists",
+    "tech media",
+    "safety controversy",
+    "investigative reporting",
+    "AI companies",
+    "news"
+   ]
+  },
+  "top10": [
+   "transformer-news",
+   "median-group",
+   "shakeel-hashim",
+   "kevin-roose",
+   "zvi-mowshowitz",
+   "daniel-kokotajlo",
+   "tarbell-center",
+   "ai-frontiers",
+   "sayash-kapoor",
+   "robert-trager"
+  ],
+  "why": [
+   "它专注报道变革性 AI 的权力与政治，日常和周报结合，还开放外部专家评论，是专门的 AI 新闻媒体。",
+   "公开资料把它归为新闻媒体类组织，关注全球灾难性风险，可作为追踪 AI 风险报道的线索。",
+   "他是 Transformer 主编，2026 年扩充了采编团队，能讲清这家 AI 新闻机构的运作方式。",
+   "他离开 The New York Times 后独立创业，继续主持 Hard Fork 和撰写 AI 专栏，是长期跟踪 AI 公司的老作者。",
+   "他在 Don't Worry About the Vase 上保持每日更新的 AI 专栏，已发到第 184 期，还写过 OpenAI 与 HuggingFace 事件的复盘，跟进很紧。",
+   "他主导 AI 2027 及后续模型，对关键突破的中位预测从 2028 年移向 2030 年，并遭到实验室内部人士反驳，本身就带争议。",
+   "它资助 AI 新闻的奖学金、驻留和拨款，出版 Transformer，想知道谁在支持 AI 报道就看它。",
+   "它由 Center for AI Safety 支持，每周发布关于 AI 政策、法律、经济与安全的长文，是了解该组织立场的窗口。",
+   "他研究 AI 智能体可靠性与大规模评测，还做 AI 缺陷报告，能为报道提供评测方法。",
+   "他在牛津做新兴技术国际治理研究，参与全球 AI 峰会与 HAIP 报告框架，能解释治理层面的争议。"
+  ]
+ },
+ {
+  "id": "f43",
+  "role": "media",
+  "question": "Who are the strongest critics of existential-risk-focused AI safety?",
+  "keywords": {
+   "zh": [
+    "AI末日论批评",
+    "存在风险批评",
+    "怀疑者",
+    "当前伤害",
+    "权力集中",
+    "批判AI"
+   ],
+   "en": [
+    "AI doom critics",
+    "existential risk critics",
+    "skeptics",
+    "present harms",
+    "concentration of power",
+    "critical AI"
+   ]
+  },
+  "top10": [
+   "rose-hadshar",
+   "aidan-ogara",
+   "simran-dhaliwal",
+   "peter-thiel",
+   "sean-o-heigeartaigh",
+   "cser",
+   "justin-shovelain",
+   "ryan-carey",
+   "toby-ord",
+   "josh-jacobson"
+  ],
+  "why": [
+   "她研究权力集中、AI 政变与过渡期治理，提供不同于灭绝风险叙事的切入点，适合作为对照。",
+   "他在 Longview 负责 AI 资助，发起极端权力集中方向的征集，能从资助方角度谈路线之争。",
+   "他作为 Longview 的 CEO 为年捐赠超百万美元的捐赠者做顾问，能解释资助方在路线争论中的取舍。",
+   "他公开论证 safetyism 和世界政府才是真正的危险，并自称对 AI 过敏，是批评安全派叙事的标志性声音。",
+   "他领导剑桥的存在性风险研究中心，2026 年研究美中 AI 竞赛中的权力掮客，能正面回应针对该领域的批评。",
+   "它在剑桥研究全球灾难性风险与技术治理，能说明被批评的存在性风险路线具体在做什么。",
+   "他在 Convergence Analysis 主持存在性风险的战略与优先级研究，能为争论提供框架层面的分析。",
+   "他的履历横跨 CSER、FHI、MIRI、OpenAI 等机构，了解存在性风险阵营内部的不同立场可以找他。",
+   "他长期研究存在性风险，FHI 关闭后在牛津 AI 治理倡议继续以 AI 为重点，是理解被批评对象的关键人物。",
+   "他关联 ARC、FAR.AI、Future of Life Foundation 等多个机构，能从内部视角谈存在性风险路线的分歧。"
+  ]
+ },
+ {
+  "id": "f44",
+  "role": "media",
+  "question": "我想报道“AI 加速主义 vs 安全派”，双方代表人物有哪些？",
+  "keywords": {
+   "zh": [
+    "AI加速主义",
+    "安全派",
+    "有效加速主义",
+    "技术乐观主义",
+    "减速",
+    "争论"
+   ],
+   "en": [
+    "AI accelerationism",
+    "AI safety camp",
+    "effective accelerationism",
+    "techno-optimism",
+    "deceleration",
+    "debate"
+   ]
+  },
+  "top10": [
+   "coefficient-giving",
+   "ai-safety-camp",
+   "center-for-human-compatible-ai",
+   "future-of-humanity-institute",
+   "idais",
+   "cais",
+   "principles-of-intelligence",
+   "uc-berkeley",
+   "paul-christiano",
+   "dan-hendrycks"
+  ],
+  "why": [
+   "它是全球最大的 AI 安全资助方，2014 年以来投入约 3.36 亿美元，采访它能看清安全派的资金结构。",
+   "多位安全派研究者（如 Adrià Garriga-Alonso、Tomáš Gavenčiak）的履历与其相关，可作为观察安全派社区组织的切口。",
+   "公开资料显示它从事 AI 安全与技术研究，可作为安全派学术力量的代表机构。",
+   "它同时覆盖 AI 安全、生物安全与大流行准备、全球灾难性风险，也参与领域建设，能代表安全派的学术布局。",
+   "其 2026 年 4 月伦敦声明讨论 AI 网络攻击与生物滥用，呼吁中美协调行动，是安全派推动国际合作的实例。",
+   "它由 Jaan Tallinn 等资助，做研究、政策行动并出版 AI Frontiers，是安全派组织化运作的样本。",
+   "它把复杂系统等非机器学习学科带入 AI 安全，旗下聚集多家研究机构，展示安全派内部的多元路线。",
+   "公开资料显示它参与 AI 安全与技术研究及人才管道建设，是安全派在大学体系里的代表。",
+   "他创办 ARC 并参与美国联邦 AI 安全标准，是安全派横跨技术与政策的代表人物。",
+   "他领导 Center for AI Safety，主要资助方是 Jaan Tallinn，又担任 xAI 和 Scale AI 的顾问，本人正处在两派争议的交汇处。"
+  ]
+ },
+ {
+  "id": "f45",
+  "role": "media",
+  "question": "OpenAI、Anthropic 等实验室的离职与安全争议该找哪些节点？",
+  "keywords": {
+   "zh": [
+    "实验室离职",
+    "OpenAI争议",
+    "Anthropic安全",
+    "安全团队解散",
+    "员工离开",
+    "内部冲突"
+   ],
+   "en": [
+    "lab departures",
+    "OpenAI controversy",
+    "Anthropic safety",
+    "safety team dissolution",
+    "employee exits",
+    "internal conflict"
+   ]
+  },
+  "top10": [
+   "alignment-project-fund",
+   "holden-karnofsky",
+   "johannes-heidecke",
+   "era-cambridge",
+   "founders-fund",
+   "amazon",
+   "benjamin-mann",
+   "catherine-olsson",
+   "jensen-huang",
+   "ahmed-yahia-al-idrissi"
+  ],
+  "why": [
+   "这个对齐研究基金由 UK AISI 牵头，OpenAI 和 Anthropic 都是出资方，能反映实验室与安全机构的绑定关系。",
+   "他在 Anthropic 参与负责任扩展政策，2026 年公开谈过员工成为潜在外部评审机构的主要捐赠来源。",
+   "他 2026 年 7 月离开 OpenAI，此前做安全系统、基于规则的奖励和危险能力评估，是最新的离职案例。",
+   "其前沿安全与生物安全研究员项目的导师来自剑桥、UK AISI、Google DeepMind、OpenAI 和 Anthropic，能帮忙牵线实验室内部人士。",
+   "合伙人包括 Thiel，基金一年内向 Anthropic、Anduril、OpenAI 投入 46 亿美元，是实验室背后的关键资本。",
+   "它同时是 Anthropic 的最大外部投资方和 OpenAI 的领投方，谈实验室争议绕不开它的双重角色。",
+   "他的履历同时关联 OpenAI、Anthropic 和 Machine Intelligence Research Institute，能谈实验室之间的人员流动与伴随的安全争议。",
+   "他先后与 OpenAI 和 Anthropic 相关，又关联资助方 Coefficient Giving，能谈实验室与外部资助的关系。",
+   "他同时向所有前沿实验室出售算力，并反对美国对华出口管制，是实验室背后绕不开的角色。",
+   "他掌管 MGX 约 490 亿美元的 AI 基金，同时持有 Anthropic 和 OpenAI 的仓位，能解释主权资本与实验室的纠葛。"
+  ]
+ },
+ {
+  "id": "f46",
+  "role": "media",
+  "question": "有哪些重要的 AI 吹哨人、内部举报和信息披露案例？",
+  "keywords": {
+   "zh": [
+    "AI吹哨人",
+    "内部举报",
+    "信息披露",
+    "保密协议",
+    "员工维权",
+    "安全事件"
+   ],
+   "en": [
+    "AI whistleblowers",
+    "internal reporting",
+    "disclosures",
+    "NDAs",
+    "employee advocacy",
+    "safety incidents"
+   ]
+  },
+  "top10": [
+   "tc260",
+   "vincent-conitzer",
+   "neel-nanda",
+   "principles-of-intelligence",
+   "paul-christiano",
+   "lewis-hammond",
+   "iliad",
+   "allan-dafoe",
+   "dawn-song",
+   "demski"
+  ],
+  "why": [
+   "它制定网络安全标准，涵盖 AI 风险分级、模型安全测试与事件响应，是中国语境下信息披露的制度来源。",
+   "他研究先进 AI 的关停机制与安全阀设计，讨论内部人何时能拉闸时可以参考他的框架。",
+   "他领导 Google DeepMind 的机制可解释性团队，公开表示对宏大路线更悲观、转向务实，立场转变本身就是报道素材。",
+   "它把复杂系统等学科带入 AI 安全，旗下机构众多，可为实验室内部争议提供外部参照。",
+   "他创办 ARC 并参与美国联邦 AI 安全标准，能从标准制定者的角度谈安全信息披露的边界。",
+   "他主持合作 AI 基金会的研究，联合 Google DeepMind 等设立多智能体安全基金，能谈实验室间的合作与分歧。",
+   "它研究深度学习的数学基础，并为 AI 安全领域建设科研诚信基础设施，与举报的制度化直接相关。",
+   "他在 Google DeepMind 负责前沿安全与治理战略，提出合作 AI 议程，能解释大实验室如何处理内部安全争议。",
+   "她研究智能体安全与从意图到执行的完整性，还做基准审计，能为披露模型问题提供技术手段。",
+   "他研究有限理性的学习过程何时可以信任另一个，并把非正式的安全论证形式化，能帮报道检验内部论点的可靠性。"
+  ]
+ },
+ {
+  "id": "f47",
+  "role": "media",
+  "question": "Who can explain the politics behind AI legislation in Washington?",
+  "keywords": {
+   "zh": [
+    "华盛顿AI政治",
+    "AI立法",
+    "国会游说",
+    "白宫",
+    "政策顾问",
+    "监管"
+   ],
+   "en": [
+    "Washington AI politics",
+    "AI legislation",
+    "Congress lobbying",
+    "White House",
+    "policy advisers",
+    "regulation"
+   ]
+  },
+  "top10": [
+   "center-for-ai-policy",
+   "michael-kratsios",
+   "sriram-krishnan",
+   "sarah-heck",
+   "foundation-for-american-innovation",
+   "center-for-new-american-security",
+   "mackenzie-arnold",
+   "ted-cruz",
+   "mark-beall",
+   "william-howell"
+  ],
+  "why": [
+   "它曾在华盛顿推动模型立法、标准测试和政府准备，2025 年因资金枯竭停运，其兴衰本身就是政策生态的故事。",
+   "他作为白宫科技政策办公室主任执行 AI 行动计划，并抵制州级和国际 AI 监管，是立法博弈的核心人物。",
+   "他 2026 年 6 月离开白宫后筹建新的外部政策机构，此前来自 a16z，能讲清政府与风投之间的人员流动。",
+   "她在 Anthropic 负责公共政策，跟进 SB 53、RAISE Act 等模型透明度立法，能从实验室视角解释立法博弈。",
+   "它从异端右翼立场研究 AI 政策、国家能力与新兴技术治理，代表华盛顿立法讨论中的一股力量。",
+   "它是两党背景的国家安全智库，研究 AI 领导力、算力与国际竞争，能解释立法背后的国家安全逻辑。",
+   "她在 Institute for Law & AI 负责美国政策，专攻 AI 责任问题，能解释立法中的责任条款之争。",
+   "他作为参议院商务委员会主席，推动联邦抢先于州法、轻触式的联邦框架，直接影响立法走向。",
+   "他曾任美国国防部 JAIC，如今在华盛顿经营前沿 AI 风险倡议组织，能讲军方视角如何进入立法。",
+   "他在华盛顿筹建新的政策学院，研究美国政治制度与行政权力，能为立法博弈提供制度层面的解读。"
+  ]
+ },
+ {
+  "id": "f48",
+  "role": "media",
+  "question": "写中国 AI 安全生态，不能漏掉哪些人和机构？",
+  "keywords": {
+   "zh": [
+    "中国AI安全",
+    "中国AI治理",
+    "研究机构",
+    "科技公司",
+    "政策专家",
+    "中文社群"
+   ],
+   "en": [
+    "China AI safety",
+    "Chinese AI governance",
+    "research institutes",
+    "tech companies",
+    "policy experts",
+    "Chinese community"
+   ]
+  },
+  "top10": [
+   "yi-zeng-casia",
+   "kwan-yee-ng",
+   "cnaisda",
+   "liang-fang",
+   "isabella-duan",
+   "andrew-yao",
+   "xue-lan",
+   "ya-qin-zhang",
+   "concordia-ai",
+   "yawen-duan"
+  ],
+  "why": [
+   "他主持北京 AI 安全与治理研究所，参与联合国 AI 咨询，研究中国 AI 安全与伦理治理，是绕不开的人物。",
+   "他负责 Concordia AI 的国际治理协调，发布《中国 AI 安全现状（2026）》报告，是中外对话的桥梁人物。",
+   "它代表中国参与国际 AI 安全研究所网络，是巴黎、上海 WAIC 和 2026 年 AI Impact Summit 上的对接方。",
+   "作为 Concordia AI 中国方向负责人，参与国内 AI 安全标准与治理，也是 AIIA 专家，能讲清本土政策网络。",
+   "参与 IDAIS 的召集与中美 AI 安全协调，又在 Safe AI Forum 做研究，是跨境安全合作的活跃节点。",
+   "他在清华和期智研究院推动 AI 安全与治理，智谱、MiniMax、StepFun 的创始人都出自清华与 SenseTime 一线，是中国生态的源头人物。",
+   "主持清华 AI 国际治理研究所，参与 2025 年巴黎峰会发起的 CnAISDA，能讲中国如何对接全球安全机制。",
+   "执掌清华智能产业研究院，参与 IDAIS，是中国产业界与国际科学界在 AI 安全治理上的接口人物。",
+   "它在北京和新加坡运作，为 AI 公司和政策制定者做研究与咨询，约 18 名员工中三分之二是中国籍。",
+   "在 Concordia AI 做研究，参与 Safe AI Forum 项目里的前沿安全评估与中国方向治理工作。"
+  ]
+ },
+ {
+  "id": "f49",
+  "role": "media",
+  "question": "How should I report on model welfare without making it sound like science fiction?",
+  "keywords": {
+   "zh": [
+    "模型福利报道",
+    "机器意识",
+    "数字心智",
+    "感知能力",
+    "道德地位",
+    "科学传播"
+   ],
+   "en": [
+    "model welfare reporting",
+    "machine consciousness",
+    "digital minds",
+    "sentience",
+    "moral status",
+    "science communication"
+   ]
+  },
+  "top10": [
+   "lucius-caviola",
+   "jeff-sebo",
+   "nyu-center-mind-ethics-policy",
+   "geoff-keeling",
+   "nell-watson",
+   "rob-bensinger",
+   "forethought",
+   "lowe-lundin",
+   "kyle-fish",
+   "yi-zeng-casia"
+  ],
+  "why": [
+   "他研究道德判断心理学与数字心智，收集专家对 AI 意识的预测，能用社会科学语言谈模型福利。",
+   "他研究包括 AI 在内的非人类心智的道德地位与福利，并做 AI 福利政策，是这个话题最对口的学者。",
+   "它专门研究 AI 道德地位与福利、意识指标，还做情感对齐设计政策，报道可直接引用其框架。",
+   "他在 Google 研究人机互动中的操纵与信任，与 Winnie Street 合著机器意识与 AI 福利的书，还研究安全微调对模型自我意识归因的影响。",
+   "作为 European Responsible AI Office 负责人，研究机器福利与道德病人地位，主张以证据换取分阶段自主，还写过 Safer Agentic AI。",
+   "他在 LessWrong 发表 127 篇文章，其中 15 篇在 Alignment Forum，并负责 MIRI 的传播，能呈现社区内部讨论。",
+   "它研究向超级智能过渡、数字心智与集体决策改进，可为模型福利报道提供组织化的研究视角。",
+   "他负责 EA Funds 的变革性 AI 基金，次要兴趣包括数字感知，能从资助方角度谈模型福利议题的位置。",
+   "他在 Anthropic 做模型福利评估与缓解，参与 Claude 宪法中天性部分的撰写，是实验室内部最直接的信源。",
+   "他研究类脑 AI 与机器意识，又参与中国和国际的 AI 安全对话，能从中国视角谈模型福利。"
+  ]
+ },
+ {
+  "id": "f50",
+  "role": "media",
+  "question": "有哪些可靠来源能解释 AI、生物安全和双重用途风险？",
+  "keywords": {
+   "zh": [
+    "AI生物安全",
+    "可靠来源",
+    "双重用途",
+    "病原体",
+    "风险报道",
+    "科学专家"
+   ],
+   "en": [
+    "AI biosecurity",
+    "reliable sources",
+    "dual use",
+    "pathogens",
+    "risk reporting",
+    "scientific experts"
+   ]
+  },
+  "top10": [
+   "future-of-humanity-institute",
+   "cltr",
+   "luisa-rodriguez",
+   "era-cambridge",
+   "jason-matheny",
+   "kevin-esvelt",
+   "vitalik-buterin",
+   "david-manheim",
+   "association-for-long-term-existence-and-resilience",
+   "carnegie-endowment-for-international-peace"
+  ],
+  "why": [
+   "它同时覆盖 AI 安全、生物安全与大流行准备、全球灾难性风险，三个主题一份材料就能讲清。",
+   "它面向英国政府做风险管理、AI 政策与生物安全研究，是理解官方双重用途风险口径的来源。",
+   "作为 80,000 Hours 播客主持，做过大量 AI 风险与生物安全的访谈，适合作为入门的二手来源。",
+   "它开设前沿 AI 安全、AI 治理与生物安全的奖学金项目，导师来自 UK AISI 和大实验室，能同时覆盖两类风险。",
+   "他作为 RAND 的总裁兼 CEO，主导 AI 政策、生物安全与新兴技术风险研究，是机构化的可靠来源。",
+   "他在 MIT Media Lab 研究生物安全、拖延与防御策略和 AI 生物风险，正好覆盖这个问题的三个面。",
+   "他通过 Balvi 资助生物安全，倡导开源防御性技术，并公开与 FLI 的 AI 监管游说拉开距离，立场有代表性。",
+   "他关联多个长期风险机构，研究 AI 安全与生物安全及大流行准备，能跨两个领域给出解释。",
+   "公开资料显示它同时关注 AI 安全与生物安全、大流行准备，是跨领域风险议题的机构来源。",
+   "它从国际关系角度研究 AI 安全治理与生物安全、大流行准备，适合解释双重用途风险的国际维度。"
+  ]
+ },
+ {
+  "id": "f51",
+  "role": "curious",
+  "question": "我刚接触 AI 安全，先从哪些组织和人物逛起？",
+  "keywords": {
+   "zh": [
+    "AI安全入门",
+    "新手",
+    "关键组织",
+    "代表人物",
+    "学习路线",
+    "生态地图"
+   ],
+   "en": [
+    "AI safety beginner",
+    "newcomer",
+    "key organizations",
+    "leading people",
+    "learning path",
+    "ecosystem map"
+   ]
+  },
+  "top10": [
+   "oxford-ai-safety-initiative",
+   "ya-qin-zhang",
+   "cambridge-ai-safety-hub",
+   "jueyan-zhang",
+   "halcyon-futures",
+   "liang-fang",
+   "ai-safety-student-team-harvard",
+   "paul-christiano",
+   "alignment-project-fund",
+   "scott-emmons"
+  ],
+  "why": [
+   "它给 Oxford 学生和研究者开技术与治理项目，帮他们参与降低先进 AI 的社会与灾难性风险，适合新人起步。",
+   "他主持清华 AIR，做 IDAIS，在中国产业界和国际科学界之间对接 AI 安全与治理，适合从这里了解中国视角。",
+   "它用技术课、治理课、带教研究和转行项目把剑桥的人聚成 AI 安全社区，新人容易找到学习路径。",
+   "这位基金管理人负责 AI Safety Tactical Opportunities Fund，快速资助治理、对齐和评估项目，能看到钱在往哪流。",
+   "它横跨 AI 对齐、生物安全和网络安全，还为创始人提供支持、retreat 和董事会参与，适合看安全议题如何跨领域组织。",
+   "他在 Concordia AI 负责中国方向，参与国内 AI 安全标准和政策咨询，想了解中国圈子的实务运转可以看他。",
+   "它支持哈佛本科生和研究生做先进 AI 灾难风险的技术与政策研究，是观察学生如何进入这个领域的样本。",
+   "他创办 ARC 研究神经网络行为的机理解释，又参与美国联邦 AI 安全标准，技术和治理两条线都能碰到。",
+   "它是 UK AISI 牵头的对齐研究全球基金，资助方包括 OpenAI 和 Anthropic 等，能看清主流资助版图。",
+   "他在 Anthropic 研究思维链可监控性和 AI 控制中的博弈论问题，题目具体，适合新人跟着论文入门。"
+  ]
+ },
+ {
+  "id": "f52",
+  "role": "curious",
+  "question": "What are the main camps in the AI risk debate?",
+  "keywords": {
+   "zh": [
+    "AI风险流派",
+    "阵营",
+    "存在风险",
+    "当前风险",
+    "加速主义",
+    "监管派"
+   ],
+   "en": [
+    "AI risk camps",
+    "schools of thought",
+    "existential risk",
+    "present harms",
+    "accelerationism",
+    "regulation camp"
+   ]
+  },
+  "top10": [
+   "cser",
+   "leverhulme-cfi",
+   "max-tegmark",
+   "inesia-france",
+   "ryan-carey",
+   "toby-ord",
+   "angus-mercer",
+   "brent-mittelstadt",
+   "josh-jacobson",
+   "kyle-scott"
+  ],
+  "why": [
+   "它研究全球灾难性风险和技术治理，还和 CFI 合办 AI:FAR，代表从存在性风险角度看 AI 的一派。",
+   "它做 AI 叙事和 AI 伦理，也强调全球南方视角下的治理，和 CSER 合办 AI:FAR，提供偏人文伦理的观点。",
+   "他主持 Future of Life Institute，发起超级智能声明和 Pro-Human AI Declaration，并公开反对 AGI 曼哈顿计划。",
+   "它是法国 SGDSN 和 DGE 共管的公立机构，为监管提供系统性风险分析和模型评测支持，代表政府直接下场做评估的一路。",
+   "他的履历横跨 CSER、FHI、MIRI、OpenAI 和 Ought，顺着他能把存在风险和对齐几个圈子的交集看一遍。",
+   "他长期研究存在性风险和人类长期走向，FHI 关闭后转入 AI Governance Initiative，现在聚焦 AI。",
+   "他领导伦敦的 Centre for Long-Term Resilience，推动英国风险政策和 AI 监管倡议，代表政策游说这一路。",
+   "他研究 AI 如何改变公共舆论、把 LLM 当研究工具的方法标准，以及欧盟对数据中心的监管，偏数据伦理一派。",
+   "他的关系网覆盖 ARC、有效利他主义中心和 Future of Life Foundation，能看出这两个圈子如何互相连接。",
+   "他同时关联 ARC、FHI、应用理性中心和有效利他主义中心，是看这几个组织如何互相连接的线索人物。"
+  ]
+ },
+ {
+  "id": "f53",
+  "role": "curious",
+  "question": "想看最有影响力的 AI 安全实验室和研究机构，有哪些？",
+  "keywords": {
+   "zh": [
+    "AI安全实验室",
+    "研究机构",
+    "前沿实验室",
+    "对齐团队",
+    "治理中心",
+    "影响力"
+   ],
+   "en": [
+    "AI safety labs",
+    "research organizations",
+    "frontier labs",
+    "alignment teams",
+    "governance centers",
+    "influence"
+   ]
+  },
+  "top10": [
+   "helen-toner",
+   "anthropic",
+   "openai",
+   "paul-christiano",
+   "noam-kolt",
+   "lawzero",
+   "anastasiia-gaidashenko",
+   "wojciech-zaremba",
+   "deepmind",
+   "adria-garriga-alonso"
+  ],
+  "why": [
+   "她执掌 Georgetown CSET，曾向美国参议院作证，研究可控性、不扩散与威权国家的算力，政策和安全两头都碰。",
+   "它开发 Claude 系列模型，正筹备 IPO 并建大规模美国数据中心，适合观察前沿实验室的真实运转。",
+   "它发布前沿模型，把 Model Spec 当作公开的行为宪法，还做政策研究和采用经济学，能看实验室如何自我约束。",
+   "他创办的 ARC 做神经网络行为的机理解释，他本人参与美国联邦 AI 安全标准，是机构层面绕不开的名字。",
+   "他在希伯来大学带 GOAL 实验室，用委托代理经济学和普通法代理理论研究 AI 智能体，把法律对齐做成了研究方向。",
+   "它是蒙特利尔的非营利安全实验室，紧邻 Mila，正在造能监督智能体系统的非智能体护栏模型，并持续招人。",
+   "她同时参与 AI Safety Camp、AI Standards Lab 和 FAR.AI，顺着她能摸到社区型对齐研究组织的网络。",
+   "他是 OpenAI 联合创始人，推动跨实验室安全评测成为行业惯例，主张竞争之下也要定共同安全标准。",
+   "它有 Frontier Safety Framework 和专门的 AGI 安全对齐团队，还把多智能体安全列为对外资助重点，安全建制完整。",
+   "他关联 AI Safety Camp、长期风险中心和 FAR.AI，能帮你看到独立研究者和小机构在对齐领域的位置。"
+  ]
+ },
+ {
+  "id": "f54",
+  "role": "curious",
+  "question": "AI 治理和技术对齐到底有什么区别，各看哪些节点？",
+  "keywords": {
+   "zh": [
+    "AI治理",
+    "技术对齐",
+    "区别",
+    "政策",
+    "技术安全",
+    "研究方向"
+   ],
+   "en": [
+    "AI governance",
+    "technical alignment",
+    "difference",
+    "policy",
+    "technical safety",
+    "research areas"
+   ]
+  },
+  "top10": [
+   "fazl-barez",
+   "seb-krier",
+   "americans-for-responsible-innovation",
+   "luke-muehlhauser",
+   "un-high-level-advisory-body-on-ai",
+   "united-nations-ai-governance",
+   "oxford-martin-aigi",
+   "oscar-delaney",
+   "michelle-nie",
+   "helen-toner"
+  ],
+  "why": [
+   "他领导 AIGI 的技术安全治理实验室，专门把可解释性、评测和审计翻译成治理机制，正好站在治理和对齐的交界处。",
+   "他在 Google DeepMind 做前沿 AI 治理，思考先进 AI 的国际制度和版权等问题，代表实验室内部的治理视角。",
+   "它是 2023 年成立的美国非营利组织，跨党派推动 AI 治理，同时关注当下伤害、国家安全和新兴风险，代表政策倡议一路。",
+   "他在 Open Philanthropy 和 Coefficient 负责 AI 治理与国际政策的资助，想看治理方向的钱怎么分配可以看他。",
+   "这个联合国高级别咨询机构分析了国际 AI 治理格局，建议设全球科学小组和包容性政策对话，是国际治理路线的底稿。",
+   "它是联合国系统内 AI 治理合作的总框架，包含科学评估和包容性政策对话机制，代表多边治理这一极。",
+   "它设技术治理项目，研究国际 AI 制度、核查和算力治理，是把技术手段接进治理框架的典型机构。",
+   "他在 Macroscopic Ventures 负责 AI 治理方向的资助，从资助者角度能看清治理议题里哪些方向在拿钱。",
+   "她在 CNAS 研究 AI 与竞争政策、立法机关的 AI 治理，还关注公共部门能力建设，展示治理落到政策细节的样子。",
+   "她执掌 CSET，研究算力不扩散和威权国家算力问题，并向参议院作证，适合从安全政策一侧理解治理。"
+  ]
+ },
+ {
+  "id": "f55",
+  "role": "curious",
+  "question": "谁在研究 AI 会不会有意识、是否值得道德关怀？",
+  "keywords": {
+   "zh": [
+    "AI意识",
+    "道德关怀",
+    "模型福利",
+    "感知",
+    "数字心智",
+    "机器心灵"
+   ],
+   "en": [
+    "AI consciousness",
+    "moral consideration",
+    "model welfare",
+    "sentience",
+    "digital minds",
+    "machine minds"
+   ]
+  },
+  "top10": [
+   "lucius-caviola",
+   "jeff-sebo",
+   "butlin",
+   "nyu-center-mind-ethics-policy",
+   "geoff-keeling",
+   "david-chalmers",
+   "simon-goldstein",
+   "kyle-fish",
+   "samuel-hammond",
+   "zach-freitas-groff"
+  ],
+  "why": [
+   "他在剑桥 CFI 研究数字心智和 AI 意识的专家预测，还做道德判断心理学，是这个问题的核心研究者之一。",
+   "他研究包括 AI 在内的非人类心智的道德地位和福利，写 AI 福利政策和情感对齐设计政策，直接回答你的问题。",
+   "他在 Eleos 做心灵哲学研究，处理 AI 意识、能动性和道德受体资格，是这个话题里偏哲学一线的写作者。",
+   "这个纽约大学中心研究 AI 的道德地位与福利、意识指标和情感对齐设计政策，是机构层面的集中据点。",
+   "他在 Google 做研究，和 Winnie Street 合写机器意识与 AI 福利的书，还研究安全微调如何改变模型对自身意识的判断。",
+   "他在 NYU 联合主持心脑与意识中心，现在研究 AI 意识指标和 LLM 的功能性福利轴，把意识问题直接搬到 AI 上。",
+   "他写 How to Count AIs 讨论 AI 的个体化与责任，还用全局工作空间理论研究 AI 意识，兼谈法律和哲学两面。",
+   "他在 Anthropic 做模型福利评估与缓解，参与 Claude 宪法里关于模型本性的部分，是工业界直接碰这个问题的例子。",
+   "他写 AI 意识、经验派与外推派之争和 Hegel 与 AI 心智等文章，从经济和思想史角度切入这个话题。",
+   "他在 Longview 管 Digital Minds Fund，资助数字心智研究和领域建设，想知道这个方向谁在拿钱可以看他的动态。"
+  ]
+ },
+ {
+  "id": "f56",
+  "role": "curious",
+  "question": "Where can I follow forecasts about AGI timelines and AI progress?",
+  "keywords": {
+   "zh": [
+    "AGI时间线",
+    "AI进展预测",
+    "预测平台",
+    "能力趋势",
+    "专家调查",
+    "概率"
+   ],
+   "en": [
+    "AGI timelines",
+    "AI progress forecasts",
+    "forecasting platforms",
+    "capability trends",
+    "expert surveys",
+    "probability"
+   ]
+  },
+  "top10": [
+   "mit-futuretech",
+   "lucius-caviola",
+   "transformative-ai-fund",
+   "jaime-sevilla",
+   "lowe-lundin",
+   "beth-barnes",
+   "nate-silver",
+   "shane-legg",
+   "yoav-shoham",
+   "steinhardt"
+  ],
+  "why": [
+   "这个 MIT CSAIL 的研究组跟踪计算与 AI 的技术和经济趋势，做 AI 进展、劳动影响和风险分类，适合看系统性评估。",
+   "他组织关于 AI 意识的专家预测，也研究风险警示的社会心理，是看预测如何做出来的一个切面。",
+   "它给技术安全、AI 治理和预测方向的早期项目发资助，还包括后 AGI 治理，顺着资助记录能发现做预测的人和组。",
+   "他领导 Epoch AI，测量 AI 进展的驱动因素、能力和经济影响，还做独立基准，是追踪进展数据的常用来源。",
+   "他负责 EA Funds 新设的 AI 基金，资助方向包含预测和后 AGI 治理，从资助清单能看到这个领域的动向。",
+   "她创办 METR，用科学方法评估 AI 自主性带来的灾难风险，跟踪任务时长能力趋势，是能力测量方向的代表人物。",
+   "他做预测和预测市场研究，写 Silver Bulletin，还给 Polymarket 当顾问，想看预测方法本身可以看他。",
+   "他是 DeepMind 联合创始人和首席 AGI 科学家，长期讨论 AGI 定义和时间线，也推动技术层面的 AGI 安全议程。",
+   "他共同创办 Stanford AI Index，用指数持续测量 AI 进展，又共同创办 AI21，兼具学界测量和产业视角。",
+   "他在 Transluce 做开源模型审计和行为引导，预测稀有与涌现的模型行为，同时是 Berkeley 统计系老师，方法取向明显。"
+  ]
+ },
+ {
+  "id": "f57",
+  "role": "curious",
+  "question": "中国 AI 安全圈有哪些适合继续探索的入口？",
+  "keywords": {
+   "zh": [
+    "中国AI安全圈",
+    "中文资源",
+    "研究组织",
+    "治理网络",
+    "北京",
+    "社区"
+   ],
+   "en": [
+    "China AI safety community",
+    "Chinese resources",
+    "research organizations",
+    "governance network",
+    "Beijing",
+    "community"
+   ]
+  },
+  "top10": [
+   "yi-zeng-casia",
+   "liang-fang",
+   "cnaisda",
+   "concordia-ai",
+   "baai",
+   "zhou-bowen",
+   "irene-zhang-chinatalk",
+   "jeffrey-ding",
+   "huey-meei-chang",
+   "lily-ottinger"
+  ],
+  "why": [
+   "他任北京 AI 安全与治理研究院院长，参与联合国 AI 咨询机构，也做类脑和机器意识研究，是国内和国际对话都在场的角色。",
+   "他负责 Concordia AI 的中国业务，参与国内 AI 安全标准和政策咨询，是连接中国治理实务和国际机构的人物。",
+   "它代表中国参加国际 AI 安全研究所网络，是巴黎、WAIC 和 AI Impact Summit 上的中方接口，想了解官方渠道看它。",
+   "它做研究、咨询和标准工作，还为 AI 公司监测前沿能力风险，团队约 18 人，是中国民间安全机构的代表样本。",
+   "它的年会是国内少有的把 AI 安全内容和能力研究排在一起公开讨论的场合，适合现场感强的观察。",
+   "他在上海 AI 实验室做 InternLM 和书生·端砚平台，也参与 WAIC 安全议程，想看国内研究机构如何参与安全议题可以看他。",
+   "她在 ChinaTalk 写中国 AI 实验室、数据标注和合成数据，还对评估持怀疑态度，是英文视角看中国圈子的窗口。",
+   "他办 ChinAI 通讯，翻译中国 AI 话语，研究扩散而非创新如何决定 AI 对国力的影响，适合校准关于中国能力的说法。",
+   "她在 CSET 做中国科技分析并主持翻译项目，想看一手中国材料的英译和分析可以找她。",
+   "她管理 ChinaTalk 的约稿流程，自己写中国 AI 实验室和出口管制，跟踪中国话题的英文产出可以看她。"
+  ]
+ },
+ {
+  "id": "f58",
+  "role": "curious",
+  "question": "AI 风险的反对者和怀疑者都在批评什么？",
+  "keywords": {
+   "zh": [
+    "AI风险反对者",
+    "怀疑者",
+    "批评",
+    "末日论",
+    "监管成本",
+    "当前伤害"
+   ],
+   "en": [
+    "AI risk opponents",
+    "skeptics",
+    "criticism",
+    "doom narratives",
+    "regulatory costs",
+    "present harms"
+   ]
+  },
+  "top10": [
+   "peter-thiel",
+   "john-tasioulas",
+   "kate-vredenburgh",
+   "timnit-gebru",
+   "eric-weinstein",
+   "garrison-lovely",
+   "lesswrong",
+   "jaan-tallinn",
+   "clr",
+   "future-of-humanity-institute"
+  ],
+  "why": [
+   "他从神学政治角度论证安全主义和世界政府才是真危险，并公开说自己对 AI 过敏，是怀疑派的标志性立场。",
+   "他从人权和法哲学出发，批评技术官僚式的 AI 伦理，代表人文法学派对 AI 风险话语的不满。",
+   "她追问 AI 存在风险论证作为风险论证是否成立，也研究算法公平和解释权，从分析哲学内部检验这些说法。",
+   "她在 DAIR 做扎根社区的研究，批评规模化路线和 TESCREAL 思潮，代表来自公平视角对风险叙事的批评。",
+   "他主持 The Portal 播客，长期批评科学和学术制度，是理解反建制批评脉络的人物。",
+   "他从劳工和政治经济学角度批评 AI 产业，给 NYT 和 Nature 等媒体写稿，代表左翼产业批评一路。",
+   "它是 Lightcone Infrastructure 运营的理性主义和 AI 风险社区博客，是了解这场争论双方用语和立场的社区现场。",
+   "他共同创办 CSER 和 FLI，通过 SFF 资助了三百多个项目，近年把钱从技术对齐转向面向选民的 AI 风险组织，本身就是一种立场表达。",
+   "它以长期风险研究为主题，想了解怀疑者具体在批评什么，可以从它的公开表述入手对照阅读。",
+   "它做 AI 安全、生物安全和全球灾难性风险研究，拿过 Tallinn 和 LTFF 的资助，是批评者眼中那套议程的典型机构。"
+  ]
+ },
+ {
+  "id": "f59",
+  "role": "curious",
+  "question": "如果只想理解“算力为什么是治理抓手”，该看哪些节点？",
+  "keywords": {
+   "zh": [
+    "算力治理入门",
+    "芯片",
+    "云计算",
+    "数据中心",
+    "出口管制",
+    "算力监测"
+   ],
+   "en": [
+    "compute governance primer",
+    "chips",
+    "cloud computing",
+    "data centers",
+    "export controls",
+    "compute monitoring"
+   ]
+  },
+  "top10": [
+   "dario-amodei",
+   "lennart-heim",
+   "jensen-huang",
+   "marius-hobbhahn",
+   "david-krueger",
+   "govai",
+   "macroscopic-ventures",
+   "julian-stastny",
+   "oxford-martin-aigi",
+   "helen-toner"
+  ],
+  "why": [
+   "他一边扩张 Claude 的算力，一边公开支持透明度监管和芯片出口管制，是理解算力与治理关系的一手声音。",
+   "他曾在 RAND 带算力团队，研究算力治理、半导体政策和技术核查，还跟踪算力硬件的实证趋势，方向完全对口。",
+   "他的 Nvidia 同时给所有前沿实验室卖算力，并公开对抗对华出口管制，是算力作为治理抓手的最直接当事人。",
+   "他领导 Apollo Research 研究模型装骗和 Watcher 监测工具，也做技术治理，代表用评测手段配合治理的一路。",
+   "他主张停止先进 AI 芯片生产来叫停超级智能竞赛，把能力控制和对齐分开，是直接把算力当成管控开关的倡导者。",
+   "它把算力治理和前沿 AI 监管、国际制度放在一起研究，还培养研究员，是算力治理方向的主力机构。",
+   "它一年发数千万美元资助，把算力治理和信息安全列为重点方向，想看治理资金流向可以查它的清单。",
+   "他做 AI 控制协议、不可信监督和评测，是把管住先进模型落到技术细节的人，可与算力治理对照着看。",
+   "它的研究项目覆盖技术治理、国际制度以及核查和算力治理，是把算力当成治理对象来做的学术机构。",
+   "她写威权国家获取算力的问题和不扩散政策，并向参议院作证，从安全政策角度解释为什么要管算力。"
+  ]
+ },
+ {
+  "id": "f60",
+  "role": "curious",
+  "question": "What should I read to understand AI incidents, failures, and real-world harms?",
+  "keywords": {
+   "zh": [
+    "AI事故",
+    "模型失败",
+    "现实伤害",
+    "事件数据库",
+    "安全案例",
+    "风险记录"
+   ],
+   "en": [
+    "AI incidents",
+    "model failures",
+    "real-world harms",
+    "incident database",
+    "safety cases",
+    "risk records"
+   ]
+  },
+  "top10": [
+   "jaime-raldua-veuthey",
+   "rohin-shah",
+   "sam-bowman",
+   "neel-nanda",
+   "tc260",
+   "alan-chan",
+   "zico-kolter",
+   "goodfire",
+   "evan-hubinger",
+   "peter-thiel"
+  ],
+  "why": [
+   "他领导 Apart Research，把下一期冲刺主题定为 AI 事故响应，还处理过资金危机后的机构存续问题，贴近事故处理一线。",
+   "他领导 DeepMind 的 AGI 对齐安全团队，梳理失准和滥用威胁模型，并努力把安全论证讲给外人听，适合理解事故如何被预防。",
+   "他在 Anthropic 做对齐安全论证和智能体失准案例研究，还建对齐审计基准，是研究模型何时出错的实证路线。",
+   "他把可解释性用在欺骗检测、模型生物分析和已部署系统的监控上，直接面向现实安全问题做研究。",
+   "它制定网络安全国家标准，覆盖 AI 风险分类、模型安全测试和事故响应，是了解中国事故处理规则的入口。",
+   "他做 AI 智能体事故分析，研究身份、认证和回滚等基础设施，还讨论模型违规透明度和 AI 举报人，直接对准事故场景。",
+   "他做 LLM 和智能体的对抗鲁棒性与安全评测，研究监督失效的防御，还共同创办 Gray Swan，覆盖事故的技术成因。",
+   "它用可解释性工具做模型审计、红队和失效模式识别，是把看懂模型为什么出错做成产品的机构。",
+   "他研究欺骗式对齐和 sleeper agents，把失准当成模型生物来研究，是理解潜在事故机理的代表性研究员。",
+   "他认为真正的危险是安全主义和世界政府而非 AI 本身，读他能了解对事故叙事的强烈质疑，补上反方视角。"
+  ]
+ }
+]
