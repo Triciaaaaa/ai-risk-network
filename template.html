@@ -14,9 +14,15 @@ a{color:#7fb2ff;text-decoration:none}a:hover{text-decoration:underline}
 #edges div{padding:5px 0;border-top:1px solid #232838}#edges .lab{color:#c7cddb}
 canvas{display:block}#tip{position:absolute;z-index:6;pointer-events:none;background:#1b1f2a;border:1px solid #39415a;border-radius:6px;padding:4px 8px;font-size:12px;display:none}
 .close{float:right;cursor:pointer;color:#9aa3b5}
+#hits .askrow{color:#7fb2ff}.ex{margin-top:6px;font-size:11px;color:#9aa3b5;line-height:1.7}.ex a{cursor:pointer;margin-right:8px;display:inline-block}
+.chip{display:inline-block;font-size:11px;padding:1px 8px;border-radius:9px;border:1px solid #39415a;margin:5px 4px 0 0;cursor:pointer;color:#c7cddb}.chip.on{background:#2b3245;border-color:#7fb2ff;color:#e5e7eb}
+textarea{width:100%;box-sizing:border-box;min-height:70px;padding:6px 8px;border-radius:6px;border:1px solid #39415a;background:#0e1018;color:#e5e7eb;margin-top:6px;font:inherit;resize:vertical}
+.btn{margin-top:8px;font-size:12px;padding:4px 12px;border-radius:6px;border:1px solid #39415a;background:#1f2636;color:#e5e7eb;cursor:pointer}.btn:hover{border-color:#7fb2ff}
+.sec{margin-top:12px;padding-bottom:2px;font-weight:600;color:#e5e7eb}#edges .why{color:#9aa3b5;font-size:11.5px}#edges .why b{color:#e5e7eb}#edges .rel{color:#9aa3b5}
+.pill{font-size:10px;padding:0 6px;border-radius:8px;color:#0f1117;font-weight:600;margin-left:5px}.nm{cursor:pointer;font-weight:600}.nm:hover{text-decoration:underline}
 </style></head><body>
 <div id="left"><h1>AI risk fund &amp; member network</h1><div class="muted" id="meta"></div><div class="muted" style="margin-top:4px"><a href="https://github.com/Triciaaaaa/ai-risk-network" target="_blank" rel="noopener">GitHub：数据、来源规则、怎么提 PR ↗</a></div>
-<input id="q" placeholder="搜索人名 / 机构…" autocomplete="off"><div id="hits"></div>
+<input id="q" placeholder="搜人名 / 机构，或直接提问后回车" autocomplete="off"><div id="hits"></div><div class="ex" id="ex"></div><details id="gbox" style="margin-top:8px"><summary style="cursor:pointer;font-weight:600">我该关注谁？</summary><div class="muted" style="margin-top:4px">写几句你在做什么、关心什么（中英文都行），按方向列出相关的人、机构和关系。只在你的浏览器里计算，不发送、不保存。</div><textarea id="gtext" placeholder="例：在读 PhD，做 mechanistic interpretability，想知道谁在资助这个方向、哪些机构在做"></textarea><div id="groles"></div><button class="btn" id="gbtn">看看</button></details>
 <div class="leg" id="legend"></div><details style="margin-top:8px"><summary class="muted" style="cursor:pointer">相关项目与数据来源</summary><ul class="muted" style="margin:6px 0 0 16px;padding:0;line-height:1.5"><li><a href="https://aiwatch.issarice.com/" target="_blank" rel="noopener">AI Watch</a> — 人 × 机构 × 职位数据库（Issa Rice）</li><li><a href="https://donations.vipulnaik.com/" target="_blank" rel="noopener">Donations list</a> — 捐赠流水数据库（Vipul Naik）</li><li><a href="https://ailabwatch.org/" target="_blank" rel="noopener">AI Lab Watch</a> — 实验室安全承诺打分</li><li><a href="https://littlesis.org/" target="_blank" rel="noopener">LittleSis</a> — 权力网络数据库</li><li><a href="https://survivalandflourishing.fund/recommendations" target="_blank" rel="noopener">SFF recommendations</a> — Tallinn 主轮资助结果</li><li><a href="https://funds.effectivealtruism.org/grants" target="_blank" rel="noopener">EA Funds grants</a> — LTFF / TAIF 历史资助</li><li><a href="https://www.coefficientgiving.org/grants" target="_blank" rel="noopener">Coefficient Giving grants</a> — 原 Open Phil 资助库</li><li><a href="https://manifund.org/" target="_blank" rel="noopener">Manifund</a> — regranting 平台</li><li><a href="https://lightconecommons.com/" target="_blank" rel="noopener">Lightcone Commons</a> — 2026 年新资助平台</li><li><a href="https://jaan.info/priorities/" target="_blank" rel="noopener">Jaan Tallinn · priorities</a> — 出资人现行优先级</li><li><a href="https://epoch.ai/" target="_blank" rel="noopener">Epoch AI</a> — 算力与趋势数据</li><li><a href="https://www.lesswrong.com/" target="_blank" rel="noopener">LessWrong</a> / <a href="https://www.alignmentforum.org/" target="_blank" rel="noopener">Alignment Forum</a> — 论坛公开档案：谁在上面发文、合著</li></ul></details><div class="muted" style="margin-top:8px">线：<span style="color:#f59e0b">橙 = 钱</span> · <span style="color:#94a3b8">灰 = 职位</span> · <span style="color:#818cf8">蓝 = 合著 / 结盟</span> · <span style="color:#2dd4bf">青 = 论坛发文</span><br>点节点看关系与来源 · 滚轮缩放</div><div class="tog" id="tog"></div></div>
 <div id="right"><span class="close" onclick="closePanel()">✕</span><h2 id="pname"></h2><div class="muted" id="pmeta"></div><div id="edges"></div></div>
 <div id="tip"></div><canvas id="c"></canvas>
@@ -51,13 +57,13 @@ const pct=(arr,p)=>{const a=arr.slice().sort((x,y)=>x-y);return a[Math.floor((a.
 function fit(){const s=Math.min(innerWidth/(xs[1]-xs[0]+200),innerHeight/(ys[1]-ys[0]+200))*0.92;if(!(s>0))return;T=d3.zoomIdentity.translate(innerWidth/2-s*(xs[0]+xs[1])/2+(innerWidth>900?140:0),innerHeight/2-s*(ys[0]+ys[1])/2).scale(s);d3.select(canvas).call(zoom.transform,T)}
 let userZoomed=false;const zoom=d3.zoom().scaleExtent([0.1,8]).on('zoom',ev=>{T=ev.transform;if(ev.sourceEvent)userZoomed=true;draw()});d3.select(canvas).call(zoom);
 const lod=()=>nodes.length>400?(T.k<0.9?4:(T.k<1.6?3:(T.k<2.6?2:1))):1;
-const vis=n=>{const f=sel||hover;if(f&&(f.id===n.id||(adj[f.id]||[]).some(e=>e.s===n.id||e.t===n.id)))return true;return (n.deg||0)>=lod()+(isStub(n)?1:0)};
+const vis=n=>{if(spot&&spot.has(n.id))return true;const f=sel||hover;if(f&&(f.id===n.id||(adj[f.id]||[]).some(e=>e.s===n.id||e.t===n.id)))return true;return (n.deg||0)>=lod()+(isStub(n)?1:0)};
 function draw(){ctx.save();ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.clearRect(0,0,innerWidth,innerHeight);ctx.translate(T.x,T.y);ctx.scale(T.k,T.k);
- const focus=sel||hover;const nb=focus?new Set((adj[focus.id]||[]).flatMap(e=>[e.s,e.t])):null;
- const big=nodes.length>400;edges.forEach(e=>{if(!gOn[e.g]||!vis(e.a)||!vis(e.b))return;const hot=focus&&(e.s===focus.id||e.t===focus.id);const dimE=focus&&!hot;const base=big?0.10:0.22;ctx.strokeStyle=e.g==='forum'?'rgba(45,212,191,'+(hot?0.9:(dimE?0.02:base*0.8))+')':e.g==='money'?'rgba(245,158,11,'+(hot?0.95:(dimE?0.04:base+0.06))+')':(e.g==='position'?'rgba(148,163,184,'+(hot?0.95:(dimE?0.03:base))+')':'rgba(99,102,241,'+(hot?0.95:(dimE?0.03:base))+')');ctx.lineWidth=(hot?2.2:0.7+(e.scale||1)*0.25)/T.k;if(e.dash)ctx.setLineDash([4/T.k,3/T.k]);else ctx.setLineDash([]);ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);ctx.stroke()});
+ const focus=sel||hover;const nb=focus?new Set((adj[focus.id]||[]).flatMap(e=>[e.s,e.t])):spot;
+ const big=nodes.length>400;edges.forEach(e=>{if(!gOn[e.g]||!vis(e.a)||!vis(e.b))return;const hot=focus?(e.s===focus.id||e.t===focus.id):!!(spot&&spot.has(e.s)&&spot.has(e.t));const dimE=!!(focus||spot)&&!hot;const base=big?0.10:0.22;ctx.strokeStyle=e.g==='forum'?'rgba(45,212,191,'+(hot?0.9:(dimE?0.02:base*0.8))+')':e.g==='money'?'rgba(245,158,11,'+(hot?0.95:(dimE?0.04:base+0.06))+')':(e.g==='position'?'rgba(148,163,184,'+(hot?0.95:(dimE?0.03:base))+')':'rgba(99,102,241,'+(hot?0.95:(dimE?0.03:base))+')');ctx.lineWidth=(hot?2.2:0.7+(e.scale||1)*0.25)/T.k;if(e.dash)ctx.setLineDash([4/T.k,3/T.k]);else ctx.setLineDash([]);ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);ctx.stroke()});
  ctx.setLineDash([]);
- nodes.forEach(n=>{if(!vis(n))return;const dim=focus&&!(nb.has(n.id)||n.id===focus.id);ctx.globalAlpha=dim?0.15:(isStub(n)?0.45:1);ctx.fillStyle=n.type==='person'?(PAL[n.cluster]||'#94a3b8'):(isStub(n)?'#6b7280':ORG);const rr=r(n);if(n.type==='person'){ctx.beginPath();ctx.arc(n.x,n.y,rr,0,7);ctx.fill()}else{ctx.fillRect(n.x-rr,n.y-rr,2*rr,2*rr)}
-  const big2=nodes.length>400;const hub=(n.deg||0)>=(big2?(T.k<0.9?hubCut:(T.k<1.8?16:8)):8);if(!dim&&((hub&&(T.k>0.35||(n.deg||0)>=hubCut))||T.k*rr>7||(focus&&(nb.has(n.id)||n.id===focus.id)))){ctx.font=(hub?'600 ':'')+(Math.max(9.5,11.5/T.k))+'px sans-serif';ctx.textAlign='center';const fs=Math.max(9.5,11.5/T.k);const tw=ctx.measureText(n.name).width;ctx.fillStyle='rgba(15,17,23,0.72)';ctx.fillRect(n.x-tw/2-2/T.k,n.y-rr-2/T.k-fs,tw+4/T.k,fs+2/T.k);ctx.fillStyle=hub?'#ffffff':'#d1d5db';ctx.fillText(n.name,n.x,n.y-rr-2/T.k)}ctx.globalAlpha=1});ctx.restore()}
+ nodes.forEach(n=>{if(!vis(n))return;const dim=!!nb&&!(nb.has(n.id)||(focus&&n.id===focus.id));ctx.globalAlpha=dim?0.15:(isStub(n)?0.45:1);ctx.fillStyle=n.type==='person'?(PAL[n.cluster]||'#94a3b8'):(isStub(n)?'#6b7280':ORG);const rr=r(n);if(n.type==='person'){ctx.beginPath();ctx.arc(n.x,n.y,rr,0,7);ctx.fill()}else{ctx.fillRect(n.x-rr,n.y-rr,2*rr,2*rr)}
+  const big2=nodes.length>400;const hub=(n.deg||0)>=(big2?(T.k<0.9?hubCut:(T.k<1.8?16:8)):8);if(!dim&&((hub&&(T.k>0.35||(n.deg||0)>=hubCut))||T.k*rr>7||(nb&&(nb.has(n.id)||(focus&&n.id===focus.id))))){ctx.font=(hub?'600 ':'')+(Math.max(9.5,11.5/T.k))+'px sans-serif';ctx.textAlign='center';const fs=Math.max(9.5,11.5/T.k);const tw=ctx.measureText(n.name).width;ctx.fillStyle='rgba(15,17,23,0.72)';ctx.fillRect(n.x-tw/2-2/T.k,n.y-rr-2/T.k-fs,tw+4/T.k,fs+2/T.k);ctx.fillStyle=hub?'#ffffff':'#d1d5db';ctx.fillText(n.name,n.x,n.y-rr-2/T.k)}ctx.globalAlpha=1});ctx.restore()}
 function pick(mx,my){const p=T.invert([mx,my]);let best=null,bd=1e9;nodes.forEach(n=>{if(!vis(n))return;const d=Math.hypot(n.x-p[0],n.y-p[1]);if(d<bd&&d<r(n)+6/T.k){bd=d;best=n}});return best}
 const tip=document.getElementById('tip');
 canvas.addEventListener('mousemove',ev=>{const n=pick(ev.clientX,ev.clientY);hover=n;canvas.style.cursor=n?'pointer':'grab';if(n){tip.style.display='block';tip.style.left=(ev.clientX+12)+'px';tip.style.top=(ev.clientY+12)+'px';tip.textContent=n.name+(n.type==='person'?' · '+(ZH[n.cluster]||n.cluster):' · 机构')+' · '+n.deg+' 条关系'}else tip.style.display='none';draw()});
@@ -65,17 +71,167 @@ canvas.addEventListener('click',ev=>{const n=pick(ev.clientX,ev.clientY);if(n)op
 function open(n){sel=n;const R=document.getElementById('right');R.style.display='block';document.getElementById('pname').innerHTML=n.url?`<a href="${n.url}" target="_blank" rel="noopener">${n.name} ↗</a>`:n.name;document.getElementById('pmeta').innerHTML=((n.type==='person'?(ZH[n.cluster]||n.cluster):'机构')+' · '+(adj[n.id]||[]).length+' 条关系 · <a href="'+fixUrl(n)+'" target="_blank" rel="noopener">报错</a>')+(n.affil?'<div style="margin-top:4px">'+n.affil+'</div>':'')+(n.focus?'<div style="margin-top:4px">'+n.focus+'</div>':'');
  const es=(adj[n.id]||[]).slice();const byO=new Map();es.forEach(e=>{const o=e.s===n.id?e.b:e.a;if(!byO.has(o.id))byO.set(o.id,{o,items:[]});byO.get(o.id).items.push(e)});
  const groups=[...byO.values()].sort((a,b)=>(b.o.deg||0)-(a.o.deg||0));
- document.getElementById('edges').innerHTML=groups.map(g=>`<div><b style="cursor:pointer" onclick="openId('${g.o.id}')">${g.o.name}</b>`+g.items.map(e=>{const dir=e.arrow==='1->2'?(e.s===n.id?'→':'←'):'—';return `<br><span class="lab">${dir} ${e.label||''}</span>${e.u?` · <a href="${e.u}" target="_blank" rel="noopener">来源</a>`:''} · <a href="${fixUrl(n,e)}" target="_blank" rel="noopener" style="color:#6b7280">反馈</a>`}).join('')+`</div>`).join('');draw()}
+ document.getElementById('edges').innerHTML=backLink()+groups.map(g=>`<div><b style="cursor:pointer" onclick="openId('${g.o.id}')">${g.o.name}</b>`+g.items.map(e=>{const dir=e.arrow==='1->2'?(e.s===n.id?'→':'←'):'—';return `<br><span class="lab">${dir} ${e.label||''}</span>${e.u?` · <a href="${e.u}" target="_blank" rel="noopener">来源</a>`:''} · <a href="${fixUrl(n,e)}" target="_blank" rel="noopener" style="color:#6b7280">反馈</a>`}).join('')+`</div>`).join('');draw()}
 window.openId=id=>{const n=byId[id];if(n){open(n);T=d3.zoomIdentity.translate(innerWidth/2-n.x*2+140,innerHeight/2-n.y*2).scale(2);d3.select(canvas).call(zoom.transform,T)}};
-window.closePanel=()=>{document.getElementById('right').style.display='none';sel=null;draw()};
+window.closePanel=()=>{document.getElementById('right').style.display='none';sel=null;spot=null;lastRes=null;draw()};
 const REPO='https://github.com/Triciaaaaa/ai-risk-network';const MISS_ENDPOINT='';/* optional: a form endpoint that silently records zero-result searches */
 const q=document.getElementById('q'),hits=document.getElementById('hits');let missTimer=null;const missSent=new Set();
 function fixUrl(n,e){const what=e?`${n.name} — ${e.label||''}`:n.name;const t=encodeURIComponent('修正：'+what);const b=encodeURIComponent((e?`关系：${byId[e.s].name} → ${byId[e.t].name}\n标签：${e.label||''}\n来源：${e.u||'（无）'}\n`:`节点：${n.name}（id: ${n.id}）\n`)+'\n哪里不准确：\n应该改成 / 应该删除：\n公开来源链接：\n');return `${REPO}/issues/new?labels=fix-request&title=${t}&body=${b}`}
 function issueUrl(v){const t=encodeURIComponent('添加请求：'+v);const b=encodeURIComponent('想加的条目：'+v+'\n\n它是谁 / 什么机构：\n公开来源链接：\n与图里哪些节点有什么关系（钱 / 职位 / 合著）：\n');return `${REPO}/issues/new?labels=add-request&title=${t}&body=${b}`}
 function logMiss(v){if(!MISS_ENDPOINT||missSent.has(v))return;missSent.add(v);try{const fd=new FormData();fd.append('query',v);fd.append('page',location.href);fetch(MISS_ENDPOINT,{method:'POST',mode:'no-cors',body:fd})}catch(e){}}
 q.addEventListener('input',()=>{const raw=q.value.trim(),v=raw.toLowerCase();hits.innerHTML='';clearTimeout(missTimer);if(!v)return;const found=nodes.filter(n=>n.name.toLowerCase().includes(v)||n.id.includes(v)).slice(0,12);
+ if(raw.length>=2){const d=document.createElement('div');d.className='askrow';d.textContent='↵ 查「'+raw+'」相关的关系和来源';d.onclick=()=>{hits.innerHTML='';ask(raw)};hits.appendChild(d)}
  if(found.length){found.forEach(n=>{const d=document.createElement('div');d.textContent=n.name+(n.type==='person'?'':' (机构)');d.onclick=()=>{openId(n.id);hits.innerHTML='';q.value=n.name};hits.appendChild(d)});return}
+ if(/[谁哪什么吗？?]|^(who|what|which|how|where|why)\b/i.test(raw)||parseQuery(raw).ents.some(h=>!h.sur))return;
  if(raw.length>=2){const d=document.createElement('div');d.className='muted';d.style.cursor='default';d.innerHTML=`没找到「${raw.replace(/</g,'&lt;')}」 · <a href="${issueUrl(raw)}" target="_blank" rel="noopener">提交添加请求 ↗</a>`;hits.appendChild(d);missTimer=setTimeout(()=>logMiss(raw),1500)}});
+/* ---- 问答与「我该关注谁」：只在浏览器里计算，输入的内容不发送、不保存 ---- */
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nz=s=>String(s||'').normalize('NFKD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[’‘]/g,"'");
+const head=e=>(e.label||'').split(' · ')[0];
+const CJK=/[㐀-鿿]/;
+const GENERIC=new Set('independent ai the board fund funds safety policy research institute foundation lab labs group center centre council forum network project program school university college team office initiative alliance coalition partners capital ventures trust society union commission committee agency department government company open future impact alignment security governance standards evals media news blog podcast summit conference community association academy'.split(' '));
+const CASE_ONLY=new Set('Arena Resolution Trace Tempo Paradigm Manifest Encode Obsolete Evitable Transformer Constellation Elicit Affine Accel Ripple Stripe Oracle Perplexity Simplex Larks Valentine plex yams Iliad Kairos Imbue Nonlinear Forethought Lisa Mox Averi Casia'.split(' '));
+const SUR_STOP=new Set('long hope black white young brown green price cook wood hill king bell ward rose page love best will good fair park reed lane west north south east field ford power money rich cash gold stone little small sharp strong bird fish lamb nash law hall hunt day fox miller baker carter taylor turner walker wright martin moore allen clark lewis james scott thomas'.split(' '));
+const ALIAS=new Map(),ALIAS_CS=new Map(),SUR=new Map();
+const put=(m,k,id)=>{(m.get(k)||m.set(k,new Set()).get(k)).add(id)};
+function addA(a,id){a=String(a||'').trim().replace(/\s+/g,' ');if(!a)return;if(!CJK.test(a)&&!/\s/.test(a)&&CASE_ONLY.has(a)){put(ALIAS_CS,a,id);return}const k=nz(a);if(GENERIC.has(k)||(!CJK.test(k)&&k.length<3))return;put(ALIAS,k,id)}
+nodes.forEach(n=>{const nm=n.name||'';addA(nm,n.id);const base=nm.replace(/\s*[（(][^）)]*[）)]\s*/g,' ').trim();if(base!==nm)addA(base,n.id);
+ (nm.match(/[（(][^）)]+[）)]/g)||[]).forEach(p=>p.slice(1,-1).split(/\s*[,，/;；]\s*/).forEach(s=>{if(CJK.test(s)||(!/\s/.test(s)&&s.length<=12)||(s.match(/(^|\s)[A-Z]/g)||[]).length>=2)addA(s,n.id)}));
+ if(/ \/ /.test(base))base.split(' / ').forEach(p=>addA(p,n.id));
+ if(!/^lw-|-lw$/.test(n.id))addA(n.id.replace(/-/g,' '),n.id);
+ if(n.type==='person'&&!CJK.test(base)){const w=base.split(/\s+/),last=nz(w[w.length-1]);if(w.length>=2&&last.length>=4&&!SUR_STOP.has(last))put(SUR,last,n.id)}});
+const nextToName=(s,i,j)=>{const w=[(s.slice(0,i).match(/([a-z][a-z'.-]*)\s$/)||[])[1],(s.slice(j).match(/^\s([a-z][a-z'.-]*)/)||[])[1]];return w.some(x=>x&&x.length>=2&&!STOP.has(x)&&!INTENT_WORD.test(x)&&!ALIAS.has(x))};
+const bound=(s,i,j)=>!/[a-z0-9]/i.test(s[i-1]||'')&&!/[a-z0-9]/i.test(s[j]||'');
+function findEntities(qn,qraw){const cand=[];
+ const scan=(m,s,w,sur)=>{for(const [a,ids] of m){let i=s.indexOf(a);while(i>=0){const j=i+a.length;if((CJK.test(a)||bound(s,i,j))&&!(sur&&nextToName(s,i,j)))cand.push({i,j,ids:[...ids],len:a.length+w,text:a,sur});i=s.indexOf(a,i+1)}}};
+ scan(ALIAS,qn,0,false);scan(ALIAS_CS,qraw,0,false);scan(SUR,qn,-0.5,true);
+ cand.sort((a,b)=>b.len-a.len||a.i-b.i);const out=[];
+ for(const c of cand){if(out.some(t=>c.i<t.j&&t.i<c.j))continue;out.push(c)}
+ return out.sort((a,b)=>a.i-b.i)}
+const INTENTS=[
+ {k:'invest',zh:'投资',money:1,re:/投资|投了|领投|跟投|入股|股东|注资|融资|invest|led round|stake|equity/i,edge:e=>/invest|led round|capitaliz/i.test(head(e))},
+ {k:'donate',zh:'捐赠',money:1,re:/捐|donat/i,edge:e=>/donat/i.test(head(e))},
+ {k:'money',zh:'资助',money:1,re:/资助|出资|出钱|给钱|拨款|赞助|资方|金主|募资|钱|fund|grant|money|backer|financ|raise/i,edge:e=>e.g==='money'&&!/invest|led round|capitaliz/i.test(head(e))},
+ {k:'board',zh:'董事 / 理事',re:/董事|理事|board|trustee|director/i,edge:e=>/board|trustee|director/i.test(head(e))},
+ {k:'employ',zh:'任职',re:/任职|在哪工作|工作过|雇|员工|就职|职位|团队|staff|employ|works? (?:at|for)|hire|job|role/i,edge:e=>/employ|officer|runs|manag/i.test(head(e))},
+ {k:'found',zh:'创办 / 筹建',re:/创始|创办|创立|成立|创建|筹建|发起|found|launch|start/i,edge:e=>/found|spun out|propos/i.test(head(e))},
+ {k:'advise',zh:'顾问',re:/顾问|咨询|导师|advis|mentor/i,edge:e=>/advis|mentor/i.test(head(e))},
+ {k:'member',zh:'成员',re:/成员|会员|加入|member|join/i,edge:e=>/member/i.test(head(e))},
+ {k:'coauthor',zh:'合著',re:/合著|合写|论文|co-?author|paper/i,edge:e=>/co-?author/i.test(head(e))},
+ {k:'ally',zh:'盟友 / 对手',re:/盟友|支持|合作|伙伴|反对|对手|批评|ally|allies|partner|oppos|critic|against|rival/i,edge:e=>/ally|oppon|partner|debat/i.test(head(e))},
+ {k:'candidate',zh:'候选',re:/候选|人选|提名|candidate|shortlist|nominee/i,edge:e=>/candidate/i.test(head(e))},
+ {k:'forum',zh:'论坛发文',re:/论坛|发文|发帖|lesswrong|forum|posts?\b/i,edge:e=>e.g==='forum'}];
+const INTENT_WORD=/^(fund\w*|grants?|donat\w*|invest\w*|money|backer\w*|financ\w*|raise\w*|board|trustee\w*|director\w*|employ\w*|staff|hire\w*|jobs?|roles?|found\w*|launch\w*|start\w*|advis\w*|mentor\w*|member\w*|join\w*|co-?author\w*|papers?|ally|allies|partner\w*|oppos\w*|critic\w*|against|rival\w*|candidate\w*|shortlist\w*|nominee\w*|forums?|posts?|writes?|works?|working)$/;
+const STOP=new Set('who whom whose what which where when why how is are was were be been the a an of for to and or in on at by with from into about as does do did has have had me my i we our you your they their them it its this that these those any all some most more less than then there here not no yes please show list find tell give get want need know related relation relations relationship relationships between connection connections connected link links people person persons org orgs organization organizations organisation organisations company companies group groups someone anyone recently recent new latest current currently also like just really very much many phd student students master masters undergrad undergraduate postdoc professor researcher researchers engineer engineers scientist interested interest interests looking hope plan planning year years university college field area areas topic topics direction'.split(' '));
+const TOPIC_ZH={'机制可解释':['mechanistic interp','interpretab'],'可解释':['interpretab'],'对齐':['alignment'],'评测':['eval','benchmark'],'评估':['eval','assessment'],'基准':['benchmark'],'治理':['governance'],'政策':['policy'],'监管':['regulat'],'立法':['legislat','bill'],'法律':['law','legal'],'责任':['liabilit'],'生物安全':['biosecur','biosafety','pandemic'],'生物':['bio'],'网络安全':['cyber'],'算力':['compute'],'芯片':['chip','semiconductor'],'出口管制':['export control'],'硬件':['hardware'],'数据中心':['datacenter','data centre','data center'],'可纠正':['corrigib'],'欺骗':['decepti'],'监控':['monitor','oversight'],'控制':['control'],'红队':['red team','red-team','red-teaming'],'标准':['standard'],'审计':['audit'],'预测':['forecast'],'开源':['open-source','open source','open-weight','open weight'],'超级智能':['superintelligen'],'通用人工智能':['agi'],'暂停':['pause'],'存在风险':['existential','x-risk','catastroph'],'生存风险':['existential','x-risk'],'灾难':['catastroph'],'安全':['safety','security'],'形式化':['formal verif','formal method'],'证明':['proof','provabl'],'数学':['math'],'经济':['econom'],'就业':['labor','labour','employment'],'中国':['china','chinese'],'欧盟':['eu ai','european'],'英国':['uk ','british'],'国家安全':['national security'],'军事':['military','defense','defence'],'教育':['education'],'医疗':['health','medical'],'健康':['health'],'机器人':['robot'],'智能体':['agent'],'奖励':['reward'],'强化学习':['reinforcement'],'博弈':['game theor','game-theor'],'协作':['cooperat'],'多智能体':['multi-agent','multiagent'],'伦理':['ethic'],'哲学':['philosoph'],'意识':['conscious','sentien'],'模型福利':['model welfare'],'福祉':['welfare'],'区块链':['blockchain','crypto'],'加密':['crypto'],'有效利他':['effective altruism'],'慈善':['philanthrop'],'风投':['venture'],'记者':['journalis','reporter'],'媒体':['media','journalis'],'播客':['podcast'],'学术':['academ','professor'],'博士':['phd','doctoral'],'奖学金':['fellowship','scholarship'],'训练营':['bootcamp','fellowship'],'水印':['watermark'],'隐私':['privacy'],'公平':['fairness'],'鲁棒':['robust'],'对抗':['adversarial'],'前沿':['frontier'],'透明':['transparen'],'问责':['accountab'],'民主':['democra'],'选举':['election'],'虚假信息':['disinformation','misinformation'],'深度伪造':['deepfake'],'版权':['copyright'],'能源':['energy'],'气候':['climate'],'价值观':['values'],'理性':['rational'],'认知':['epistem','cognit'],'计算机视觉':['vision'],'多模态':['multimodal'],'语言模型':['language model','llm']};
+const stem=w=>{for(const [s,r] of [['abilities','ab'],['ability','ab'],['ibility','ib'],['ations','at'],['ation','at'],['ities','it'],['ity','it'],['ings',''],['ing',''],['ies','y'],['ers','er'],['ed',''],['es',''],['s','']])if(w.length-s.length>=4&&w.endsWith(s))return w.slice(0,-s.length)+r;return w};
+function topicTerms(res){const t=new Set();for(const [zh,en] of Object.entries(TOPIC_ZH))if(res.includes(zh))en.forEach(x=>t.add(x));
+ (res.match(/[a-z][a-z0-9+-]{2,}/g)||[]).forEach(w=>{w=w.replace(/[+-]+$/,'');if(w.length>=3&&!STOP.has(w)&&!INTENT_WORD.test(w))t.add(stem(w))});
+ return [...t].filter(x=>![...t].some(y=>y!==x&&y.includes(x)&&y.length>x.length+3))}
+const DOC=nodes.map(n=>({n,name:nz(n.name),affil:nz(n.affil),focus:nz(n.focus),wr:nz(n.writings),lab:nz((adj[n.id]||[]).map(e=>e.label).join(' | '))})),DOCBY=new Map(DOC.map(d=>[d.n.id,d]));
+function topicRank(terms){if(!terms.length)return [];const N=DOC.length;
+ const idf=terms.map(t=>Math.log(1+N/(1+DOC.filter(d=>d.name.includes(t)||d.affil.includes(t)||d.focus.includes(t)||d.wr.includes(t)).length)));const out=[];
+ DOC.forEach(d=>{let s=0,why=null;terms.forEach((t,k)=>{let w=0;if(d.name.includes(t))w+=3;if(d.focus.includes(t))w+=2;if(d.affil.includes(t))w+=1.5;if(d.wr.includes(t))w+=1;if(!w&&d.lab.includes(t))w=0.4/Math.max(1,Math.log2(1+(d.n.deg||0)/8));if(w){s+=idf[k]*w;why=why||t}});if(s>0)out.push({n:d.n,s:s*(1+0.12*Math.log(1+(d.n.deg||0))),t:why})});
+ return out.sort((a,b)=>b.s-a.s)}
+function parse(q){const qraw=String(q||'').normalize('NFKD').replace(/[̀-ͯ]/g,''),qn=qraw.toLowerCase().replace(/[’‘]/g,"'");const ents=findEntities(qn,qraw);
+ const r=qn.split('');ents.forEach(h=>{for(let k=h.i;k<h.j;k++)r[k]=' '});const res=r.join('');
+ let intents=INTENTS.filter(I=>I.re.test(res));if(intents.some(I=>I.k==='invest'||I.k==='donate'))intents=intents.filter(I=>I.k!=='money'||/资助|fund|grant/i.test(res));
+ return {q,ents,res,intents,terms:topicTerms(res)}}
+const HZ={'funds':['{X} 资助的','资助 {X} 的'],'donated to':['{X} 捐给的','捐给 {X} 的'],'invested in':['{X} 投资的','投资 {X} 的'],'led round':['{X} 领投的','领投 {X} 的'],'co-invested':['与 {X} 共同投资的','与 {X} 共同投资的'],'grantee of':['资助 {X} 的','{X} 资助的'],
+ 'employed by':['{X} 任职的地方','在 {X} 任职的'],'employs':['{X} 雇用的','雇用 {X} 的'],'board of':['{X} 担任董事的','{X} 的董事'],'member of':['{X} 加入的','{X} 的成员'],'advises':['{X} 担任顾问的','{X} 的顾问'],'founded':['{X} 创办的','{X} 的创办方'],'co-founded with':['{X} 的共同创办者','{X} 的共同创办者'],'officer of':['{X} 任高管的','{X} 的高管'],'runs':['{X} 运营的','运营 {X} 的'],
+ 'co-authored with':['{X} 的合著者','{X} 的合著者'],'ally of':['{X} 的盟友','{X} 的盟友'],'opponent of':['{X} 反对的','反对 {X} 的'],'partners with':['{X} 的合作方','{X} 的合作方'],'writes on':['{X} 发文的论坛','在 {X} 发文的人'],'mentor of':['{X} 指导的','{X} 的导师'],'candidate for':['{X} 是候选人的','{X} 的候选人'],'plans to found':['{X} 筹建的','筹建 {X} 的'],'proposed':['{X} 提出的','提出 {X} 的'],'feeds into':['{X} 输送人才的去处','向 {X} 输送人才的'],'hosts':['{X} 主办的','主办 {X} 的']};
+const GORD={money:0,position:1,other:2,forum:3},HORD=h=>({'funds':0,'donated to':1,'invested in':2,'led round':3,'grantee of':4,'board of':0,'founded':1,'employed by':2,'officer of':3,'advises':4,'member of':5,'co-invested':9})[h]??6;
+const nodeLink=n=>`<span class="nm" onclick="openId('${n.id}')">${esc(n.name)}</span>`;
+const srcLink=e=>e.u?` · <a href="${esc(e.u)}" target="_blank" rel="noopener">来源</a>`:'';
+const restOf=e=>(e.label||'').slice(head(e).length).replace(/^ · /,'');
+function eLine(e){const h=head(e),r=restOf(e),d=e.arrow==='1->2';return `<div>${nodeLink(e.a)} <span class="rel">— ${esc(h)} ${d?'→':'—'}</span> ${nodeLink(e.b)}${r?`<br><span class="lab">${esc(r)}</span>`:''}${srcLink(e)}</div>`}
+function oLine(e,x){const o=e.s===x?e.b:e.a,r=restOf(e);return `<div>${nodeLink(o)}${r?`<br><span class="lab">${esc(r)}</span>`:''}${srcLink(e)}</div>`}
+function snip(n,terms){for(const f of ['focus','affil','writings']){const raw=String(n[f]||''),low=raw.toLowerCase();for(const t of terms){const i=low.indexOf(t);if(i>=0){const a=Math.max(0,i-45),b=Math.min(raw.length,i+t.length+70);return (a>0?'…':'')+esc(raw.slice(a,i))+'<b>'+esc(raw.slice(i,i+t.length))+'</b>'+esc(raw.slice(i+t.length,b))+(b<raw.length?'…':'')}}}const x=String(n.affil||n.focus||'');return esc(x.slice(0,110))+(x.length>110?'…':'')}
+const tag=n=>n.type==='person'?`<span class="pill" style="background:${PAL[n.cluster]||'#94a3b8'}">${esc(GZH[GROUP[n.cluster]]||'其他')}</span>`:'<span class="pill" style="background:#cbd5e1">机构</span>';
+const nItem=(n,why)=>`<div>${nodeLink(n)}${tag(n)}${why?`<br><span class="why">${why}</span>`:''}</div>`;
+let spot=null,lastRes=null;
+function showPanel(title,meta,html,ids,refit=true){const R=document.getElementById('right');R.style.display='block';R.scrollTop=0;document.getElementById('pname').textContent=title;document.getElementById('pmeta').innerHTML=meta;document.getElementById('edges').innerHTML=html;sel=null;spot=ids&&ids.size?ids:null;lastRes={title,meta,html,ids:spot};draw();if(spot&&refit)fitTo(spot)}
+window.showRes=()=>{if(lastRes)showPanel(lastRes.title,lastRes.meta,lastRes.html,lastRes.ids,false)};
+const backLink=()=>lastRes?`<div style="margin:2px 0 6px"><a href="#" onclick="showRes();return false">← 回到「${esc(lastRes.title)}」</a></div>`:'';
+function fitTo(ids){const ps=[...ids].map(id=>byId[id]).filter(Boolean);if(!ps.length)return;let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;ps.forEach(n=>{x0=Math.min(x0,n.x);x1=Math.max(x1,n.x);y0=Math.min(y0,n.y);y1=Math.max(y1,n.y)});
+ const wide=innerWidth>900,L=wide?275:0,Rw=wide?365:0,aw=innerWidth-L-Rw,s=Math.max(0.25,Math.min(2.5,Math.min(aw/(Math.max(x1-x0,60)+300),innerHeight/(Math.max(y1-y0,60)+200))));
+ T=d3.zoomIdentity.translate(L+aw/2-s*(x0+x1)/2,innerHeight/2-s*(y0+y1)/2).scale(s);d3.select(canvas).call(zoom.transform,T)}
+function interp(P){const bits=[];if(P.ents.length)bits.push('提到：'+P.ents.map(h=>h.ids.length>1?`「${esc(h.text)}」可能指 `+h.ids.map(id=>nodeLink(byId[id])).join(' / '):nodeLink(byId[h.ids[0]])).join('、'));
+ if(P.intents.length)bits.push('关系：'+P.intents.map(I=>I.zh).join('、'));if(P.terms.length)bits.push('主题词：'+P.terms.map(esc).join('、'));return bits.join(' · ')}
+function groupedEdges(x,es){const g=new Map();es.forEach(e=>{const h=head(e),dir=e.arrow==='1->2'&&e.t===x?1:0,k=h+'|'+dir;if(!g.has(k))g.set(k,{h,dir,es:[],grp:e.g});g.get(k).es.push(e)});
+ const X=byId[x].name;return [...g.values()].sort((a,b)=>GORD[a.grp]-GORD[b.grp]||HORD(a.h)-HORD(b.h)||b.es.length-a.es.length).map(G=>{const tpl=(HZ[G.h]||[`{X} → ${G.h}`,`${G.h} → {X}`])[G.dir];const es2=G.es.sort((a,b)=>((b.s===x?b.b:b.a).deg||0)-((a.s===x?a.b:a.a).deg||0));
+  return `<div class="sec">${esc(tpl.replace('{X}',X))}（${G.es.length}）</div>`+es2.slice(0,15).map(e=>oLine(e,x)).join('')+(es2.length>15?`<div class="muted">还有 ${es2.length-15} 条，点 ${nodeLink(byId[x])} 看全部</div>`:'')}).join('')}
+function ask(q){q=String(q||'').trim();if(!q)return;const P=parse(q),title=q,ids=new Set();let html='',note='';
+ const flat=P.ents.flatMap(h=>h.ids),edgeOk=e=>!P.intents.length||P.intents.some(I=>I.edge(e));
+ const termOk=(e,x)=>{const o=e.s===x?e.t:e.s,d=DOCBY.get(o),l=nz(e.label);return P.terms.some(t=>l.includes(t)||d.name.includes(t)||d.focus.includes(t)||d.affil.includes(t))};
+ if(P.ents.length===1&&P.ents[0].ids.length===1&&!P.intents.length&&!P.terms.length){q_hits_clear();openId(flat[0]);return}
+ if(P.ents.length>=2){const H=P.ents.slice(0,4);let direct=[];
+  for(let a=0;a<H.length;a++)for(let b=a+1;b<H.length;b++){const A=new Set(H[a].ids),B=new Set(H[b].ids);edges.forEach(e=>{if((A.has(e.s)&&B.has(e.t))||(B.has(e.s)&&A.has(e.t)))direct.push(e)})}
+  const f=direct.filter(edgeOk);if(P.intents.length&&!f.length&&direct.length)note='<div class="muted">没有这类关系，下面是它们之间的全部直接关系。</div>';else direct=f;
+  direct.forEach(e=>{ids.add(e.s);ids.add(e.t)});
+  if(direct.length)html+=`<div class="sec">直接关系（${direct.length}）</div>`+note+direct.map(eLine).join('');
+  else{html+='<div class="muted" style="margin-top:6px">它们之间没有直接关系。</div>';const nb=h=>{const m=new Map();h.ids.forEach(x=>(adj[x]||[]).forEach(e=>{const o=e.s===x?e.t:e.s;if(!m.has(o))m.set(o,e)}));return m};
+   const m1=nb(H[0]),m2=nb(H[1]),common=[...m1.keys()].filter(k=>m2.has(k)&&!flat.includes(k)).sort((a,b)=>(byId[b].deg||0)-(byId[a].deg||0));
+   if(common.length){html+=`<div class="sec">共同关联（${common.length}）</div>`+common.slice(0,12).map(k=>{ids.add(k);return `<div>${nodeLink(byId[k])}${tag(byId[k])}<br><span class="lab">${esc(byId[H[0].ids[0]].name)}：${esc(m1.get(k).label)}</span>${srcLink(m1.get(k))}<br><span class="lab">${esc(byId[H[1].ids[0]].name)}：${esc(m2.get(k).label)}</span>${srcLink(m2.get(k))}</div>`}).join('')}}
+  flat.forEach(x=>ids.add(x))}
+ else if(P.ents.length===1){P.ents[0].ids.slice(0,3).forEach(x=>{ids.add(x);let es=(adj[x]||[]).filter(edgeOk);let t='';
+   if(P.terms.length){const f=es.filter(e=>termOk(e,x));if(f.length)es=f;else t=`<div class="muted">没有和「${esc(P.terms.join(' '))}」直接相关的，下面不按主题筛。</div>`}
+   if(P.ents[0].ids.length>1)html+=`<h2 style="margin-top:10px">${nodeLink(byId[x])}</h2>`;
+   if(!es.length){html+=`<div class="muted" style="margin-top:6px">${esc(byId[x].name)} 没有这类关系。</div>`;return}
+   es.forEach(e=>{ids.add(e.s);ids.add(e.t)});html+=t+groupedEdges(x,es)})}
+ else if(P.terms.length){const R=topicRank(P.terms);if(!R.length){html='<div class="muted" style="margin-top:6px">没有节点提到这些主题词。</div>'}else{
+   if(P.intents.length){const top=new Map(R.slice(0,60).map(x=>[x.n.id,x.s]));const seen=new Set(),hitE=[];
+    const recv=e=>/grantee/i.test(head(e))?e.s:e.t,wantMoney=P.intents.some(I=>I.money);R.slice(0,60).forEach(x=>(adj[x.n.id]||[]).forEach(e=>{if(seen.has(e)||!edgeOk(e))return;seen.add(e);const s=wantMoney&&e.g==='money'?(top.get(recv(e))||0):Math.max(top.get(e.s)||0,top.get(e.t)||0);if(s>0)hitE.push({e,s})}));hitE.sort((a,b)=>b.s-a.s);{const per=new Map();hitE.splice(0,hitE.length,...hitE.filter(x=>{const k=wantMoney?recv(x.e):x.e.s+'|'+x.e.t;const c=(per.get(k)||0)+1;per.set(k,c);return c<=3}))}
+    if(hitE.length){html+=`<div class="sec">${wantMoney?'给这个方向的人和机构'+(P.intents.some(I=>I.k==='invest')?'投资':'出钱')+'的':esc(P.intents.map(I=>I.zh).join('、'))+'：和这个主题相关的节点'}（${hitE.length}）</div>`+hitE.slice(0,15).map(x=>{ids.add(x.e.s);ids.add(x.e.t);return eLine(x.e)}).join('')}}
+   const ppl=R.filter(x=>x.n.type==='person').slice(0,10),org=R.filter(x=>x.n.type!=='person').slice(0,8);
+   const pH=ppl.length?'<div class="sec">相关的人</div>'+ppl.map(x=>{ids.add(x.n.id);return nItem(x.n,snip(x.n,P.terms))}).join(''):'',oH=org.length?'<div class="sec">相关的机构</div>'+org.map(x=>{ids.add(x.n.id);return nItem(x.n,snip(x.n,P.terms))}).join(''):'';
+   html+=/机构|组织|公司|实验室|基金会|\borgs?\b|organi[sz]ation|institut|compan|lab/i.test(P.q)?oH+pH:pH+oH;
+   if(!P.intents.length){const le=edges.filter(e=>P.terms.some(t=>nz(e.label).includes(t))).sort((a,b)=>((b.a.deg||0)+(b.b.deg||0))-((a.a.deg||0)+(a.b.deg||0)));
+    if(le.length)html+=`<div class="sec">关系标签里提到的（${le.length}）</div>`+le.slice(0,10).map(e=>{ids.add(e.s);ids.add(e.t);return eLine(e)}).join('')}}}
+ else if(P.intents.length){const I=P.intents[0],cnt=new Map();edges.forEach(e=>{if(!I.edge(e))return;const k=I.k==='money'?(/grantee/i.test(head(e))?e.t:e.s):e.t;cnt.set(k,(cnt.get(k)||0)+1)});
+  const top=[...cnt.entries()].sort((a,b)=>b[1]-a[1]).slice(0,15);html+=`<div class="sec">${esc(I.zh)}最多的节点</div>`+top.map(([k,c])=>{ids.add(k);return nItem(byId[k],`${c} 条${esc(I.zh)}关系`)}).join('')}
+ else{html=`<div class="muted" style="margin-top:6px">没认出图里的人名、机构或主题。可以换个说法，比如写人名或机构全名、英文缩写，或者研究方向的英文词。</div>`+exHTML()}
+ const cap=[...ids].slice(0,80);showPanel(title,interp(P)||'　',html,new Set(cap))}
+function q_hits_clear(){hits.innerHTML=''}
+const ROLES=[['research','做研究'],['funding','找资助'],['policy','做政策'],['invest','投资'],['media','写作 / 报道'],['curious','随便看看']];
+const isGrant=e=>e.g==='money'&&!/invest|led round|capitaliz/i.test(head(e)),giver=e=>/grantee/i.test(head(e))?e.t:e.s,taker=e=>/grantee/i.test(head(e))?e.s:e.t;
+const ROLE_W={research:{p:n=>['research','safety-org'].includes(GROUP[n.cluster]),edge:e=>e.g==='position'||/co-?author|mentor|advis/i.test(head(e)),
+  hop:{title:'这个方向的人所在的机构',org:true,take:(e,x)=>/employ|member|officer/i.test(head(e))&&e.s===x?e.t:null,why:'{N} 在这里'}},
+ funding:{p:n=>GROUP[n.cluster]==='funder',edge:isGrant,hop:{title:'资助过这个方向的',take:(e,x)=>isGrant(e)&&taker(e)===x?giver(e):null,why:'资助过 {N}'}},
+ policy:{p:n=>GROUP[n.cluster]==='policy',o:n=>n.cluster==='policy-gov',edge:e=>e.g==='position'||/ally|oppon|member|board|candidate|propos/i.test(head(e))},
+ invest:{p:n=>GROUP[n.cluster]==='funder',o:n=>n.cluster==='frontier-lab-exec',edge:e=>/invest|led round|found/i.test(head(e)),hop:{title:'投资过这个方向的',take:(e,x)=>/invest|led round/i.test(head(e))&&e.t===x?e.s:null,why:'投资过 {N}'}},
+ media:{edge:e=>e.g==='forum'||/ally|oppon|co-?author|debat/i.test(head(e))},curious:{}};
+function guide(text,role){const P=parse(text);role=role||'curious';const W=ROLE_W[role]||{},anchors=[...new Set(P.ents.flatMap(h=>h.ids))].slice(0,6);
+ if(!P.terms.length&&!anchors.length){showPanel('我该关注谁？','','<div class="muted" style="margin-top:6px">没从这段话里认出方向。多写几个关键词，比如研究方向（interpretability、AI governance、biosecurity、可解释性、治理）或你关心的机构。</div>',null);return}
+ const R=topicRank(P.terms),score=new Map(R.map(x=>[x.n.id,x.s])),why=new Map(R.map(x=>[x.n.id,snip(x.n,P.terms)]));
+ anchors.forEach(a=>(adj[a]||[]).forEach(e=>{const o=e.s===a?e.t:e.s;if(anchors.includes(o))return;score.set(o,(score.get(o)||0)+1.5);if(!why.has(o))why.set(o,`和你提到的 ${esc(byId[a].name)} 有公开关系：${esc(e.label)}`)}));
+ const seeds=[...score.entries()].sort((a,b)=>b[1]-a[1]).slice(0,80),hopS=new Map(),hopW=new Map();
+ if(W.hop)seeds.forEach(([x,sx])=>(adj[x]||[]).forEach(e=>{const y=W.hop.take(e,x);if(!y||y===x||anchors.includes(y))return;hopS.set(y,(hopS.get(y)||0)+sx);const l=hopW.get(y)||[];if(l.length<2&&!l.includes(byId[x].name))l.push(byId[x].name);hopW.set(y,l)}));
+ const prior=n=>1+(role==='media'?0.1:0.04)*Math.log(1+(n.deg||0));
+ const rank=(ids,f)=>ids.map(id=>byId[id]).filter(n=>n&&!anchors.includes(n.id)&&f(n)).map(n=>({n,s:(score.get(n.id)||0)*prior(n)*(n.type==='person'?(W.p&&W.p(n)?1.7:1):(W.o&&W.o(n)?1.7:1))})).sort((a,b)=>b.s-a.s);
+ const hopL=W.hop?[...hopS.entries()].map(([id,v])=>({n:byId[id],s:v})).filter(x=>x.n&&(!W.hop.org||x.n.type!=='person')).sort((a,b)=>b.s-a.s).slice(0,8):[];
+ const inHop=new Set(hopL.map(x=>x.n.id)),all=[...score.keys()];
+ const topP=rank(all,n=>n.type==='person'&&!inHop.has(n.id)).slice(0,8),topO=rank(all,n=>n.type!=='person'&&!inHop.has(n.id)).slice(0,6);
+ const rel=new Set([...topP,...topO,...hopL].map(x=>x.n.id)),ek=W.edge||(()=>true),cand=new Map();
+ rel.forEach(id=>(adj[id]||[]).forEach(e=>{if(!ek(e)||cand.has(e))return;const both=rel.has(e.s)&&rel.has(e.t);cand.set(e,(score.get(e.s)||0)+(score.get(e.t)||0)+(hopS.get(e.s)||0)*0.3+(both?8:0))}));
+ const topE=[...cand.entries()].sort((a,b)=>b[1]-a[1]).slice(0,12).map(x=>x[0]),ids=new Set([...rel,...anchors]);topE.forEach(e=>{ids.add(e.s);ids.add(e.t)});
+ const rz=(ROLES.find(r=>r[0]===role)||[])[1]||'';let html='';
+ if(anchors.length)html+=`<div class="muted" style="margin-top:6px">你提到的：${anchors.map(a=>nodeLink(byId[a])).join('、')}</div>`;
+ if(hopL.length)html+=`<div class="sec">${W.hop.title}</div>`+hopL.map(x=>nItem(x.n,esc(W.hop.why.replace('{N}',hopW.get(x.n.id).join('、'))))).join('');
+ if(topP.length)html+='<div class="sec">这个方向的人</div>'+topP.map(x=>nItem(x.n,why.get(x.n.id))).join('');
+ if(topO.length)html+='<div class="sec">这个方向的机构</div>'+topO.map(x=>nItem(x.n,why.get(x.n.id))).join('');
+ if(topE.length)html+=`<div class="sec">值得留意的关系${rz&&role!=='curious'?'（按「'+esc(rz)+'」挑）':''}</div>`+topE.map(eLine).join('');
+ html+='<div class="muted" style="margin-top:10px">只根据图里的公开关系和你写的关键词排序，不代表推荐或评价。你写的内容只在这个页面里计算，不会发送或保存。</div>';
+ const meta=[P.terms.length?'主题词：'+P.terms.map(esc).join('、'):'',rz?'身份：'+esc(rz):''].filter(Boolean).join(' · ');
+ showPanel('我该关注谁？',meta,html,ids)}
+const EXAMPLES=['谁资助 METR','Anthropic 董事会','谁在资助 interpretability','Paul Christiano 和 OpenAI','Jaan Tallinn 投资了哪些公司'];
+const exHTML=()=>'<div class="ex">试试：'+EXAMPLES.map(x=>`<a onclick="runEx(this)">${esc(x)}</a>`).join('')+'</div>';
+window.runEx=a=>{q.value=a.textContent;hits.innerHTML='';ask(a.textContent)};
+document.getElementById('ex').innerHTML=exHTML().replace(/^<div class="ex">|<\/div>$/g,'');
+let role='';const gr=document.getElementById('groles');ROLES.forEach(([k,z])=>{const c=document.createElement('span');c.className='chip';c.textContent=z;c.onclick=()=>{role=role===k?'':k;[...gr.children].forEach(x=>x.classList.toggle('on',x===c&&role===k))};gr.appendChild(c)});
+document.getElementById('gbtn').onclick=()=>guide(document.getElementById('gtext').value,role);
+q.addEventListener('keydown',ev=>{if(ev.key==='Enter'){ev.preventDefault();hits.innerHTML='';ask(q.value)}});
+window.ask=ask;window.guide=guide;window.parseQuery=parse;
 Object.keys(GNAME).forEach(g=>{const b=document.createElement('button');b.textContent=GNAME[g];b.title='显示 / 隐藏这类连线';b.onclick=()=>{gOn[g]=!gOn[g];b.classList.toggle('off',!gOn[g]);draw()};document.getElementById('tog').appendChild(b)});
 addEventListener('resize',resize);resize();fit();
 </script></body></html>
