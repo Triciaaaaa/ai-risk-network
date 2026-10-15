@@ -4,7 +4,10 @@
 #   bash ~/research/ai-risk-network/merge_all.sh 8 9        # or an explicit order
 set -uo pipefail
 REPO=Triciaaaaa/ai-risk-network
+AGENT=~/research/xrisk-atlas/agent/issue_agent.py
 export PATH="$PATH:/usr/local/bin:/opt/homebrew/bin"
+# An agent without --refresh-only ignores its arguments and runs in full: it would take up pending issues and wait on them for hours.
+grep -q -- '--refresh-only' "$AGENT" || { echo "$AGENT has no --refresh-only mode; update it first"; exit 1; }
 if [ $# -gt 0 ]; then PRS="$*"; else
   ALL=$(gh pr list -R $REPO --json number,headRefName --jq '.[] | "\(.number) \(.headRefName)"')
   FIRST=$(echo "$ALL" | awk '$2 ~ /^cleanup\// {print $1}')
@@ -14,7 +17,9 @@ fi
 echo "order: $PRS"
 for n in $PRS; do
   echo "== PR #$n"
-  /usr/bin/python3 ~/research/xrisk-atlas/agent/issue_agent.py 2>&1 | grep -i "refresh" || true
+  # Only the refresh, and only for this PR: pending issues are never touched. --force because GitHub's mergeable flag lags
+  # right after the previous merge; the agent still skips the rebuild by itself when the branch already sits on current main.
+  /usr/bin/python3 "$AGENT" --refresh-only "$n" --force || echo "refresh step failed for #$n"
   m=""
   for i in $(seq 1 12); do
     m=$(gh pr view $n -R $REPO --json mergeable --jq .mergeable 2>/dev/null); [ "$m" = "MERGEABLE" ] && break; sleep 8
